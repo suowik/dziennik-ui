@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router'
 
 const Users = React.createClass({
