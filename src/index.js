@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router'
@@ -84,16 +84,24 @@ const App = React.createClass({
     }
 });
 
+class Routes extends Component {
+    render() {
+        return (
+            <Router history={browserHistory}>
+                <Route path="/" component={App}>
+                    <IndexRoute component={Users}/>
+                    <Route path="about" component={About}/>
+                    <Route path="users" component={Users}>
+                        <Route path="/user/:userId" component={User}/>
+                    </Route>
+                    <Route path="*" component={NoMatch}/>
+                </Route>
+            </Router>
+        )
+    }
+}
+
 ReactDOM.render(
-    <Router history={browserHistory}>
-        <Route path="/" component={App}>
-            <IndexRoute component={Users}/>
-            <Route path="about" component={About}/>
-            <Route path="users" component={Users}>
-                <Route path="/user/:userId" component={User}/>
-            </Route>
-            <Route path="*" component={NoMatch}/>
-        </Route>
-    </Router>,
+    <Routes />,
     document.getElementById('root')
 );
