@@ -6,11 +6,10 @@ class Layout extends Component {
         return (
             <div>
                 <div className="page-header">
-                    <h1>Moje miony</h1>
+                    <h1>Moje miniony</h1>
                 </div>
                 <ul>
                     <li><Link to="/users">users</Link></li>
-                    <li><Link to="/about">about</Link></li>
                 </ul>
                 {this.props.children}
             </div>
