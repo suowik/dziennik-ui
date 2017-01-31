@@ -1,12 +1,18 @@
 import React, {Component} from 'react';
-import { Link } from 'react-router'
 
 class Group extends Component {
+
+    constructor(props){
+        super(props);
+        this.state = {
+            "user": {id: 1, name: "dfas"}
+        }
+    }
 
     componentWillMount() {
         this.setState({
             // route components are rendered with useful information, like URL params
-            user: this.findUserById(this.props.params.userId)
+            user: this.findUserById(this.props.params.groupId)
         })
     }
 

@@ -3,30 +3,42 @@ import { Link } from 'react-router'
 
 class Groups extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            "groups": [
+                {id: "3C", name: "3C", "description": "czw. 10:00 - 11:30"},
+                {id: "3A", name: "3C", "description": "czw. 10:00 - 11:30"},
+                {id: "3B", name: "3C", "description": "czw. 10:00 - 11:30"},
+                {id: "3D", name: "3C", "description": "czw. 10:00 - 11:30"}
+            ]
+        }
+    }
+
     render() {
         return (
-            <div>
-                <h1>Users</h1>
-
-                <div className="master">
-                    <ul>
-                        {/* use Link to route around the app */}
-                        {this.state.users.map(user => (
-                            <li key={user.id}><Link to={`/users/${user.id}`}>{user.name}</Link></li>
-                        ))}
-                    </ul>
+            <div className="row">
+                <div className="page-header">
+                    <h1>Twoje grupy</h1>
                 </div>
-                <div className="detail">
-                    {this.props.children}
+
+                <div className="row">
+                    {this.state.groups.map(group => (
+                        <div className="col-sm-3" key={group.id}>
+                            <div className="panel panel-default">
+                                <div className="panel-heading">
+                                    <h3 className="panel-title">3C</h3>
+                                </div>
+                                <div className="panel-body">
+                                    {group.description}
+                                    <Link to={`/groups/${group.id}`} className="btn btn-sm btn-success">Podgląd</Link>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         )
-    }
-
-    componentWillMount() {
-        this.setState({
-            users: [{id: 1, name: "dupa"}]
-        })
     }
 }
 
