@@ -24,21 +24,38 @@ class Groups extends Component {
 
                 <div className="row">
                     {this.state.groups.map(group => (
-                        <div className="col-sm-3" key={group.id}>
-                            <div className="panel panel-default">
-                                <div className="panel-heading">
-                                    <h3 className="panel-title">3C</h3>
-                                </div>
-                                <div className="panel-body">
-                                    {group.description}
-                                    <Link to={`/groups/${group.id}`} className="btn btn-sm btn-success">Podgląd</Link>
-                                </div>
-                            </div>
-                        </div>
+                        <GroupTile group={group} key={group.id}/>
                     ))}
                 </div>
             </div>
         )
+    }
+}
+
+class GroupTile extends Component {
+
+    constructor(props){
+        super(props);
+        this.state = {
+            group: props.group
+        }
+    }
+
+    render(){
+        return (
+            <div className="col-sm-3">
+                <div className="panel panel-default">
+                    <div className="panel-heading">
+                        <h3 className="panel-title">3C</h3>
+                    </div>
+                    <div className="panel-body">
+                        {this.state.group.description}
+                        <Link to={`/groups/${this.state.group.id}`} className="btn btn-sm btn-success">Podgląd</Link>
+                    </div>
+                </div>
+            </div>
+        )
+
     }
 }
 
