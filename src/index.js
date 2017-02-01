@@ -5,6 +5,7 @@ import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 import Groups from './Groups.js'
 import Group from './Group.js'
 import Layout from './Layout.js'
+import NewGroup from './NewGroup.js'
 
 class Routes extends Component {
     render() {
@@ -14,7 +15,7 @@ class Routes extends Component {
                     <IndexRoute component={Groups}/>
                     <Route path="/groups" component={Groups}/>
                     <Route path="/groups/:groupId" component={Group}/>
-                    <Route path="/add-group" component={Group}/>
+                    <Route path="/new-group" component={NewGroup}/>
                 </Route>
             </Router>
         )

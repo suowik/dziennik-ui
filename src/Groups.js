@@ -35,7 +35,7 @@ class Groups extends Component {
                                 <h3 className="panel-title">Dodaj grupę</h3>
                             </div>
                             <div className="panel-body">
-                                <Link to="/add-group" className="btn btn-sm btn-success"><span
+                                <Link to="/new-group" className="btn btn-sm btn-success"><span
                                     className="glyphicon glyphicon-plus"></span></Link>
                             </div>
                         </div>
