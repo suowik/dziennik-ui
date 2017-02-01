@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { Link } from 'react-router'
 import request from 'request'
 
 class NewGroup extends Component {
@@ -27,8 +26,11 @@ class NewGroup extends Component {
     }
 
     handleSubmit(e) {
-        console.log(this.state);
-        e.preventDefault()
+        e.preventDefault();
+        let group = this.state;
+        group._id = group.name;
+        console.log(group);
+        request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)})
     }
 
     render() {

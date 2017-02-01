@@ -60,7 +60,7 @@ class GroupTile extends Component {
             <div className="col-sm-3">
                 <div className="panel panel-default">
                     <div className="panel-heading">
-                        <h3 className="panel-title">3C</h3>
+                        <h3 className="panel-title">{this.state.group.name}</h3>
                     </div>
                     <div className="panel-body">
                         {this.state.group.dateOfActivities} &nbsp;
