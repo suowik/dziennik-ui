@@ -25,7 +25,7 @@ class Groups extends Component {
                     <h1>Twoje grupy</h1>
                 </div>
 
-                <div className="row">
+                <div>
                     {this.state.groups.map(group => (
                         <GroupTile group={group} key={group._id}/>
                     ))}
@@ -63,7 +63,7 @@ class GroupTile extends Component {
                         <h3 className="panel-title">3C</h3>
                     </div>
                     <div className="panel-body">
-                        {this.state.group.dateOfActivities}
+                        {this.state.group.dateOfActivities} &nbsp;
                         <Link to={`/groups/${this.state.group._id}`} className="btn btn-sm btn-success">Podgląd</Link>
                     </div>
                 </div>
