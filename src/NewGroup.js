@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import request from 'request'
+import { browserHistory } from 'react-router';
 
 class NewGroup extends Component {
 
@@ -30,7 +31,9 @@ class NewGroup extends Component {
         let group = this.state;
         group._id = group.name;
         console.log(group);
-        request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)})
+        request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, e =>{
+            browserHistory.push('/groups')
+        })
     }
 
     render() {

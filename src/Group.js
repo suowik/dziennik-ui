@@ -1,7 +1,40 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router'
+import request from 'request'
 
 class Group extends Component {
+
+    componentDidMount() {
+        var that = this;
+        request.get('https://dziennik-api.herokuapp.com/groups/' + that.props.params.groupId, function (err, res, body) {
+            let group = JSON.parse(body);
+            group.students.forEach(student => {
+                if (student.tests === undefined) {
+                    student.tests = []
+                }
+                if(student.attendances === undefined){
+                    student.attendances = []
+                }
+            });
+            let refStudent = group.students[0];
+
+            let attendanceHeaders = refStudent.attendances.map(attendance=> {
+                return attendance.date
+            });
+            let testNames = refStudent.tests.map(test=> {
+                return test.name
+            });
+            let commonHeaders = ["#", "Imię", "Nazwisko"];
+
+            that.setState({
+                attendanceHeaders: commonHeaders.concat(attendanceHeaders),
+                attendances: attendanceHeaders,
+                testNames: commonHeaders.concat(testNames),
+                tests: testNames,
+                group: group
+            });
+        });
+    }
 
     constructor(props) {
         super(props);
@@ -23,29 +56,13 @@ class Group extends Component {
                         {date: "25.02.2017", status: "absent"},
                         {date: "02.03.2017", status: "justified"}
                     ]
-                },
-                {
-                    id: 2,
-                    name: "Abc2",
-                    surname: "Abc2",
-                    tests: [
-                        {name: "U1", marks: {first: "4.5"}},
-                        {name: "U2", marks: {first: "2.0", second: "2.0", third: "2.0"}}
-                    ],
-                    attendances: [
-                        {date: "23.02.2017", status: "absent"},
-                        {date: "25.02.2017", status: "absent"},
-                        {date: "02.03.2017", status: "justified"}
-                    ]
                 }
             ]
         };
-        this.state = {
-            group: group
-        };
+
 
         let commonHeaders = ["#", "Imię", "Nazwisko"];
-        let refStudent = this.state.group.students[0];
+        let refStudent = group.students[0];
         let attendanceHeaders = refStudent.attendances.map(attendance=> {
             return attendance.date
         });
@@ -123,6 +140,17 @@ class Table extends Component {
         }
     }
 
+    componentWillReceiveProps(props){
+        this.setState({
+            headers: props.headers,
+            linkTo: props.linkTo,
+            rows: props.rows,
+            group: props.group,
+            renderer: props.renderer,
+            linkLabel: props.linkLabel
+        })
+    }
+
     render() {
         return (
             <table className="table table-striped">
@@ -166,6 +194,13 @@ class AttendanceRenderer extends Component {
         }
     }
 
+    componentWillReceiveProps(props){
+        this.setState({
+            row: props.row,
+        })
+    }
+
+
     attendanceToString(status) {
         switch (status) {
             case 'present':
@@ -188,14 +223,23 @@ class AttendanceRenderer extends Component {
 
 class TestResultRenderer extends Component {
 
+    failed(marks) {
+        return marks.first === "2.0" && marks.second === "2.0" && marks.third === "2.0";
+    }
+
+    componentWillReceiveProps(props){
+        let that = this
+        this.setState({
+            row: props.row,
+            failed: that.failed(props.row.marks)
+        })
+    }
+
     constructor(props) {
         super(props);
-        let failed = (marks) => {
-            return marks.first === "2.0" && marks.second === "2.0" && marks.third === "2.0";
-        };
         this.state = {
             row: props.row,
-            failed: failed(props.row.marks)
+            failed: false
         }
     }
 
