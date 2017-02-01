@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e2dc97c-a11e-4c98-9434-6536c54d8533" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Attendance.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Group.js" afterPath="$PROJECT_DIR$/src/Group.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Attendance.js" afterPath="$PROJECT_DIR$/src/Attendance.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dziennik-react.iws" />
@@ -40,8 +38,8 @@
       <file leaf-file-name="Attendance.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Attendance.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.021428572">
-              <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.6">
+              <caret line="107" column="80" selection-start-line="107" selection-start-column="80" selection-end-line="107" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -653,7 +651,7 @@
       <workItem from="1485851488924" duration="3675000" />
       <workItem from="1485868082848" duration="482000" />
       <workItem from="1485936544336" duration="17390000" />
-      <workItem from="1485970416875" duration="5550000" />
+      <workItem from="1485970416875" duration="5650000" />
     </task>
     <task id="LOCAL-00001" summary="rijreoi">
       <created>1485532146549</created>
@@ -757,11 +755,17 @@
       <option name="project" value="LOCAL" />
       <updated>1485972406543</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="attendance checking">
+      <created>1485976074713</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1485976074713</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32009000" />
+    <option name="totallyTimeSpent" value="32109000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -816,7 +820,8 @@
     <MESSAGE value="dodawanie grupy" />
     <MESSAGE value="wyswietlanie grupy" />
     <MESSAGE value="group rendering with request lib" />
-    <option name="LAST_COMMIT_MESSAGE" value="group rendering with request lib" />
+    <MESSAGE value="attendance checking" />
+    <option name="LAST_COMMIT_MESSAGE" value="attendance checking" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1136,8 +1141,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Attendance.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.021428572">
-          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.6">
+          <caret line="107" column="80" selection-start-line="107" selection-start-column="80" selection-end-line="107" selection-end-column="80" />
           <folding />
         </state>
       </provider>

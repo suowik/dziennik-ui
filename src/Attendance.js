@@ -105,7 +105,7 @@ class Attendance extends Component {
                                         {this.status(idx, 'present')}
                                         <div className="radio">
                                             <label>
-                                                <select
+                                                <select className="form-control"
                                                     onChange={this.handleAttendanceChangeFactory(idx)}>
                                                     <option value="present">Obecny(a)
                                                     </option>
