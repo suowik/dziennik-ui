@@ -196,7 +196,7 @@ class AttendanceRenderer extends Component {
 
     componentWillReceiveProps(props){
         this.setState({
-            row: props.row,
+            row: props.row
         })
     }
 

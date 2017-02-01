@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e2dc97c-a11e-4c98-9434-6536c54d8533" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Attendance.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Group.js" afterPath="$PROJECT_DIR$/src/Group.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NewGroup.js" afterPath="$PROJECT_DIR$/src/NewGroup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dziennik-react.iws" />
@@ -30,17 +31,17 @@
         <entry file="file://$PROJECT_DIR$/src/Group.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+              <caret line="172" column="20" selection-start-line="172" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewGroup.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/NewGroup.js">
+      <file leaf-file-name="Attendance.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Attendance.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6995885">
-              <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.021428572">
+              <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -50,7 +51,27 @@
         <entry file="file://$PROJECT_DIR$/src/Groups.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="18" selection-end-column="5" />
+              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewGroup.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NewGroup.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="35" column="10" selection-start-line="29" selection-start-column="8" selection-end-line="35" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="83" selection-start-line="18" selection-start-column="83" selection-end-line="18" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -101,10 +122,11 @@
         <option value="$PROJECT_DIR$/src/Layout.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/Groups.js" />
-        <option value="$PROJECT_DIR$/src/Group.js" />
         <option value="$PROJECT_DIR$/src/NewGroup.js" />
+        <option value="$PROJECT_DIR$/src/Group.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/Attendance.js" />
       </list>
     </option>
   </component>
@@ -631,7 +653,7 @@
       <workItem from="1485851488924" duration="3675000" />
       <workItem from="1485868082848" duration="482000" />
       <workItem from="1485936544336" duration="17390000" />
-      <workItem from="1485970416875" duration="1925000" />
+      <workItem from="1485970416875" duration="5550000" />
     </task>
     <task id="LOCAL-00001" summary="rijreoi">
       <created>1485532146549</created>
@@ -729,11 +751,17 @@
       <option name="project" value="LOCAL" />
       <updated>1485960289363</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="group rendering with request lib">
+      <created>1485972406543</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1485972406543</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28384000" />
+    <option name="totallyTimeSpent" value="32009000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -741,6 +769,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -763,7 +792,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -787,7 +815,8 @@
     <MESSAGE value="gitignore" />
     <MESSAGE value="dodawanie grupy" />
     <MESSAGE value="wyswietlanie grupy" />
-    <option name="LAST_COMMIT_MESSAGE" value="wyswietlanie grupy" />
+    <MESSAGE value="group rendering with request lib" />
+    <option name="LAST_COMMIT_MESSAGE" value="group rendering with request lib" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1076,7 +1105,7 @@
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="64" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
+          <caret line="18" column="83" selection-start-line="18" selection-start-column="83" selection-end-line="18" selection-end-column="83" />
           <folding />
         </state>
       </provider>
@@ -1084,7 +1113,15 @@
     <entry file="file://$PROJECT_DIR$/src/Groups.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="18" selection-end-column="5" />
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NewGroup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="10" selection-start-line="29" selection-start-column="8" selection-end-line="35" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -1092,15 +1129,15 @@
     <entry file="file://$PROJECT_DIR$/src/Group.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+          <caret line="172" column="20" selection-start-line="172" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NewGroup.js">
+    <entry file="file://$PROJECT_DIR$/src/Attendance.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6995885">
-          <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.021428572">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
           <folding />
         </state>
       </provider>
