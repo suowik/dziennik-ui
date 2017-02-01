@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e2dc97c-a11e-4c98-9434-6536c54d8533" name="Default" comment="gitignore">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/NewGroup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Groups.js" afterPath="$PROJECT_DIR$/src/Groups.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
+    <list default="true" id="0e2dc97c-a11e-4c98-9434-6536c54d8533" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Group.js" afterPath="$PROJECT_DIR$/src/Group.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dziennik-react.iws" />
@@ -27,51 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Layout.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Layout.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="94" selection-start-line="10" selection-start-column="94" selection-end-line="10" selection-end-column="94" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="64" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Group.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Group.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Group.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewGroup.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/NewGroup.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.59511566">
-              <caret line="127" column="22" selection-start-line="127" selection-start-column="22" selection-end-line="127" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Groups.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Groups.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.57840616">
+              <caret line="152" column="69" selection-start-line="152" selection-start-column="69" selection-end-line="152" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -119,13 +77,13 @@
         <option value="$PROJECT_DIR$/model/group.html" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/Group.js" />
         <option value="$PROJECT_DIR$/src/Layout.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/Groups.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/NewGroup.js" />
+        <option value="$PROJECT_DIR$/src/Groups.js" />
+        <option value="$PROJECT_DIR$/src/Group.js" />
       </list>
     </option>
   </component>
@@ -652,7 +610,7 @@
       <workItem from="1485844098453" duration="926000" />
       <workItem from="1485851488924" duration="3675000" />
       <workItem from="1485868082848" duration="482000" />
-      <workItem from="1485936544336" duration="9698000" />
+      <workItem from="1485936544336" duration="16762000" />
     </task>
     <task id="LOCAL-00001" summary="rijreoi">
       <created>1485532146549</created>
@@ -726,11 +684,23 @@
       <option name="project" value="LOCAL" />
       <updated>1485940737484</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="dodawanie grupy">
+      <created>1485949983552</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1485949983552</updated>
+    </task>
+    <task id="LOCAL-00014" summary="dodawanie grupy">
+      <created>1485952940814</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1485952940814</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18767000" />
+    <option name="totallyTimeSpent" value="25831000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="23" width="1920" height="1173" extended-state="6" />
@@ -782,7 +752,8 @@
     <MESSAGE value="groups real data fetching" />
     <MESSAGE value="some styling" />
     <MESSAGE value="gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignore" />
+    <MESSAGE value="dodawanie grupy" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodawanie grupy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1042,14 +1013,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Layout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="94" selection-start-line="10" selection-start-column="94" selection-end-line="10" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.625">
@@ -1066,10 +1029,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Group.js">
+    <entry file="file://$PROJECT_DIR$/src/NewGroup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.214653">
+          <caret line="32" column="73" selection-start-line="32" selection-start-column="73" selection-end-line="32" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Layout.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="10" column="94" selection-start-line="10" selection-start-column="94" selection-end-line="10" selection-end-column="94" />
           <folding />
         </state>
       </provider>
@@ -1085,15 +1056,15 @@
     <entry file="file://$PROJECT_DIR$/src/Groups.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+          <caret line="30" column="23" selection-start-line="28" selection-start-column="20" selection-end-line="30" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NewGroup.js">
+    <entry file="file://$PROJECT_DIR$/src/Group.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59511566">
-          <caret line="127" column="22" selection-start-line="127" selection-start-column="22" selection-end-line="127" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.57840616">
+          <caret line="152" column="69" selection-start-line="152" selection-start-column="69" selection-end-line="152" selection-end-column="69" />
           <folding />
         </state>
       </provider>
