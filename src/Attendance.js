@@ -95,7 +95,7 @@ class Attendance extends Component {
                     {this.state.date}
                 </div>
                 <form onSubmit={this.handleSubmit}>
-                    <div className="row">
+                    <div>
                         {this.state.group.students.map((student, idx) => (
                             <div className="col-sm-3" key={idx}>
                                 <div className="panel panel-default">
@@ -121,10 +121,8 @@ class Attendance extends Component {
                             </div>
                         ))}
                     </div>
-                    <div className="row">
-                        <div className="col-sm-12">
-                            <button type="submit" className="btn btn-sm btn-success">Zapisz</button>
-                        </div>
+                    <div className="col-sm-12">
+                        <button type="submit" className="btn btn-sm btn-success">Zapisz</button>
                     </div>
                 </form>
 
