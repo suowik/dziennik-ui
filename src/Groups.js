@@ -1,18 +1,21 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router'
+import request from 'request'
 
 class Groups extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            "groups": [
-                {id: "3C", name: "3C", "description": "czw. 10:00 - 11:30"},
-                {id: "3A", name: "3C", "description": "czw. 10:00 - 11:30"},
-                {id: "3B", name: "3C", "description": "czw. 10:00 - 11:30"},
-                {id: "3D", name: "3C", "description": "czw. 10:00 - 11:30"}
-            ]
+            "groups": []
         }
+    }
+
+    componentDidMount(){
+        var that = this;
+        request.get('https://dziennik-api.herokuapp.com/groups/', function (err, res, body) {
+            that.setState({ "groups": JSON.parse(body) });
+        });
     }
 
     render() {
@@ -24,8 +27,19 @@ class Groups extends Component {
 
                 <div className="row">
                     {this.state.groups.map(group => (
-                        <GroupTile group={group} key={group.id}/>
+                        <GroupTile group={group} key={group._id}/>
                     ))}
+                    <div className="col-sm-3">
+                        <div className="panel panel-default">
+                            <div className="panel-heading">
+                                <h3 className="panel-title">Dodaj grupę</h3>
+                            </div>
+                            <div className="panel-body">
+                                <Link to="/add-group" className="btn btn-sm btn-success"><span
+                                    className="glyphicon glyphicon-plus"></span></Link>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         )
@@ -49,8 +63,8 @@ class GroupTile extends Component {
                         <h3 className="panel-title">3C</h3>
                     </div>
                     <div className="panel-body">
-                        {this.state.group.description}
-                        <Link to={`/groups/${this.state.group.id}`} className="btn btn-sm btn-success">Podgląd</Link>
+                        {this.state.group.dateOfActivities}
+                        <Link to={`/groups/${this.state.group._id}`} className="btn btn-sm btn-success">Podgląd</Link>
                     </div>
                 </div>
             </div>
