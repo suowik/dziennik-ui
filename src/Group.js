@@ -68,40 +68,38 @@ class Group extends Component {
                     <h1>{this.state.group.name}</h1>
                     <span>{this.state.group.dateOfActivities}</span>
                 </div>
-                <div className="row">
-                    <div className="col-sm-12">
-                        <div className="page-header">
-                            <h4>Obecności Twoich minionków</h4>
-                        </div>
-                        <div className="row">
-                            <div className="col-sm-12">
-                                <div className="table-responsive">
-                                    <Table headers={this.state.attendanceHeaders}
-                                           linkTo='attendance'
-                                           linkLabel='Sprawdź obecność'
-                                           rows='attendances'
-                                           group={this.state.group}
-                                           renderer={AttendanceRenderer}/>
-                                </div>
+
+                <div className="col-sm-12">
+                    <div className="page-header">
+                        <h4>Obecności Twoich minionków</h4>
+                    </div>
+                    <div className="row">
+                        <div className="col-sm-12">
+                            <div className="table-responsive">
+                                <Table headers={this.state.attendanceHeaders}
+                                       linkTo='attendance'
+                                       linkLabel='Sprawdź obecność'
+                                       rows='attendances'
+                                       group={this.state.group}
+                                       renderer={AttendanceRenderer}/>
                             </div>
                         </div>
+
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-sm-12">
-                        <div className="page-header">
-                            <h4>Kolokwia Twoich minionków</h4>
-                        </div>
-                        <div className="row">
-                            <div className="col-sm-12">
-                                <div className="table-responsive">
-                                    <Table headers={this.state.testNames}
-                                           linkTo='tests'
-                                           linkLabel='Wprowadź wyniki kolokwiów'
-                                           rows='tests'
-                                           group={this.state.group}
-                                           renderer={TestResultRenderer}/>
-                                </div>
+                <div className="col-sm-12">
+                    <div className="page-header">
+                        <h4>Kolokwia Twoich minionków</h4>
+                    </div>
+                    <div className="row">
+                        <div className="col-sm-12">
+                            <div className="table-responsive">
+                                <Table headers={this.state.testNames}
+                                       linkTo='tests'
+                                       linkLabel='Wprowadź wyniki kolokwiów'
+                                       rows='tests'
+                                       group={this.state.group}
+                                       renderer={TestResultRenderer}/>
                             </div>
                         </div>
                     </div>
@@ -138,7 +136,7 @@ class Table extends Component {
                 <tfoot>
                 <tr>
                     <th colSpan={this.state.headers.length}>
-                        <Link to={`/groups/${this.state.group._id}/attendance`}
+                        <Link to={`/groups/${this.state.group._id}/${this.state.linkTo}`}
                               className="btn btn-sm btn-success">{this.state.linkLabel}</Link>
                     </th>
                 </tr>
@@ -150,7 +148,7 @@ class Table extends Component {
                         <td>{student.name}</td>
                         <td>{student.surname}</td>
                         {student[this.state.rows].map((row, idx) => (
-                            <this.state.renderer row={row} key={idx} />
+                            <this.state.renderer row={row} key={idx}/>
                         ))}
                     </tr>
                 ))}
