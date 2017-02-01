@@ -62,9 +62,10 @@ class Attendance extends Component {
         let group = this.state.group;
         group._id = group.name;
         console.log(group);
-        request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, e =>{
-            browserHistory.push('/groups')
-        })    }
+        request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, e => {
+            browserHistory.push('/groups/' + group.name)
+        })
+    }
 
     handleAttendanceChangeFactory(idx) {
         var that = this;
@@ -106,10 +107,10 @@ class Attendance extends Component {
                                         <div className="radio">
                                             <label>
                                                 <select className="form-control"
-                                                    onChange={this.handleAttendanceChangeFactory(idx)}>
+                                                        onChange={this.handleAttendanceChangeFactory(idx)}>
                                                     <option value="present">Obecny(a)
                                                     </option>
-                                                    <option value="absent">Niebecny(a)
+                                                    <option value="absent">Nieobecny(a)
                                                     </option>
                                                 </select>
 
