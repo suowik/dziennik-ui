@@ -156,8 +156,8 @@ class Table extends Component {
             <table className="table table-striped">
                 <thead>
                 <tr>
-                    {this.state.headers.map(col => (
-                        <th key={col}>{col}</th>
+                    {this.state.headers.map((col,idx) => (
+                        <th key={idx}>{col}</th>
                     ))}
                 </tr>
                 </thead>
