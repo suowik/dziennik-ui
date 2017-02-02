@@ -9,6 +9,13 @@ class Attendance extends Component {
         var that = this;
         request.get('https://dziennik-api.herokuapp.com/groups/' + that.props.params.groupId, function (err, res, body) {
             let group = JSON.parse(body);
+            group.students.forEach((student)=> {
+                if (student.attendances === undefined) {
+                    student.attendances = [{status: 'present', date: getFormattedDate(new Date())}];
+                } else {
+                    student.attendances.push({status: 'present', date: getFormattedDate(new Date())})
+                }
+            });
             that.setState({
                 group: group
             });
@@ -82,13 +89,6 @@ class AttendancePanel extends Component {
     init(parent, props) {
         let group = props.group;
         let date = getFormattedDate(new Date());
-        group.students.forEach((student)=> {
-            if (student.attendances === undefined) {
-                student.attendances = [{status: 'present', date: date}];
-            } else {
-                student.attendances.push({status: 'present', date: date})
-            }
-        });
         let student = group.students[props.idx];
         parent.state = {
             group: group,
