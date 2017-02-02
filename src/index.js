@@ -7,6 +7,7 @@ import Group from './Group.js'
 import Layout from './Layout.js'
 import NewGroup from './NewGroup.js'
 import Attendance from './Attendance.js'
+import TestResult from './TestResult.js'
 
 class Routes extends Component {
     render() {
@@ -16,7 +17,8 @@ class Routes extends Component {
                     <IndexRoute component={Groups}/>
                     <Route path="/groups" component={Groups}/>
                     <Route path="/groups/:groupId" component={Group}/>
-                    <Route path="/groups/:groupId/attendance" component={Attendance}/>
+                    <Route path="/groups/:groupId/attendances" component={Attendance}/>
+                    <Route path="/groups/:groupId/tests" component={TestResult}/>
                     <Route path="/new-group" component={NewGroup}/>
                 </Route>
             </Router>

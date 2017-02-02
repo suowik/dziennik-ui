@@ -94,7 +94,7 @@ class Group extends Component {
                         <div className="col-sm-12">
                             <div className="table-responsive">
                                 <Table headers={this.state.attendanceHeaders}
-                                       linkTo='attendance'
+                                       linkTo='attendances'
                                        linkLabel='Sprawdź obecność'
                                        rows='attendances'
                                        group={this.state.group}

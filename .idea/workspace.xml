@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e2dc97c-a11e-4c98-9434-6536c54d8533" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Attendance.js" afterPath="$PROJECT_DIR$/src/Attendance.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TestResult.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Group.js" afterPath="$PROJECT_DIR$/src/Group.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dziennik-react.iws" />
@@ -29,17 +31,27 @@
         <entry file="file://$PROJECT_DIR$/src/Group.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="159" column="36" selection-start-line="159" selection-start-column="36" selection-end-line="159" selection-end-column="36" />
+              <caret line="96" column="58" selection-start-line="96" selection-start-column="58" selection-end-line="96" selection-end-column="58" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Attendance.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Attendance.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Attendance.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4852941">
+            <state vertical-scroll-proportion="0.0">
               <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestResult.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/TestResult.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.9044118">
+              <caret line="126" column="122" selection-start-line="126" selection-start-column="122" selection-end-line="126" selection-end-column="122" />
               <folding />
             </state>
           </provider>
@@ -69,7 +81,7 @@
         <entry file="file://$PROJECT_DIR$/src/NewGroup.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="10" selection-start-line="29" selection-start-column="8" selection-end-line="35" selection-end-column="10" />
+              <caret line="26" column="5" selection-start-line="19" selection-start-column="4" selection-end-line="26" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -79,7 +91,7 @@
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="83" selection-start-line="18" selection-start-column="83" selection-end-line="18" selection-end-column="83" />
+              <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -132,10 +144,11 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/Groups.js" />
         <option value="$PROJECT_DIR$/src/NewGroup.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/Group.js" />
         <option value="$PROJECT_DIR$/src/util.js" />
         <option value="$PROJECT_DIR$/src/Attendance.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/Group.js" />
+        <option value="$PROJECT_DIR$/src/TestResult.js" />
       </list>
     </option>
   </component>
@@ -250,6 +263,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/public/js" />
       <recent name="$PROJECT_DIR$/public/css" />
     </key>
@@ -664,7 +678,7 @@
       <workItem from="1485868082848" duration="482000" />
       <workItem from="1485936544336" duration="17390000" />
       <workItem from="1485970416875" duration="5698000" />
-      <workItem from="1485976516135" duration="3369000" />
+      <workItem from="1485976516135" duration="4206000" />
     </task>
     <task id="LOCAL-00001" summary="rijreoi">
       <created>1485532146549</created>
@@ -798,11 +812,17 @@
       <option name="project" value="LOCAL" />
       <updated>1486030751316</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="bug with double init fix">
+      <created>1486031020343</created>
+      <option name="number" value="00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1486031020343</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35526000" />
+    <option name="totallyTimeSpent" value="36363000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="23" width="1920" height="1173" extended-state="6" />
@@ -861,7 +881,8 @@
     <MESSAGE value="attendance checking - styling" />
     <MESSAGE value="proper redirect" />
     <MESSAGE value="attendance refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="attendance refactor" />
+    <MESSAGE value="bug with double init fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug with double init fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1186,34 +1207,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="83" selection-start-line="18" selection-start-column="83" selection-end-line="18" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Groups.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NewGroup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="10" selection-start-line="29" selection-start-column="8" selection-end-line="35" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Group.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="159" column="36" selection-start-line="159" selection-start-column="36" selection-end-line="159" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -1228,8 +1225,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Attendance.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4852941">
+        <state vertical-scroll-proportion="0.0">
           <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Group.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="96" column="58" selection-start-line="96" selection-start-column="58" selection-end-line="96" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NewGroup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="5" selection-start-line="19" selection-start-column="4" selection-end-line="26" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestResult.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.9044118">
+          <caret line="126" column="122" selection-start-line="126" selection-start-column="122" selection-end-line="126" selection-end-column="122" />
           <folding />
         </state>
       </provider>
