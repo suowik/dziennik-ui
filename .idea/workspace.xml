@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e2dc97c-a11e-4c98-9434-6536c54d8533" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TestResult.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Group.js" afterPath="$PROJECT_DIR$/src/Group.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dziennik-react.iws" />
@@ -27,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Group.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Group.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Group.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="96" column="58" selection-start-line="96" selection-start-column="58" selection-end-line="96" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.625">
+              <caret line="240" column="10" selection-start-line="240" selection-start-column="10" selection-end-line="240" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -47,10 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestResult.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestResult.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TestResult.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.9044118">
+            <state vertical-scroll-proportion="0.0">
               <caret line="126" column="122" selection-start-line="126" selection-start-column="122" selection-end-line="126" selection-end-column="122" />
               <folding />
             </state>
@@ -147,8 +145,8 @@
         <option value="$PROJECT_DIR$/src/util.js" />
         <option value="$PROJECT_DIR$/src/Attendance.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/Group.js" />
         <option value="$PROJECT_DIR$/src/TestResult.js" />
+        <option value="$PROJECT_DIR$/src/Group.js" />
       </list>
     </option>
   </component>
@@ -678,7 +676,7 @@
       <workItem from="1485868082848" duration="482000" />
       <workItem from="1485936544336" duration="17390000" />
       <workItem from="1485970416875" duration="5698000" />
-      <workItem from="1485976516135" duration="4206000" />
+      <workItem from="1485976516135" duration="4892000" />
     </task>
     <task id="LOCAL-00001" summary="rijreoi">
       <created>1485532146549</created>
@@ -818,11 +816,17 @@
       <option name="project" value="LOCAL" />
       <updated>1486031020343</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="test results">
+      <created>1486031858119</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1486031858119</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36363000" />
+    <option name="totallyTimeSpent" value="37049000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="23" width="1920" height="1173" extended-state="6" />
@@ -882,7 +886,8 @@
     <MESSAGE value="proper redirect" />
     <MESSAGE value="attendance refactor" />
     <MESSAGE value="bug with double init fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug with double init fix" />
+    <MESSAGE value="test results" />
+    <option name="LAST_COMMIT_MESSAGE" value="test results" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1239,14 +1244,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Group.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="96" column="58" selection-start-line="96" selection-start-column="58" selection-end-line="96" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/NewGroup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1257,8 +1254,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TestResult.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9044118">
+        <state vertical-scroll-proportion="0.0">
           <caret line="126" column="122" selection-start-line="126" selection-start-column="122" selection-end-line="126" selection-end-column="122" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Group.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.625">
+          <caret line="240" column="10" selection-start-line="240" selection-start-column="10" selection-end-line="240" selection-end-column="10" />
           <folding />
         </state>
       </provider>

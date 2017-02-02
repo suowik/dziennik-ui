@@ -224,11 +224,17 @@ class AttendanceRenderer extends Component {
 class TestResultRenderer extends Component {
 
     failed(marks) {
-        return marks.first === "2.0" && marks.second === "2.0" && marks.third === "2.0";
+        if (marks.first && marks.second && marks.third) {
+            return marks.first === "2.0" && marks.second === "2.0" && marks.third === "2.0";
+        } else if (marks.first && marks.second) {
+            return marks.first === "2.0" && marks.second === "2.0";
+        } else {
+            return marks.first === "2.0";
+        }
     }
 
     componentWillReceiveProps(props){
-        let that = this
+        let that = this;
         this.setState({
             row: props.row,
             failed: that.failed(props.row.marks)
