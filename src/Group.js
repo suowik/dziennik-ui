@@ -6,45 +6,113 @@ import request from 'request'
 class TestResultRenderer extends Component {
 
     failed(marks) {
-        if (marks.first && marks.second && marks.third) {
-            return marks.first === "2.0" && marks.second === "2.0" && marks.third === "2.0";
-        } else if (marks.first && marks.second) {
-            return marks.first === "2.0" && marks.second === "2.0";
-        } else {
-            return marks.first === "2.0";
-        }
+        let arrayMarks = this.marksToArray(marks, this.rawMarkValue);
+        let sum = arrayMarks.reduce((a, b)=> {
+            return a + b
+        });
+        return sum / arrayMarks.length < 3.0;
     }
 
     componentWillReceiveProps(props) {
         let that = this;
         this.setState({
             row: props.row,
-            failed: that.failed(props.row.marks)
-        })
+            failed: that.failed(props.row.marks),
+            studentId: props.studentId,
+            columnId: props.columnId,
+            group: props.group
+        });
     }
 
     constructor(props) {
         super(props);
         this.state = {
             row: props.row,
-            failed: false
+            failed: false,
+            studentId: props.studentId,
+            columnId: props.columnId,
+            group: props.group
         }
     }
 
-    marksPresentation(marks) {
-        if (marks.first && marks.second && marks.third) {
-            return marks.first + "/" + marks.second + "/" + marks.third;
-        } else if (marks.first && marks.second) {
-            return marks.first + "/" + marks.second;
-        } else {
-            return marks.first
+    renderMarks(marks, studentId, columnId) {
+        let res = this.marksToArray(marks, this.renderMarkFactory(studentId, columnId));
+        return res.map((e, i) => {
+            if (this.isNumeric(e) && res[i + 1] != null) {
+                return e + "/"
+            }
+            return e;
+        });
+    }
+
+    isNumeric(n) {
+        return !isNaN(parseFloat(n));
+    }
+
+    renderMarkFactory(studentId, columnId) {
+        let markNames = ['first', 'second', 'third'];
+
+        return (marks, mark, i)=> {
+            let prevMark = marks[markNames[i - 1]];
+            let rawValue = this.rawMarkValue(marks, mark);
+            if (rawValue === 0) {
+                return this.renderSelect(studentId, columnId, mark)
+            }
+            if (prevMark === "2.0" && rawValue == null) {
+                return this.renderSelect(studentId, columnId, mark)
+            }
+            return rawValue;
         }
     }
 
+    renderSelect(studentId, columnId, mark) {
+        let id = studentId + "_" + columnId + "_" + mark;
+        return <select key={id} onChange={this.changeMark(studentId,columnId,mark)}>
+            <option value="0">0</option>
+            <option value="2.0">2.0</option>
+            <option value="3.0">3.0</option>
+            <option value="3.5">3.5</option>
+            <option value="4.0">4.0</option>
+            <option value="4.5">4.5</option>
+            <option value="5.0">5.0</option>
+        </select>
+    }
+
+    changeMark(studentId, columnId, mark) {
+        return (e)=> {
+            console.log(studentId);
+            console.log(columnId);
+            console.log(mark);
+            let group = this.state.group;
+            group.students[studentId]['tests'][columnId]['marks'][mark] = e.target.value;
+            request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, e => {
+                console.log(group);
+                this.setState({
+                    group: group
+                });
+            });
+        }
+    }
+
+    marksToArray(marks, cb) {
+        return ['first', 'second', 'third'].map((mark, i)=> {
+            return cb(marks, mark, i)
+        }).filter(m => m !== null);
+    }
+
+    rawMarkValue(marks, mark) {
+        let value = marks[mark];
+        if (value !== null && value !== undefined) {
+            return parseFloat(value)
+        }
+        return null
+    }
 
     render() {
         return (
-            <td className={this.state.failed ? 'danger':'success'}>{this.marksPresentation(this.state.row.marks)}</td>
+            <td className={this.failed(this.state.row.marks) ? 'danger':'success'}>
+                {this.renderMarks(this.state.row.marks, this.props.studentId, this.props.columnId)}
+            </td>
         )
     }
 }
@@ -274,7 +342,8 @@ class Table extends Component {
                         <td>{student.name}</td>
                         <td>{student.surname}</td>
                         {student[this.state.rows].map((row, idx) => (
-                            <this.state.renderer row={row} studentId={student.id} columnId={idx} key={idx} group={this.state.group} />
+                            <this.state.renderer row={row} studentId={student.id} columnId={idx} key={idx}
+                                                 group={this.state.group}/>
                         ))}
                     </tr>
                 ))}
