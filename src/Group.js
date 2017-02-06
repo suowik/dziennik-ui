@@ -200,9 +200,9 @@ class Group extends Component {
             let commonHeaders = ["#", "Imię", "Nazwisko"];
 
             that.setState({
-                attendanceHeaders: commonHeaders.concat(attendanceHeaders),
+                attendanceHeaders: commonHeaders.concat(attendanceHeaders).concat("[% obecności]"),
                 attendances: attendanceHeaders,
-                testNames: commonHeaders.concat(testNames),
+                testNames: commonHeaders.concat(testNames).concat("Średnia"),
                 tests: testNames,
                 group: group
             });
@@ -264,7 +264,9 @@ class Group extends Component {
                                        linkLabel='Sprawdź obecność'
                                        rows='attendances'
                                        group={this.state.group}
-                                       renderer={AttendanceRenderer}/>
+                                       renderer={AttendanceRenderer}
+                                       lastColumnRenderer={AvgAttendanceCalculator}
+                                    />
                             </div>
                         </div>
 
@@ -282,13 +284,96 @@ class Group extends Component {
                                        linkLabel='Wprowadź wyniki kolokwiów'
                                        rows='tests'
                                        group={this.state.group}
-                                       renderer={TestResultRenderer}/>
+                                       renderer={TestResultRenderer}
+                                       lastColumnRenderer={AvgTestCalculator}
+                                    />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         )
+    }
+}
+
+class AvgTestCalculator extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            average: this.average(props.student)
+        };
+    }
+
+    componentWillReceiveProps(props) {
+        this.setState({
+            average: this.average(props.student)
+        });
+    }
+
+    average(student) {
+        var tests = student['tests'];
+        if (tests.length === 0) return 0;
+        let sum = tests
+            .map(m => {
+                return this.averageOfMarks(m.marks)
+            }).reduce((a, b)=> a + b);
+        return (sum / tests.length).toFixed(2);
+    }
+
+    averageOfMarks(marks) {
+        let marksAsArray = ['first', 'second', 'third'].map((mark, i)=> {
+            return parseFloat(marks[mark]);
+        }).filter(m => m !== null && m !== undefined && !isNaN(m));
+        console.log(marksAsArray)
+        let sum = marksAsArray.reduce((a, b)=>a + b);
+        return (sum / marksAsArray.length * 1.0);
+    }
+
+    render() {
+        return (
+            <td className={this.state.average > 2.99 ? 'success' : 'danger'}>{this.state.average}</td>
+        )
+
+    }
+}
+
+class AvgAttendanceCalculator extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            averageAttendance: this.averageAttendance(props.student)
+        };
+    }
+
+    componentWillReceiveProps(props) {
+        this.setState({
+            averageAttendance: this.averageAttendance(props.student)
+        });
+    }
+
+    averageAttendance(student) {
+        var attendances = student['attendances'];
+        if (attendances.length === 0) return 0;
+        var sum = attendances
+            .map(a => {
+                switch (a.status) {
+                    case "present":
+                    case "justified":
+                        return 1;
+                    default :
+                        return 0;
+                }
+            }).reduce((a, b)=> a + b);
+        return sum / attendances.length * 100.0;
+    }
+
+    render() {
+        return (
+            <td className={this.state.averageAttendance > 50 ? 'success' : 'danger'}>{this.state.averageAttendance}%</td>
+        )
+
     }
 }
 
@@ -302,7 +387,8 @@ class Table extends Component {
             rows: props.rows,
             group: props.group,
             renderer: props.renderer,
-            linkLabel: props.linkLabel
+            linkLabel: props.linkLabel,
+            lastColumnRenderer: props.lastColumnRenderer
         }
     }
 
@@ -345,6 +431,7 @@ class Table extends Component {
                             <this.state.renderer row={row} studentId={student.id} columnId={idx} key={idx}
                                                  group={this.state.group}/>
                         ))}
+                        <this.state.lastColumnRenderer student={student} key={idx}/>
                     </tr>
                 ))}
                 </tbody>
