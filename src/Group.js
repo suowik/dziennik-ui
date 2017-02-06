@@ -80,13 +80,9 @@ class TestResultRenderer extends Component {
 
     changeMark(studentId, columnId, mark) {
         return (e)=> {
-            console.log(studentId);
-            console.log(columnId);
-            console.log(mark);
             let group = this.state.group;
             group.students[studentId]['tests'][columnId]['marks'][mark] = e.target.value;
             request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, e => {
-                console.log(group);
                 this.setState({
                     group: group
                 });
@@ -325,9 +321,8 @@ class AvgTestCalculator extends Component {
         let marksAsArray = ['first', 'second', 'third'].map((mark, i)=> {
             return parseFloat(marks[mark]);
         }).filter(m => m !== null && m !== undefined && !isNaN(m));
-        console.log(marksAsArray)
         let sum = marksAsArray.reduce((a, b)=>a + b);
-        return (sum / marksAsArray.length * 1.0);
+        return (sum / marksAsArray.length);
     }
 
     render() {
@@ -403,6 +398,27 @@ class Table extends Component {
         })
     }
 
+    removeStudent(studentId) {
+        let that = this;
+        return (e) => {
+            e.preventDefault();
+            let students = that.state.group.students.filter(student=>student.id !== studentId);
+            let group = that.state.group;
+            group.students = students;
+            group.students = group.students.map((s, i)=> {
+                s.id = i;
+                return s
+            })
+            console.log(students)
+            request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, e => {
+                this.setState({
+                    group: group
+                });
+            });
+        }
+
+    }
+
     render() {
         return (
             <table className="table table-striped">
@@ -424,7 +440,9 @@ class Table extends Component {
                 <tbody>
                 {this.state.group.students.map((student, idx) => (
                     <tr key={student.id}>
-                        <td>{student.id}</td>
+                        <td>
+                            <button onClick={this.removeStudent(idx)} className="btn btn-sm btn-danger">Usuń studenta</button>
+                        </td>
                         <td>{student.name}</td>
                         <td>{student.surname}</td>
                         {student[this.state.rows].map((row, idx) => (
