@@ -170,6 +170,85 @@ class AttendanceRenderer extends Component {
         )
     }
 }
+class AvgTestCalculator extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            average: this.average(props.student)
+        };
+    }
+
+    componentWillReceiveProps(props) {
+        this.setState({
+            average: this.average(props.student)
+        });
+    }
+
+    average(student) {
+        var tests = student['tests'];
+        if (tests.length === 0) return 0;
+        let sum = tests
+            .map(m => {
+                return this.averageOfMarks(m.marks)
+            }).reduce((a, b)=> a + b);
+        return (sum / tests.length).toFixed(2);
+    }
+
+    averageOfMarks(marks) {
+        let marksAsArray = ['first', 'second', 'third'].map((mark, i)=> {
+            return parseFloat(marks[mark]);
+        }).filter(m => m !== null && m !== undefined && !isNaN(m));
+        let sum = marksAsArray.reduce((a, b)=>a + b);
+        return (sum / marksAsArray.length);
+    }
+
+    render() {
+        return (
+            <td className={this.state.average > 2.99 ? 'success' : 'danger'}>{this.state.average}</td>
+        )
+
+    }
+}
+
+class AvgAttendanceCalculator extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            averageAttendance: this.averageAttendance(props.student)
+        };
+    }
+
+    componentWillReceiveProps(props) {
+        this.setState({
+            averageAttendance: this.averageAttendance(props.student)
+        });
+    }
+
+    averageAttendance(student) {
+        var attendances = student['attendances'];
+        if (attendances.length === 0) return 0;
+        var sum = attendances
+            .map(a => {
+                switch (a.status) {
+                    case "present":
+                    case "justified":
+                        return 1;
+                    default :
+                        return 0;
+                }
+            }).reduce((a, b)=> a + b);
+        return sum / attendances.length * 100.0;
+    }
+
+    render() {
+        return (
+            <td className={this.state.averageAttendance > 50 ? 'success' : 'danger'}>{this.state.averageAttendance}%</td>
+        )
+
+    }
+}
 
 class Group extends Component {
 
@@ -289,86 +368,6 @@ class Group extends Component {
                 </div>
             </div>
         )
-    }
-}
-
-class AvgTestCalculator extends Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            average: this.average(props.student)
-        };
-    }
-
-    componentWillReceiveProps(props) {
-        this.setState({
-            average: this.average(props.student)
-        });
-    }
-
-    average(student) {
-        var tests = student['tests'];
-        if (tests.length === 0) return 0;
-        let sum = tests
-            .map(m => {
-                return this.averageOfMarks(m.marks)
-            }).reduce((a, b)=> a + b);
-        return (sum / tests.length).toFixed(2);
-    }
-
-    averageOfMarks(marks) {
-        let marksAsArray = ['first', 'second', 'third'].map((mark, i)=> {
-            return parseFloat(marks[mark]);
-        }).filter(m => m !== null && m !== undefined && !isNaN(m));
-        let sum = marksAsArray.reduce((a, b)=>a + b);
-        return (sum / marksAsArray.length);
-    }
-
-    render() {
-        return (
-            <td className={this.state.average > 2.99 ? 'success' : 'danger'}>{this.state.average}</td>
-        )
-
-    }
-}
-
-class AvgAttendanceCalculator extends Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            averageAttendance: this.averageAttendance(props.student)
-        };
-    }
-
-    componentWillReceiveProps(props) {
-        this.setState({
-            averageAttendance: this.averageAttendance(props.student)
-        });
-    }
-
-    averageAttendance(student) {
-        var attendances = student['attendances'];
-        if (attendances.length === 0) return 0;
-        var sum = attendances
-            .map(a => {
-                switch (a.status) {
-                    case "present":
-                    case "justified":
-                        return 1;
-                    default :
-                        return 0;
-                }
-            }).reduce((a, b)=> a + b);
-        return sum / attendances.length * 100.0;
-    }
-
-    render() {
-        return (
-            <td className={this.state.averageAttendance > 50 ? 'success' : 'danger'}>{this.state.averageAttendance}%</td>
-        )
-
     }
 }
 
