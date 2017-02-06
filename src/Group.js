@@ -2,6 +2,111 @@ import React, {Component} from 'react';
 import { Link } from 'react-router'
 import request from 'request'
 
+
+class TestResultRenderer extends Component {
+
+    failed(marks) {
+        if (marks.first && marks.second && marks.third) {
+            return marks.first === "2.0" && marks.second === "2.0" && marks.third === "2.0";
+        } else if (marks.first && marks.second) {
+            return marks.first === "2.0" && marks.second === "2.0";
+        } else {
+            return marks.first === "2.0";
+        }
+    }
+
+    componentWillReceiveProps(props) {
+        let that = this;
+        this.setState({
+            row: props.row,
+            failed: that.failed(props.row.marks)
+        })
+    }
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            row: props.row,
+            failed: false
+        }
+    }
+
+    marksPresentation(marks) {
+        if (marks.first && marks.second && marks.third) {
+            return marks.first + "/" + marks.second + "/" + marks.third;
+        } else if (marks.first && marks.second) {
+            return marks.first + "/" + marks.second;
+        } else {
+            return marks.first
+        }
+    }
+
+
+    render() {
+        return (
+            <td className={this.state.failed ? 'danger':'success'}>{this.marksPresentation(this.state.row.marks)}</td>
+        )
+    }
+}
+
+
+class AttendanceRenderer extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            row: props.row,
+            studentId: props.studentId,
+            columnId: props.columnId,
+            group: props.group
+        }
+    }
+
+    componentWillReceiveProps(props) {
+        this.setState({
+            row: props.row,
+            studentId: props.studentId,
+            columnId: props.columnId,
+            group: props.group
+        })
+    }
+
+
+    attendanceToString(status, studentId, columnId) {
+        switch (status) {
+            case 'present':
+                return "+";
+            case 'absent':
+                return <select onChange={this.justifyStudent(studentId,columnId)}>
+                    <option value="absent">-</option>
+                    <option value="justified">(+)</option>
+                </select>;
+            case 'justified':
+                return "(+)";
+            default:
+                return "";
+        }
+    }
+
+    justifyStudent(studentId, columnId) {
+        return (e) => {
+            let group = this.state.group;
+            group.students[studentId]['attendances'][columnId].status = e.target.value;
+            request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, e => {
+                this.setState({
+                    group: group
+                });
+            });
+
+        };
+    }
+
+    render() {
+        return (
+            <td>{this.attendanceToString(this.state.row.status, this.props.studentId, this.props.columnId)}</td>
+        )
+    }
+}
+
 class Group extends Component {
 
     componentDidMount() {
@@ -12,7 +117,7 @@ class Group extends Component {
                 if (student.tests === undefined) {
                     student.tests = []
                 }
-                if(student.attendances === undefined){
+                if (student.attendances === undefined) {
                     student.attendances = []
                 }
             });
@@ -45,17 +150,10 @@ class Group extends Component {
             students: [
                 {
                     id: 1,
-                    name: "Abc",
-                    surname: "Abc",
-                    tests: [
-                        {name: "U1", marks: {first: "4.0"}},
-                        {name: "U2", marks: {first: "2.0", second: "4.5"}}
-                    ],
-                    attendances: [
-                        {date: "23.02.2017", status: "present"},
-                        {date: "25.02.2017", status: "absent"},
-                        {date: "02.03.2017", status: "justified"}
-                    ]
+                    name: "",
+                    surname: "",
+                    tests: [],
+                    attendances: []
                 }
             ]
         };
@@ -140,7 +238,7 @@ class Table extends Component {
         }
     }
 
-    componentWillReceiveProps(props){
+    componentWillReceiveProps(props) {
         this.setState({
             headers: props.headers,
             linkTo: props.linkTo,
@@ -156,7 +254,7 @@ class Table extends Component {
             <table className="table table-striped">
                 <thead>
                 <tr>
-                    {this.state.headers.map((col,idx) => (
+                    {this.state.headers.map((col, idx) => (
                         <th key={idx}>{col}</th>
                     ))}
                 </tr>
@@ -176,7 +274,7 @@ class Table extends Component {
                         <td>{student.name}</td>
                         <td>{student.surname}</td>
                         {student[this.state.rows].map((row, idx) => (
-                            <this.state.renderer row={row} key={idx}/>
+                            <this.state.renderer row={row} studentId={student.id} columnId={idx} key={idx} group={this.state.group} />
                         ))}
                     </tr>
                 ))}
@@ -186,85 +284,5 @@ class Table extends Component {
     }
 }
 
-class AttendanceRenderer extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            row: props.row
-        }
-    }
-
-    componentWillReceiveProps(props){
-        this.setState({
-            row: props.row
-        })
-    }
-
-
-    attendanceToString(status) {
-        switch (status) {
-            case 'present':
-                return "+";
-            case 'absent':
-                return "-";
-            case 'justified':
-                return "(+)";
-            default:
-                return "";
-        }
-    }
-
-    render() {
-        return (
-            <td>{this.attendanceToString(this.state.row.status)}</td>
-        )
-    }
-}
-
-class TestResultRenderer extends Component {
-
-    failed(marks) {
-        if (marks.first && marks.second && marks.third) {
-            return marks.first === "2.0" && marks.second === "2.0" && marks.third === "2.0";
-        } else if (marks.first && marks.second) {
-            return marks.first === "2.0" && marks.second === "2.0";
-        } else {
-            return marks.first === "2.0";
-        }
-    }
-
-    componentWillReceiveProps(props){
-        let that = this;
-        this.setState({
-            row: props.row,
-            failed: that.failed(props.row.marks)
-        })
-    }
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            row: props.row,
-            failed: false
-        }
-    }
-
-    marksPresentation(marks) {
-        if (marks.first && marks.second && marks.third) {
-            return marks.first + "/" + marks.second + "/" + marks.third;
-        } else if (marks.first && marks.second) {
-            return marks.first + "/" + marks.second;
-        } else {
-            return marks.first
-        }
-    }
-
-
-    render() {
-        return (
-            <td className={this.state.failed ? 'danger':'success'}>{this.marksPresentation(this.state.row.marks)}</td>
-        )
-    }
-}
 
 export default Group;
