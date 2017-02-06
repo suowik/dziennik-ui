@@ -71,7 +71,7 @@ class AttendanceRenderer extends Component {
     }
 
 
-    attendanceToString(status, studentId, columnId) {
+    renderAttendance(status, studentId, columnId) {
         switch (status) {
             case 'present':
                 return "+";
@@ -102,7 +102,7 @@ class AttendanceRenderer extends Component {
 
     render() {
         return (
-            <td>{this.attendanceToString(this.state.row.status, this.props.studentId, this.props.columnId)}</td>
+            <td>{this.renderAttendance(this.state.row.status, this.props.studentId, this.props.columnId)}</td>
         )
     }
 }
