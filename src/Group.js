@@ -441,7 +441,7 @@ class Table extends Component {
                 {this.state.group.students.map((student, idx) => (
                     <tr key={student.id}>
                         <td>
-                            <button onClick={this.removeStudent(idx)} className="btn btn-sm btn-danger">Usuń studenta</button>
+                            <button onClick={this.removeStudent(idx)} className="btn btn-sm btn-danger hidden-sm">Usuń studenta</button>
                         </td>
                         <td>{student.name}</td>
                         <td>{student.surname}</td>
