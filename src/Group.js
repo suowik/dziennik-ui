@@ -524,8 +524,8 @@ class Table extends Component {
                 {this.state.group.students.map((student, idx) => (
                     <tr key={student.id}>
                         <td>
-                            <button onClick={this.removeStudent(idx)} className="btn btn-sm btn-danger hidden-sm">Usuń
-                                studenta
+                            <button onClick={this.removeStudent(idx)} className="btn btn-sm btn-danger hidden-sm"><span
+                                className="glyphicon glyphicon-minus"></span>
                             </button>
                         </td>
                         <td>{student.name}</td>
