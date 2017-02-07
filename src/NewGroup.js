@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import request from 'request'
 import { browserHistory } from 'react-router';
+import Header from './common/Header.js'
 
 class NewGroup extends Component {
 
@@ -30,8 +31,7 @@ class NewGroup extends Component {
         e.preventDefault();
         let group = this.state;
         group._id = group.name;
-        console.log(group);
-        request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, e =>{
+        request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, e => {
             browserHistory.push('/groups')
         })
     }
@@ -39,9 +39,8 @@ class NewGroup extends Component {
     render() {
         return (
             <div>
-                <div className="page-header">
-                    <h1>Dodaj grupę</h1>
-                </div>
+                <Header title={`Dodaj grupę`} subtitle={``}/>
+
                 <div>
                     <form onSubmit={this.handleSubmit}>
                         <div className="form-group">

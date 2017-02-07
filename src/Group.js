@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router'
 import request from 'request'
+import Header from './common/Header.js'
 
 
 class TestResultRenderer extends Component {
@@ -287,8 +288,8 @@ class Group extends Component {
     constructor(props) {
         super(props);
         let group = {
-            name: "test7",
-            _id: "test7",
+            name: "",
+            _id: "",
             dateOfActivities: "czw. 10:00 - 11:30",
             students: [
                 {
@@ -322,10 +323,7 @@ class Group extends Component {
     render() {
         return (
             <div className="row">
-                <div className="page-header">
-                    <h1>{this.state.group.name}</h1>
-                    <span>{this.state.group.dateOfActivities}</span>
-                </div>
+                <Header title={this.state.group.name} subtitle={this.state.group.dateOfActivities}/>
 
                 <div className="col-sm-12">
                     <div className="page-header">
@@ -440,7 +438,9 @@ class Table extends Component {
                 {this.state.group.students.map((student, idx) => (
                     <tr key={student.id}>
                         <td>
-                            <button onClick={this.removeStudent(idx)} className="btn btn-sm btn-danger hidden-sm">Usuń studenta</button>
+                            <button onClick={this.removeStudent(idx)} className="btn btn-sm btn-danger hidden-sm">Usuń
+                                studenta
+                            </button>
                         </td>
                         <td>{student.name}</td>
                         <td>{student.surname}</td>

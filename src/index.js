@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, browserHistory, IndexRoute } from 'react-router'
-//import Layout from './Layout.js'
 import Groups from './Groups.js'
 import Group from './Group.js'
 import Layout from './Layout.js'

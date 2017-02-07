@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { browserHistory } from 'react-router'
 import request from 'request'
 import getFormattedDate from './util.js'
+import Header from './common/Header.js'
 
 class Attendance extends Component {
 
@@ -57,10 +58,7 @@ class Attendance extends Component {
     render() {
         return (
             <div className="row">
-                <div className="page-header">
-                    <h1>Sprawdzanie obecności - {this.state.group.name}</h1>
-                    {this.state.date}
-                </div>
+                <Header title={`Sprawdzanie obecności - ${this.state.group.name}`} subtitle={this.state.date} />
                 <form onSubmit={this.handleSubmit}>
                     {this.state.group.students.map((student, idx) => (
                         <AttendancePanel key={idx} idx={idx} group={this.state.group}/>

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router'
 import request from 'request'
+import Header from './common/Header.js'
 
 class Groups extends Component {
 
@@ -11,19 +12,17 @@ class Groups extends Component {
         }
     }
 
-    componentDidMount(){
+    componentDidMount() {
         var that = this;
         request.get('https://dziennik-api.herokuapp.com/groups/', function (err, res, body) {
-            that.setState({ "groups": JSON.parse(body) });
+            that.setState({"groups": JSON.parse(body)});
         });
     }
 
     render() {
         return (
             <div className="row">
-                <div className="page-header">
-                    <h1>Twoje grupy</h1>
-                </div>
+                <Header title={`Twoje grupy`} subtitle={``}/>
 
                 <div>
                     {this.state.groups.map(group => (
@@ -48,14 +47,14 @@ class Groups extends Component {
 
 class GroupTile extends Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             group: props.group
         }
     }
 
-    render(){
+    render() {
         return (
             <div className="col-sm-3">
                 <div className="panel panel-default">

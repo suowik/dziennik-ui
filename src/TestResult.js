@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import { browserHistory } from 'react-router'
 import request from 'request'
 import getFormattedDate from './util.js'
+import Header from './common/Header.js'
+
 
 class TestResult extends Component {
 
@@ -68,10 +70,9 @@ class TestResult extends Component {
     render() {
         return (
             <div className="row">
-                <div className="page-header">
-                    <h1>Wprowadzanie wyników kolokwium - {this.state.group.name}</h1>
-                    {this.state.testName}
-                </div>
+                <Header title={`Wprowadzanie wyników kolokwium - ${this.state.group.name}`}
+                        subtitle={this.state.testName}/>
+
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
                         <label htmlFor="testName">Nazwa kolokwium:</label>
@@ -84,7 +85,7 @@ class TestResult extends Component {
                                placeholder="Nazwa kolokwium"/>
                     </div>
                     {this.state.group.students.map((student, idx) => (
-                        <TestResultPanel key={idx} idx={idx} group={this.state.group} testName={this.state.testName} />
+                        <TestResultPanel key={idx} idx={idx} group={this.state.group} testName={this.state.testName}/>
                     ))}
                     <div className="col-sm-12">
                         <button type="submit" className="btn btn-sm btn-success">Zapisz</button>
@@ -124,7 +125,10 @@ class TestResultPanel extends Component {
             const students = that.state.group.students;
             const group = that.state.group;
             let tests = students[idx]['tests'];
-            tests[tests.length - 1] = {name: that.state.testName, marks: {first: e.target.value, second: null, third: null}};
+            tests[tests.length - 1] = {
+                name: that.state.testName,
+                marks: {first: e.target.value, second: null, third: null}
+            };
             group.students = students;
             that.setState({
                 group: group
