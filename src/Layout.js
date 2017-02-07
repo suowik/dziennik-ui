@@ -6,6 +6,9 @@ class Layout extends Component {
         return (
             <div>
                 {this.props.children}
+                <br/>
+                <br/>
+                <br/>
                 <div className="row">
                     <div className="col-sm-12">
                         <Link to="/" className="btn btn-sm btn-success btn-block">Powrót</Link>

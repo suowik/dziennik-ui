@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Link } from 'react-router'
+import { Link, browserHistory } from 'react-router'
 import request from 'request'
 import Header from './common/Header.js'
 
@@ -171,6 +171,7 @@ class AttendanceRenderer extends Component {
         )
     }
 }
+
 class AvgTestCalculator extends Component {
 
     constructor(props) {
@@ -251,6 +252,90 @@ class AvgAttendanceCalculator extends Component {
     }
 }
 
+class AddStudentPanel extends Component {
+    componentWillReceiveProps(props) {
+        this.setState({
+            group: props.group
+        })
+    }
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            group: props.group,
+            name: "",
+            surname: ""
+        };
+        this.handleInputChange = this.handleInputChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleInputChange(event) {
+        const target = event.target;
+        const name = target.name;
+        const value = target.value;
+        this.setState({
+            [name]: value
+        });
+    }
+
+    handleSubmit(e) {
+        e.preventDefault();
+        let group = this.state.group;
+        let newAttendances = this.state.group.students[0].attendances.map(t => {
+            return {date: t.date, status: "absent"}
+        });
+        let newTests = this.state.group.students[0].tests.map(t => {
+            return {name: t.date, marks: {first: 0}}
+        });
+        let newStudent = {
+            name: this.state.name,
+            surname: this.state.surname,
+            id: group.students.length,
+            tests: newTests,
+            attendances: newAttendances
+        };
+        group.students.push(newStudent);
+        group._id = group.name;
+        request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, e => {
+            browserHistory.push('/groups/'+group._id);
+        })
+    }
+
+    render() {
+        return (
+            <div className="col-sm-4">
+                <Header title="Dodaj studenta" subtitle=""/>
+                <form onSubmit={this.handleSubmit}>
+                    <div className="form-group">
+                        <label htmlFor="name">Imię</label>
+                        <input type="text"
+                               className="form-control"
+                               id="name"
+                               name="name"
+                               onChange={this.handleInputChange}
+                               value={this.state.name}
+                               placeholder="Imię"/>
+                    </div>
+
+                    <div className="form-group">
+                        <label htmlFor="surname">Nazwisko</label>
+                        <input type="text"
+                               className="form-control"
+                               id="surname"
+                               name="surname"
+                               onChange={this.handleInputChange}
+                               value={this.state.surname}
+                               placeholder="Nazwisko"/>
+                    </div>
+
+                    <button type="submit" className="btn btn-sm btn-success">Dodaj studenta</button>
+                </form>
+            </div>
+        )
+    }
+}
+
 class Group extends Component {
 
     componentDidMount() {
@@ -290,7 +375,7 @@ class Group extends Component {
         let group = {
             name: "",
             _id: "",
-            dateOfActivities: "czw. 10:00 - 11:30",
+            dateOfActivities: "",
             students: [
                 {
                     id: 1,
@@ -363,6 +448,9 @@ class Group extends Component {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="col-sm-12">
+                    <AddStudentPanel group={this.state.group}/>
                 </div>
             </div>
         )
