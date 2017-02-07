@@ -409,11 +409,11 @@ class Group extends Component {
     render() {
         return (
             <div className="row">
-                <Header title={this.state.group.name} subtitle={this.state.group.dateOfActivities}/>
+                <Header title={this.state.group.name} subtitle={this.state.group.dateOfActivities} className=".hidden-print"/>
 
                 <div className="col-sm-12">
                     <div className="page-header">
-                        <h4>Obecności Twoich minionków</h4>
+                        <h4>Obecności</h4>
                     </div>
                     <div className="row">
                         <div className="col-sm-12">
@@ -433,7 +433,7 @@ class Group extends Component {
                 </div>
                 <div className="col-sm-12">
                     <div className="page-header">
-                        <h4>Kolokwia Twoich minionków</h4>
+                        <h4>Kolokwia</h4>
                     </div>
                     <div className="row">
                         <div className="col-sm-12">
@@ -450,7 +450,7 @@ class Group extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="col-sm-12">
+                <div className="col-sm-12 hidden-print">
                     <AddStudentPanel group={this.state.group}/>
                 </div>
             </div>
@@ -494,7 +494,7 @@ class Table extends Component {
             group.students = group.students.map((s, i)=> {
                 s.id = i;
                 return s
-            })
+            });
             request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, e => {
                 browserHistory.push('/groups/' + group._id);
             })
@@ -516,7 +516,7 @@ class Table extends Component {
                 <tr>
                     <th colSpan={this.state.headers.length}>
                         <Link to={`/groups/${this.state.group._id}/${this.state.linkTo}`}
-                              className="btn btn-sm btn-success">{this.state.linkLabel}</Link>
+                              className="btn btn-sm btn-success hidden-print">{this.state.linkLabel}</Link>
                     </th>
                 </tr>
                 </tfoot>
@@ -524,7 +524,7 @@ class Table extends Component {
                 {this.state.group.students.map((student, idx) => (
                     <tr key={student.id}>
                         <td>
-                            <button onClick={this.removeStudent(idx)} className="btn btn-sm btn-danger hidden-sm"><span
+                            <button onClick={this.removeStudent(idx)} className="btn btn-sm btn-danger hidden-print"><span
                                 className="glyphicon glyphicon-minus"></span>
                             </button>
                         </td>
