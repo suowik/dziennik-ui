@@ -241,7 +241,7 @@ class AvgAttendanceCalculator extends Component {
                         return 0;
                 }
             }).reduce((a, b)=> a + b);
-        return sum / attendances.length * 100.0;
+        return (sum / attendances.length * 100.0).toFixed(2);
     }
 
     render() {
