@@ -7,11 +7,11 @@ import Header from './common/Header.js'
 class TestResultRenderer extends Component {
 
     failed(marks) {
-        let arrayMarks = this.marksToArray(marks, this.rawMarkValue);
+        let arrayMarks = this.marksToArray(marks, TestResultRenderer.rawMarkValue);
         let sum = arrayMarks.reduce((a, b)=> {
             return a + b
         });
-        return sum / arrayMarks.length < 3.0;
+        return (sum / arrayMarks.length < 3.0) && arrayMarks[arrayMarks.length - 1] < 3;
     }
 
     componentWillReceiveProps(props) {
@@ -39,14 +39,14 @@ class TestResultRenderer extends Component {
     renderMarks(marks, studentId, columnId) {
         let res = this.marksToArray(marks, this.renderMarkFactory(studentId, columnId));
         return res.map((e, i) => {
-            if (this.isNumeric(e) && res[i + 1] != null) {
+            if (TestResultRenderer.isNumeric(e) && res[i + 1] != null) {
                 return e + "/"
             }
             return e;
         });
     }
 
-    isNumeric(n) {
+    static isNumeric(n) {
         return !isNaN(parseFloat(n));
     }
 
@@ -55,7 +55,7 @@ class TestResultRenderer extends Component {
 
         return (marks, mark, i)=> {
             let prevMark = marks[markNames[i - 1]];
-            let rawValue = this.rawMarkValue(marks, mark);
+            let rawValue = TestResultRenderer.rawMarkValue(marks, mark);
             if (rawValue === 0) {
                 return this.renderSelect(studentId, columnId, mark)
             }
@@ -97,7 +97,7 @@ class TestResultRenderer extends Component {
         }).filter(m => m !== null);
     }
 
-    rawMarkValue(marks, mark) {
+    static rawMarkValue(marks, mark) {
         let value = marks[mark];
         if (value !== null && value !== undefined) {
             return parseFloat(value)
@@ -198,7 +198,7 @@ class AvgTestCalculator extends Component {
     }
 
     averageOfMarks(marks) {
-        let marksAsArray = ['first', 'second', 'third'].map((mark, i)=> {
+        let marksAsArray = ['first', 'second', 'third'].map((mark)=> {
             return parseFloat(marks[mark]);
         }).filter(m => m !== null && m !== undefined && !isNaN(m));
         let sum = marksAsArray.reduce((a, b)=>a + b);
@@ -218,17 +218,17 @@ class AvgAttendanceCalculator extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            averageAttendance: this.averageAttendance(props.student)
+            averageAttendance: AvgAttendanceCalculator.averageAttendance(props.student)
         };
     }
 
     componentWillReceiveProps(props) {
         this.setState({
-            averageAttendance: this.averageAttendance(props.student)
+            averageAttendance: AvgAttendanceCalculator.averageAttendance(props.student)
         });
     }
 
-    averageAttendance(student) {
+    static averageAttendance(student) {
         var attendances = student['attendances'];
         if (attendances.length === 0) return 0;
         var sum = attendances
@@ -298,7 +298,7 @@ class AddStudentPanel extends Component {
         group.students.push(newStudent);
         group._id = group.name;
         request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, e => {
-            browserHistory.push('/groups/'+group._id);
+            browserHistory.push('/groups/' + group._id);
         })
     }
 
@@ -306,6 +306,7 @@ class AddStudentPanel extends Component {
         return (
             <div className="col-sm-4">
                 <Header title="Dodaj studenta" subtitle=""/>
+
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
                         <label htmlFor="name">Imię</label>
@@ -494,12 +495,9 @@ class Table extends Component {
                 s.id = i;
                 return s
             })
-            console.log(students)
             request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, e => {
-                this.setState({
-                    group: group
-                });
-            });
+                browserHistory.push('/groups/' + group._id);
+            })
         }
 
     }
