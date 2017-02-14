@@ -1,7 +1,28 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router'
+import auth from './auth.js'
 
 class Layout extends Component {
+
+    constructor(props){
+        super(props);
+        this.state = {
+            loggedIn: auth.loggedIn()
+        };
+        this.updateAuth = this.updateAuth.bind(this);
+    }
+
+    updateAuth(loggedIn) {
+        this.setState({
+            loggedIn
+        })
+    }
+
+    componentWillMount() {
+        auth.onChange = this.updateAuth;
+        auth.login()
+    }
+
     render() {
         return (
             <div>
