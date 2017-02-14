@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { browserHistory } from 'react-router'
+import { hashHistory } from 'react-router'
 import request from 'request'
 import getFormattedDate from './util.js'
 import Header from './common/Header.js'
@@ -51,7 +51,7 @@ class Attendance extends Component {
         let group = this.state.group;
         group._id = group.name;
         request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, e => {
-            browserHistory.push('/groups/' + group.name)
+            hashHistory.push('/groups/' + group.name)
         })
     }
 

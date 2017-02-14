@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, browserHistory, IndexRoute } from 'react-router'
+import { Router, Route, hashHistory, IndexRoute } from 'react-router'
 import Groups from './Groups.js'
 import Group from './Group.js'
 import Layout from './Layout.js'
@@ -11,7 +11,7 @@ import TestResult from './TestResult.js'
 class Routes extends Component {
     render() {
         return (
-            <Router history={browserHistory}>
+            <Router history={hashHistory}>
                 <Route path="/"component={Layout}>
                     <IndexRoute component={Groups}/>
                     <Route path="/groups" component={Groups}/>

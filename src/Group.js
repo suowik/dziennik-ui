@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Link, browserHistory } from 'react-router'
+import { Link, hashHistory } from 'react-router'
 import request from 'request'
 import Header from './common/Header.js'
 
@@ -298,7 +298,7 @@ class AddStudentPanel extends Component {
         group.students.push(newStudent);
         group._id = group.name;
         request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, e => {
-            browserHistory.push('/groups/' + group._id);
+            hashHistory.push('/groups/' + group._id);
         })
     }
 
@@ -496,7 +496,7 @@ class Table extends Component {
                 return s
             });
             request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, e => {
-                browserHistory.push('/groups/' + group._id);
+                hashHistory.push('/groups/' + group._id);
             })
         }
 
