@@ -48,6 +48,7 @@ class Group extends Component {
             name: "",
             _id: "",
             dateOfActivities: "",
+            password: "",
             students: [
                 {
                     id: 1,
@@ -81,7 +82,7 @@ class Group extends Component {
         return (
             <div className="row">
                 <Header title={this.state.group.name} subtitle={this.state.group.dateOfActivities} className=".hidden-print"/>
-
+                <span>Hasło grupy: {this.state.group.password}</span>
                 <div className="col-sm-12">
                     <div className="page-header">
                         <h4>Obecności</h4>
