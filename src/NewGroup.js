@@ -11,6 +11,7 @@ class NewGroup extends Component {
             name: "",
             dateOfActivities: "",
             description: "",
+            password: "",
             students: []
         };
 
@@ -52,6 +53,17 @@ class NewGroup extends Component {
                                    onChange={this.handleInputChange}
                                    value={this.state.name}
                                    placeholder="Nazwa grupy"/>
+                        </div>
+
+                        <div className="form-group">
+                            <label htmlFor="password">Hasło dla studentów</label>
+                            <input type="text"
+                                   className="form-control"
+                                   id="password"
+                                   name="password"
+                                   onChange={this.handleInputChange}
+                                   value={this.state.password}
+                                   placeholder="Hasło dla studentów"/>
                         </div>
 
                         <div className="form-group">
