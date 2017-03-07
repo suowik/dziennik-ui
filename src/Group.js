@@ -61,7 +61,7 @@ class Group extends Component {
         };
 
 
-        let commonHeaders = ["#", "Imię", "Nazwisko"];
+        let commonHeaders = ["#", "lp.","Imię Nazwisko"];
         let refStudent = group.students[0];
         let attendanceHeaders = refStudent.attendances.map(attendance=> {
             return attendance.date
