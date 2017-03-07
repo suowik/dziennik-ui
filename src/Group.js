@@ -30,7 +30,7 @@ class Group extends Component {
             let testNames = refStudent.tests.map(test=> {
                 return test.name
             });
-            let commonHeaders = ["#", "Imię", "Nazwisko"];
+            let commonHeaders = ["#", "lp.","Imię Nazwisko"];
 
             that.setState({
                 attendanceHeaders: commonHeaders.concat(attendanceHeaders).concat("[% obecności]"),
@@ -81,8 +81,10 @@ class Group extends Component {
     render() {
         return (
             <div className="row">
-                <Header title={this.state.group.name} subtitle={this.state.group.dateOfActivities} className=".hidden-print"/>
+                <Header title={this.state.group.name} subtitle={this.state.group.dateOfActivities}
+                        className=".hidden-print"/>
                 <span>Hasło grupy: {this.state.group.password}</span>
+
                 <div className="col-sm-12">
                     <div className="page-header">
                         <h4>Obecności</h4>

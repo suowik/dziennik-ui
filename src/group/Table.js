@@ -68,12 +68,13 @@ class Table extends Component {
                 {this.state.group.students.map((student, idx) => (
                     <tr key={student.id}>
                         <td>
-                            <button onClick={this.removeStudent(idx)} className="btn btn-sm btn-danger hidden-print"><span
+                            <button onClick={this.removeStudent(idx)}
+                                    className="btn btn-sm btn-danger hidden-print"><span
                                 className="glyphicon glyphicon-minus"></span>
                             </button>
                         </td>
-                        <td>{student.name}</td>
-                        <td>{student.surname}</td>
+                        <td>{student.id+1}.</td>
+                        <td>{student.name} {student.surname}</td>
                         {student[this.state.rows].map((row, idx) => (
                             <this.state.renderer row={row} studentId={student.id} columnId={idx} key={idx}
                                                  group={this.state.group}/>
