@@ -30,6 +30,7 @@ class AttendanceRenderer extends Component {
             case 'absent':
                 return <select onChange={this.justifyStudent(studentId,columnId)}>
                     <option value="absent">-</option>
+                    <option value="present">+</option>
                     <option value="justified">(+)</option>
                 </select>;
             case 'justified':

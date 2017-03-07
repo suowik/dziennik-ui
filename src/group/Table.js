@@ -8,7 +8,7 @@ class Table extends Component {
         super(props);
         this.state = {
             headers: props.headers,
-            linkTo: props.linkTo,
+            type: props.type,
             rows: props.rows,
             group: props.group,
             renderer: props.renderer,
@@ -20,7 +20,7 @@ class Table extends Component {
     componentWillReceiveProps(props) {
         this.setState({
             headers: props.headers,
-            linkTo: props.linkTo,
+            type: props.type,
             rows: props.rows,
             group: props.group,
             renderer: props.renderer,
@@ -59,7 +59,7 @@ class Table extends Component {
                 <tfoot>
                 <tr>
                     <th colSpan={this.state.headers.length}>
-                        <Link to={`/groups/${this.state.group._id}/${this.state.linkTo}`}
+                        <Link to={`/groups/${this.state.group._id}/${this.state.type}`}
                               className="btn btn-sm btn-success hidden-print">{this.state.linkLabel}</Link>
                     </th>
                 </tr>
