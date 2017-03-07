@@ -82,8 +82,8 @@ class Group extends Component {
         return (
             <div className="row">
                 <Header title={this.state.group.name} subtitle={this.state.group.dateOfActivities}
-                        className=".hidden-print"/>
-                <span>Hasło grupy: {this.state.group.password}</span>
+                        className="hidden-print"/>
+                <span className="hidden-print">Hasło grupy: {this.state.group.password}</span>
 
                 <div className="col-sm-12">
                     <div className="page-header">

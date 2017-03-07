@@ -30,7 +30,7 @@ class Layout extends Component {
                 <br/>
                 <br/>
                 <br/>
-                <div className="row">
+                <div className="row hidden-print">
                     <div className="col-sm-12">
                         <Link to="/" className="btn btn-sm btn-success btn-block">Powrót</Link>
                     </div>
