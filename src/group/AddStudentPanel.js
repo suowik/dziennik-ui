@@ -14,8 +14,7 @@ class AddStudentPanel extends Component {
         super(props);
         this.state = {
             group: props.group,
-            name: "",
-            surname: ""
+            nameAndSurname: ""
         };
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -23,10 +22,9 @@ class AddStudentPanel extends Component {
 
     handleInputChange(event) {
         const target = event.target;
-        const name = target.name;
         const value = target.value;
         this.setState({
-            [name]: value
+            nameAndSurname: value
         });
     }
 
@@ -46,8 +44,8 @@ class AddStudentPanel extends Component {
             });
         }
         let newStudent = {
-            name: this.state.name,
-            surname: this.state.surname,
+            name: this.state.nameAndSurname.split(" ")[0],
+            surname: this.state.nameAndSurname.split(" ")[1],
             id: group.students.length,
             tests: newTests,
             attendances: newAttendances
@@ -66,27 +64,15 @@ class AddStudentPanel extends Component {
 
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
-                        <label htmlFor="name">Imię</label>
+                        <label htmlFor="nameAndSurname">Imię i nazwisko</label>
                         <input type="text"
                                className="form-control"
-                               id="name"
-                               name="name"
+                               id="nameAndSurname"
+                               name="nameAndSurname"
                                onChange={this.handleInputChange}
-                               value={this.state.name}
-                               placeholder="Imię"/>
+                               value={this.state.nameAndSurname}
+                               placeholder="Imię i nazwisko"/>
                     </div>
-
-                    <div className="form-group">
-                        <label htmlFor="surname">Nazwisko</label>
-                        <input type="text"
-                               className="form-control"
-                               id="surname"
-                               name="surname"
-                               onChange={this.handleInputChange}
-                               value={this.state.surname}
-                               placeholder="Nazwisko"/>
-                    </div>
-
                     <button type="submit" className="btn btn-sm btn-success">Dodaj studenta</button>
                 </form>
             </div>

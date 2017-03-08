@@ -32,6 +32,11 @@ class NewGroup extends Component {
         e.preventDefault();
         let group = this.state;
         group._id = group.name;
+        group.students.map((s)=> {
+            s.name = s.nameAndSurname.split(" ")[0];
+            s.surname = s.nameAndSurname.split(" ")[1];
+            return s;
+        });
         request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, e => {
             hashHistory.push('/groups')
         })
@@ -79,7 +84,7 @@ class NewGroup extends Component {
 
 
                         <div className="page-header">
-                            <h4>Minionki</h4>
+                            <h4>Studenci</h4>
                         </div>
 
                         <StudentsTable students={this.state.students}/>
@@ -106,7 +111,7 @@ class StudentsTable extends Component {
     addStudent(e) {
         e.preventDefault();
         const students = this.state.students;
-        students.push({name: "", surname: "", id: students.length});
+        students.push({name: "", surname: "", id: students.length, nameAndSurname: ""});
         this.setState({
             students: students
         })
@@ -121,8 +126,7 @@ class StudentsTable extends Component {
                             <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Imię</th>
-                                <th>Nazwisko</th>
+                                <th>Imię i nazwisko</th>
                             </tr>
                             </thead>
                             <tfoot>
@@ -176,12 +180,8 @@ class Student extends Component {
                 <td>{this.state.student.id + 1}</td>
                 <td><input type="text"
                            className="form-control"
-                           onChange={this.handleChangeFactory(this.state.idx, 'name')}
-                           placeholder="Imię"/></td>
-                <td><input type="text"
-                           className="form-control"
-                           onChange={this.handleChangeFactory(this.state.idx, 'surname')}
-                           placeholder="Nazwisko"/></td>
+                           onChange={this.handleChangeFactory(this.state.idx, 'nameAndSurname')}
+                           placeholder="Imię i nazwisko"/></td>
             </tr>
         )
     }
