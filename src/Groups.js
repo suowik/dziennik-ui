@@ -15,7 +15,10 @@ class Groups extends Component {
     componentDidMount() {
         var that = this;
         request.get('https://dziennik-api.herokuapp.com/groups/', function (err, res, body) {
-            that.setState({"groups": JSON.parse(body)});
+            let groups = JSON.parse(body).sort((a, b)=> {
+                return a.name.localeCompare(b.name)
+            });
+            that.setState({groups: groups});
         });
     }
 
