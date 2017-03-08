@@ -23,13 +23,17 @@ class Group extends Component {
                 }
             });
             let refStudent = group.students[0];
+            let attendanceHeaders = [];
+            let testNames = [];
+            if(refStudent){
+                attendanceHeaders = refStudent.attendances.map(attendance=> {
+                    return attendance.date
+                });
+                testNames = refStudent.tests.map(test=> {
+                    return test.name
+                });
+            }
 
-            let attendanceHeaders = refStudent.attendances.map(attendance=> {
-                return attendance.date
-            });
-            let testNames = refStudent.tests.map(test=> {
-                return test.name
-            });
             let commonHeaders = ["#", "lp.","Imię Nazwisko"];
 
             that.setState({

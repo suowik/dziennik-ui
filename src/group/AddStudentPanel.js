@@ -33,12 +33,18 @@ class AddStudentPanel extends Component {
     handleSubmit(e) {
         e.preventDefault();
         let group = this.state.group;
-        let newAttendances = this.state.group.students[0].attendances.map(t => {
-            return {date: t.date, status: "absent"}
-        });
-        let newTests = this.state.group.students[0].tests.map(t => {
-            return {name: t.date, marks: {first: 0}}
-        });
+
+        let newAttendances = [];
+        let newTests = [];
+
+        if(this.state.group.students[0]){
+            newAttendances = this.state.group.students[0].attendances.map(t => {
+                return {date: t.date, status: "absent"}
+            });
+            newTests = this.state.group.students[0].tests.map(t => {
+                return {name: t.date, marks: {first: 0}}
+            });
+        }
         let newStudent = {
             name: this.state.name,
             surname: this.state.surname,
