@@ -37,7 +37,7 @@ class AddStudentPanel extends Component {
         let newAttendances = [];
         let newTests = [];
 
-        if(this.state.group.students[0]){
+        if (this.state.group.students[0]) {
             newAttendances = this.state.group.students[0].attendances.map(t => {
                 return {date: t.date, status: "absent"}
             });
