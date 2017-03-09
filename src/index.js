@@ -8,6 +8,7 @@ import Group from './Group.js'
 import Layout from './Layout.js'
 import NewGroup from './NewGroup.js'
 import Attendance from './Attendance.js'
+import Homework from './Homework.js'
 import TestResult from './TestResult.js'
 import auth from './auth.js'
 
@@ -29,6 +30,7 @@ class Routes extends Component {
                     <Route path="/groups" component={Groups}/>
                     <Route path="/groups/:groupId" component={Group}/>
                     <Route path="/groups/:groupId/attendances" component={Attendance}/>
+                    <Route path="/groups/:groupId/homework" component={Homework}/>
                     <Route path="/groups/:groupId/tests" component={TestResult}/>
                     <Route path="/new-group" component={NewGroup}/>
                 </Route>

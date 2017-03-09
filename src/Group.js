@@ -3,8 +3,10 @@ import request from 'request'
 import Header from './common/Header.js'
 import AddStudentPanel from './group/AddStudentPanel.js'
 import AttendanceRenderer from './group/AttendanceRenderer.js'
+import HomeworkRenderer from './group/HomeworkRenderer.js'
 import AvgAttendanceCalculator from './group/AvgAttendanceCalculator.js'
 import AvgTestCalculator from './group/AvgTestCalculator.js'
+import HomeworkCountRenderer from './group/HomeworkCountRenderer.js'
 import Table from './group/Table.js'
 import TestResultRenderer from './group/TestResultRenderer.js'
 
@@ -21,16 +23,23 @@ class Group extends Component {
                 if (student.attendances === undefined) {
                     student.attendances = []
                 }
+                if (student.homework === undefined) {
+                    student.homework = []
+                }
             });
             let refStudent = group.students[0];
             let attendanceHeaders = [];
             let testNames = [];
+            let homeworkNames = [];
             if (refStudent) {
                 attendanceHeaders = refStudent.attendances.map(attendance=> {
                     return attendance.date
                 });
                 testNames = refStudent.tests.map(test=> {
                     return test.name
+                });
+                homeworkNames = refStudent.homework.map(hw=> {
+                    return hw.date
                 });
             }
 
@@ -39,6 +48,8 @@ class Group extends Component {
             that.setState({
                 attendanceHeaders: commonHeaders.concat(attendanceHeaders).concat("[% obecności]"),
                 attendances: attendanceHeaders,
+                homeworkHeaders: commonHeaders.concat(homeworkNames).concat(""),
+                homework: homeworkNames,
                 testNames: commonHeaders.concat(testNames).concat("Średnia"),
                 tests: testNames,
                 group: group
@@ -59,7 +70,8 @@ class Group extends Component {
                     name: "",
                     surname: "",
                     tests: [],
-                    attendances: []
+                    attendances: [],
+                    homework: []
                 }
             ]
         };
@@ -70,12 +82,17 @@ class Group extends Component {
         let attendanceHeaders = refStudent.attendances.map(attendance=> {
             return attendance.date
         });
+        let homeworkHeaders = refStudent.homework.map(hw=> {
+            return hw.date
+        });
         let testNames = refStudent.tests.map(test=> {
             return test.name
         });
         this.state = {
             attendanceHeaders: commonHeaders.concat(attendanceHeaders),
             attendances: attendanceHeaders,
+            homeworkHeaders: commonHeaders.concat(homeworkHeaders),
+            homework: homeworkHeaders,
             testNames: commonHeaders.concat(testNames),
             tests: testNames,
             group: group
@@ -128,6 +145,27 @@ class Group extends Component {
                         </div>
                     </div>
                 </div>
+
+                <div className="col-sm-12">
+                    <div className="page-header">
+                        <h4>Zadania domowe</h4>
+                    </div>
+                    <div className="row">
+                        <div className="col-sm-12">
+                            <div className="table-responsive">
+                                <Table headers={this.state.homeworkHeaders}
+                                       type='homework'
+                                       linkLabel='Sprawdź zadania domowe'
+                                       rows='homework'
+                                       group={this.state.group}
+                                       renderer={HomeworkRenderer}
+                                       lastColumnRenderer={HomeworkCountRenderer}
+                                    />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div className="col-sm-12 hidden-print">
                     <AddStudentPanel group={this.state.group}/>
                 </div>
