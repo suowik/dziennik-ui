@@ -81,7 +81,7 @@ class TestResultRenderer extends Component {
         return (e)=> {
             let group = this.state.group;
             group.students[studentId]['tests'][columnId]['marks'][mark] = e.target.value;
-            request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, e => {
+            request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, () => {
                 this.setState({
                     group: group
                 });
