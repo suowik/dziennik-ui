@@ -56,7 +56,7 @@ class TestResultRenderer extends Component {
             if (rawValue === 0) {
                 return this.renderSelect(studentId, columnId, mark, rawValue);
             }
-            if (prevMark === "2.0" && rawValue == null) {
+            if ((prevMark === "2.0" || prevMark === "2") && rawValue == null) {
                 return this.renderSelect(studentId, columnId, mark, rawValue);
             }
             return rawValue;
