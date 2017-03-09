@@ -12,9 +12,9 @@ class Attendance extends Component {
             let group = JSON.parse(body);
             group.students.forEach((student)=> {
                 if (student.homework === undefined) {
-                    student.homework = [{status: '+', date: getFormattedDate(new Date())}];
+                    student.homework = [{status: '', date: getFormattedDate(new Date())}];
                 } else {
-                    student.homework.push({status: '+', date: getFormattedDate(new Date())})
+                    student.homework.push({status: '', date: getFormattedDate(new Date())})
                 }
             });
             that.setState({
@@ -123,8 +123,9 @@ class HomeworkPanel extends Component {
                             <label>
                                 <select className="form-control"
                                         onChange={this.handleStatusChangeFactory(this.props.idx)}>
-                                    <option value="+">+</option>
+                                    <option value=""></option>
                                     <option value="-">-</option>
+                                    <option value="+">+</option>
                                 </select>
                             </label>
                         </div>

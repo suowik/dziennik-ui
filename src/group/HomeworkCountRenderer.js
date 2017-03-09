@@ -21,13 +21,13 @@ class HomeworkCountRenderer extends Component {
         var sum = attendances
             .map(a => {
                 switch (a.status) {
-                    case "+":
+                    case "-":
                         return 1;
                     default :
                         return 0;
                 }
             }).reduce((a, b)=> a + b);
-        return sum + "/" + attendances.length;
+        return sum;
     }
 
     render() {
