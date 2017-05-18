@@ -33,7 +33,7 @@ class AvgAttendanceCalculator extends Component {
 
     render() {
         return (
-            <td className={this.state.averageAttendance > 50 ? 'success' : 'danger'}>{this.state.averageAttendance}%</td>
+            <td className={this.state.averageAttendance > 80 ? 'success' : 'danger'}>{this.state.averageAttendance}%</td>
         )
 
     }
