@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import request from 'request'
+import EditableSelect from '../common/EditableSelect.js'
 
 class TestResultRenderer extends Component {
 
@@ -34,12 +35,15 @@ class TestResultRenderer extends Component {
     }
 
     renderMarks(marks, studentId, columnId) {
-        let res = this.marksToArray(marks, this.renderMarkFactory(studentId, columnId));
-        return res.map((e, i) => {
-            if (TestResultRenderer.isNumeric(e) && res[i + 1] != null) {
-                return e + "/"
+        let res = this.marksToArray(marks, this.renderMarkFactory(studentId, columnId))
+            .filter((e)=> e != null);
+        return new Array(res.length + (res.length - 1)).fill(1).map((e, i)=> {
+            var index = Math.floor(i / 2);
+            if (i % 2 === 0) {
+                return res[index]
+            } else {
+                return ' / '
             }
-            return e;
         });
     }
 
@@ -53,20 +57,26 @@ class TestResultRenderer extends Component {
         return (marks, mark, i)=> {
             let prevMark = marks[markNames[i - 1]];
             let rawValue = TestResultRenderer.rawMarkValue(marks, mark);
+            let id = studentId + "_" + columnId + "_" + mark;
             if (rawValue === 0) {
-                return this.renderSelect(studentId, columnId, mark, rawValue);
+                return <EditableSelect key={id} editable={true} value={rawValue} identifier={id}
+                                       renderWhenEditable={this.renderSelect(id, studentId, columnId, mark, rawValue)}/>;
             }
             if ((prevMark === "2.0" || prevMark === "2") && rawValue == null) {
-                return this.renderSelect(studentId, columnId, mark, rawValue);
+                return <EditableSelect key={id} editable={true} value={rawValue} identifier={id}
+                                       renderWhenEditable={this.renderSelect(id, studentId, columnId, mark, rawValue)}/>;
             }
-            return rawValue;
+            if (rawValue != null) {
+                return <EditableSelect key={id} editable={false} value={rawValue} identifier={id}
+                                       renderWhenEditable={this.renderSelect(id, studentId, columnId, mark, rawValue)}/>;
+
+            }
+            return rawValue
         }
     }
 
-    renderSelect(studentId, columnId, mark, current) {
-        console.log(current);
-        let id = studentId + "_" + columnId + "_" + mark;
-        return <select key={id} onChange={this.changeMark(studentId,columnId,mark)} defaultValue={current}>
+    renderSelect(id, studentId, columnId, mark, current) {
+        return <select key={id} onChange={this.changeMark(studentId, columnId, mark)} defaultValue={current}>
             <option value="0">0</option>
             <option value="2">2.0</option>
             <option value="3">3.0</option>
@@ -105,7 +115,7 @@ class TestResultRenderer extends Component {
 
     render() {
         return (
-            <td className={this.failed(this.state.row.marks) ? 'danger':'success'}>
+            <td className={this.failed(this.state.row.marks) ? 'danger' : 'success'}>
                 {this.renderMarks(this.state.row.marks, this.props.studentId, this.props.columnId)}
             </td>
         )

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import request from 'request'
-
+import EditableSelect from '../common/EditableSelect.js'
 
 class AttendanceRenderer extends Component {
     constructor(props) {
@@ -24,20 +24,29 @@ class AttendanceRenderer extends Component {
 
 
     renderAttendance(status, studentId, columnId) {
+        let id = studentId+"_"+columnId
         switch (status) {
             case 'present':
-                return "+";
+                return <EditableSelect key={id} editable={false} value={'+'} identifier={id}
+                                              renderWhenEditable={this.renderSelect(studentId,columnId)}/>;
             case 'absent':
-                return <select onChange={this.justifyStudent(studentId,columnId)}>
-                    <option value="absent">-</option>
-                    <option value="present">+</option>
-                    <option value="justified">(+)</option>
-                </select>;
+                return <EditableSelect key={id} editable={true} value={'-'} identifier={id}
+                                       renderWhenEditable={this.renderSelect(studentId,columnId)}/>;
             case 'justified':
-                return "(+)";
+                return <EditableSelect key={id} editable={false} value={'(+)'} identifier={id}
+                                       renderWhenEditable={this.renderSelect(studentId,columnId)}/>;
             default:
-                return "";
+                return <EditableSelect key={id} editable={false} value={''} identifier={id}
+                                       renderWhenEditable={this.renderSelect(studentId,columnId)}/>;
         }
+    }
+
+    renderSelect(studentId,columnId){
+        return <select onChange={this.justifyStudent(studentId,columnId)}>
+            <option value="absent">-</option>
+            <option value="present">+</option>
+            <option value="justified">(+)</option>
+        </select>
     }
 
     justifyStudent(studentId, columnId) {
