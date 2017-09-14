@@ -12,6 +12,7 @@ export default class Promote extends Component {
         this.state = {
             activeYear: "2017/2018",
             activeSemester: 1,
+            name: "",
             group: REFERENCE_GROUP
         }
     }
@@ -51,6 +52,7 @@ export default class Promote extends Component {
                 id: student.id
             })
         });
+        group.name = this.state.name;
         group.semesters.push(newSemester);
         group.activeSemester = this.state.activeSemester;
         group.activeYear = this.state.activeYear;
@@ -75,6 +77,17 @@ export default class Promote extends Component {
                                    onChange={this.handleInputChange}
                                    value={this.state.activeYear}
                                    placeholder="Rok zajęć"/>
+                        </div>
+
+                        <div className="form-group">
+                            <label htmlFor="activeYear">Nowa nazwa grupy</label>
+                            <input type="text"
+                                   className="form-control"
+                                   name="activeYear"
+                                   id="activeYear"
+                                   onChange={this.handleInputChange}
+                                   value={this.state.name}
+                                   placeholder="Nowa nazwa grupy"/>
                         </div>
 
                         <div className="form-group">
