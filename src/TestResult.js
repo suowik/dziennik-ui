@@ -3,15 +3,18 @@ import { hashHistory } from 'react-router'
 import request from 'request'
 import getFormattedDate from './util.js'
 import Header from './common/Header.js'
+import {REFERENCE_GROUP} from './common/referenceGroup.js'
+import {resolveSemester} from './common/resolveSemester.js'
 
 
 class TestResult extends Component {
 
     componentDidMount() {
-        var that = this;
+        let that = this;
         request.get('https://dziennik-api.herokuapp.com/groups/' + that.props.params.groupId, function (err, res, body) {
             let group = JSON.parse(body);
-            group.students.forEach((student)=> {
+            let semester = resolveSemester(group);
+            semester.students.forEach((student)=> {
                 if (student.tests === undefined) {
                     student.tests = [{marks: {first: 0}, name: that.state.testName}];
                 } else {
@@ -26,23 +29,9 @@ class TestResult extends Component {
 
     constructor(props) {
         super(props);
-        let group = {
-            name: "",
-            _id: "",
-            dateOfActivities: "",
-            students: [
-                {
-                    id: 1,
-                    name: "",
-                    surname: "",
-                    tests: [],
-                    attendances: []
-                }
-            ]
-        };
         this.state = {
             date: getFormattedDate(new Date()),
-            group: group,
+            group: REFERENCE_GROUP,
             testName: ""
         };
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -52,9 +41,8 @@ class TestResult extends Component {
     handleSubmit(e) {
         e.preventDefault();
         let group = this.state.group;
-        group._id = group.name;
-        request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, e => {
-            hashHistory.push('/groups/' + group.name)
+        request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, () => {
+            hashHistory.push('/groups/' + group._id)
         })
     }
 
@@ -84,7 +72,7 @@ class TestResult extends Component {
                                value={this.state.testName}
                                placeholder="Nazwa kolokwium"/>
                     </div>
-                    {this.state.group.students.map((student, idx) => (
+                    {resolveSemester(this.state.group).students.map((student, idx) => (
                         <TestResultPanel key={idx} idx={idx} group={this.state.group} testName={this.state.testName}/>
                     ))}
                     <div className="col-sm-12">
@@ -110,7 +98,7 @@ class TestResultPanel extends Component {
 
     init(parent, props) {
         let group = props.group;
-        let student = group.students[props.idx];
+        let student = resolveSemester(group).students[props.idx];
         parent.state = {
             group: group,
             student: student,
@@ -122,7 +110,7 @@ class TestResultPanel extends Component {
         var that = this;
         return function (e) {
             e.preventDefault();
-            const students = that.state.group.students;
+            const students = resolveSemester(that.state.group).students;
             const group = that.state.group;
             let tests = students[idx]['tests'];
             tests[tests.length - 1] = {

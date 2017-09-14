@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { hashHistory } from 'react-router'
 import request from 'request'
 import Header from '../common/Header.js'
+import {resolveSemester} from '../common/resolveSemester.js'
 
 class AddStudentPanel extends Component {
     componentWillReceiveProps(props) {
@@ -31,28 +32,31 @@ class AddStudentPanel extends Component {
     handleSubmit(e) {
         e.preventDefault();
         let group = this.state.group;
-
+        let semester = resolveSemester(group);
         let newAttendances = [];
         let newTests = [];
-
-        if (this.state.group.students[0]) {
-            newAttendances = this.state.group.students[0].attendances.map(t => {
+        let homework = [];
+        if (semester.students[0]) {
+            newAttendances = semester.students[0].attendances.map(t => {
                 return {date: t.date, status: "absent"}
             });
-            newTests = this.state.group.students[0].tests.map(t => {
+            newTests = semester.students[0].tests.map(t => {
                 return {name: t.date, marks: {first: 0}}
+            });
+            homework = semester.students[0].homework.map(t => {
+                return {date: t.date, status:""}
             });
         }
         let newStudent = {
             name: this.state.nameAndSurname.split(" ")[0],
             surname: this.state.nameAndSurname.split(" ")[1],
-            id: group.students.length,
+            id: semester.students.length,
             tests: newTests,
-            attendances: newAttendances
+            attendances: newAttendances,
+            homework: homework
         };
-        group.students.push(newStudent);
-        group._id = group.name;
-        request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, e => {
+        semester.students.push(newStudent);
+        request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, () => {
             hashHistory.push('/groups/' + group._id);
         })
     }

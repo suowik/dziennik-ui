@@ -10,6 +10,8 @@ import NewGroup from './NewGroup.js'
 import Attendance from './Attendance.js'
 import Homework from './Homework.js'
 import TestResult from './TestResult.js'
+import Promote from './Promote.js'
+import Archive from './Archive.js'
 import auth from './auth.js'
 
 function requireAuth(nextState, replace) {
@@ -32,6 +34,8 @@ class Routes extends Component {
                     <Route path="/groups/:groupId/attendances" component={Attendance}/>
                     <Route path="/groups/:groupId/homework" component={Homework}/>
                     <Route path="/groups/:groupId/tests" component={TestResult}/>
+                    <Route path="/groups/:groupId/promote" component={Promote}/>
+                    <Route path="/groups/:groupId/archive" component={Archive}/>
                     <Route path="/new-group" component={NewGroup}/>
                 </Route>
                 <Route path="/login" component={Login} />

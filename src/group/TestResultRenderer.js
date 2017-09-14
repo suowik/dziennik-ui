@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import request from 'request'
 import EditableSelect from '../common/EditableSelect.js'
+import {resolveSemester} from '../common/resolveSemester.js'
 
 class TestResultRenderer extends Component {
 
@@ -38,7 +39,7 @@ class TestResultRenderer extends Component {
         let res = this.marksToArray(marks, this.renderMarkFactory(studentId, columnId))
             .filter((e)=> e != null);
         return new Array(res.length + (res.length - 1)).fill(1).map((e, i)=> {
-            var index = Math.floor(i / 2);
+            let index = Math.floor(i / 2);
             if (i % 2 === 0) {
                 return res[index]
             } else {
@@ -90,7 +91,8 @@ class TestResultRenderer extends Component {
     changeMark(studentId, columnId, mark) {
         return (e)=> {
             let group = this.state.group;
-            group.students[studentId]['tests'][columnId]['marks'][mark] = e.target.value;
+            let semester = resolveSemester(group);
+            semester.students[studentId]['tests'][columnId]['marks'][mark] = e.target.value;
             request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, () => {
                 this.setState({
                     group: group

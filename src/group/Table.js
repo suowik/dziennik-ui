@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import { Link, hashHistory } from 'react-router'
+import {Link, hashHistory} from 'react-router'
 import request from 'request'
+import {resolveSemester} from '../common/resolveSemester.js'
 
 class Table extends Component {
 
@@ -32,14 +33,14 @@ class Table extends Component {
         let that = this;
         return (e) => {
             e.preventDefault();
-            let students = that.state.group.students.filter(student=>student.id !== studentId);
             let group = that.state.group;
-            group.students = students;
-            group.students = group.students.map((s, i)=> {
+            let semester = resolveSemester(group);
+            semester.students = semester.students.filter(student => student.id !== studentId);
+            semester.students = semester.students.map((s, i) => {
                 s.id = i;
                 return s
             });
-            request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, e => {
+            request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, () => {
                 hashHistory.push('/groups/' + group._id);
             })
         }
@@ -50,8 +51,8 @@ class Table extends Component {
         index -= 3;
         let that = this;
         let group = that.state.group;
-        group.students = that.state.group.students;
-        group.students = group.students.map((s, i)=> {
+        let semester = resolveSemester(that.state.group);
+        group.students = semester.students.map((s, i) => {
             s[type].splice(index, 1);
             return s
         });
@@ -71,9 +72,13 @@ class Table extends Component {
                             {col}
                             {idx > 2 && idx < this.state.headers.length - 1 &&
                             <button
-                                onClick={() => {if(confirm('Czy na pewno usunąć?')) {this.removeColumn(this.state.type,idx)}}}
-                                className="btn btn-sm btn-danger hidden-print"><span
-                                className="glyphicon glyphicon-minus"></span>
+                                onClick={() => {
+                                    if (confirm('Czy na pewno usunąć?')) {
+                                        this.removeColumn(this.state.type, idx)
+                                    }
+                                }}
+                                className="btn btn-sm btn-danger hidden-print">
+                                <span className="glyphicon glyphicon-minus"></span>
                             </button>
                             }
                         </th>
@@ -89,12 +94,12 @@ class Table extends Component {
                 </tr>
                 </tfoot>
                 <tbody>
-                {this.state.group.students.map((student, idx) => (
+                {resolveSemester(this.state.group).students.map((student, idx) => (
                     <tr key={student.id}>
                         <td>
                             <button onClick={this.removeStudent(idx)}
-                                    className="btn btn-sm btn-danger hidden-print"><span
-                                className="glyphicon glyphicon-minus"></span>
+                                    className="btn btn-sm btn-danger hidden-print">
+                                <span className="glyphicon glyphicon-minus"></span>
                             </button>
                         </td>
                         <td>{student.id + 1}.</td>

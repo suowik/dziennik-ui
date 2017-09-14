@@ -3,14 +3,15 @@ import { hashHistory } from 'react-router'
 import request from 'request'
 import getFormattedDate from './util.js'
 import Header from './common/Header.js'
-
+import {resolveSemester} from './common/resolveSemester.js'
+import {REFERENCE_GROUP} from './common/referenceGroup.js'
 class Attendance extends Component {
 
     componentDidMount() {
-        var that = this;
+        let that = this;
         request.get('https://dziennik-api.herokuapp.com/groups/' + that.props.params.groupId, function (err, res, body) {
             let group = JSON.parse(body);
-            group.students.forEach((student)=> {
+            resolveSemester(group).students.forEach((student)=> {
                 if (student.homework === undefined) {
                     student.homework = [{status: '', date: getFormattedDate(new Date())}];
                 } else {
@@ -25,24 +26,9 @@ class Attendance extends Component {
 
     constructor(props) {
         super(props);
-        let group = {
-            name: "",
-            _id: "",
-            dateOfActivities: "",
-            students: [
-                {
-                    id: 1,
-                    name: "",
-                    surname: "",
-                    tests: [],
-                    attendances: [],
-                    homework: []
-                }
-            ]
-        };
         this.state = {
             date: getFormattedDate(new Date()),
-            group: group
+            group: REFERENCE_GROUP
         };
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -50,9 +36,8 @@ class Attendance extends Component {
     handleSubmit(e) {
         e.preventDefault();
         let group = this.state.group;
-        group._id = group.name;
-        request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, e => {
-            hashHistory.push('/groups/' + group.name)
+        request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, () => {
+            hashHistory.push('/groups/' + group._id)
         })
     }
 
@@ -61,7 +46,7 @@ class Attendance extends Component {
             <div className="row">
                 <Header title={`Sprawdzanie zadania domowego - ${this.state.group.name}`} subtitle={this.state.date} />
                 <form onSubmit={this.handleSubmit}>
-                    {this.state.group.students.map((student, idx) => (
+                    {resolveSemester(this.state.group).students.map((student, idx) => (
                         <HomeworkPanel key={idx} idx={idx} group={this.state.group}/>
                     ))}
                     <div className="col-sm-12">
@@ -88,7 +73,7 @@ class HomeworkPanel extends Component {
     init(parent, props) {
         let group = props.group;
         let date = getFormattedDate(new Date());
-        let student = group.students[props.idx];
+        let student = resolveSemester(group).students[props.idx];
         parent.state = {
             group: group,
             student: student,
@@ -97,14 +82,15 @@ class HomeworkPanel extends Component {
     }
 
     handleStatusChangeFactory(idx) {
-        var that = this;
+        let that = this;
         return function (e) {
             e.preventDefault();
-            const students = that.state.group.students;
+            const semester = resolveSemester(that.state.group);
+            const students = semester.students;
             const group = that.state.group;
             let homework = students[idx]['homework'];
             homework[homework.length - 1] = {date: that.state.date, status: e.target.value};
-            group.students = students;
+            semester.students = students;
             that.setState({
                 group: group
             });

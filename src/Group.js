@@ -9,14 +9,18 @@ import AvgTestCalculator from './group/AvgTestCalculator.js'
 import HomeworkCountRenderer from './group/HomeworkCountRenderer.js'
 import Table from './group/Table.js'
 import TestResultRenderer from './group/TestResultRenderer.js'
+import {Link} from 'react-router'
+import {REFERENCE_GROUP} from './common/referenceGroup.js'
+import {resolveSemester} from './common/resolveSemester.js'
 
 class Group extends Component {
 
     componentDidMount() {
-        var that = this;
+        let that = this;
         request.get('https://dziennik-api.herokuapp.com/groups/' + that.props.params.groupId, function (err, res, body) {
             let group = JSON.parse(body);
-            group.students.forEach(student => {
+            let semester = resolveSemester(group);
+            semester.students.forEach(student => {
                 if (student.tests === undefined) {
                     student.tests = []
                 }
@@ -27,18 +31,18 @@ class Group extends Component {
                     student.homework = []
                 }
             });
-            let refStudent = group.students[0];
+            let refStudent = semester.students[0];
             let attendanceHeaders = [];
             let testNames = [];
             let homeworkNames = [];
             if (refStudent) {
-                attendanceHeaders = refStudent.attendances.map(attendance=> {
+                attendanceHeaders = refStudent.attendances.map(attendance => {
                     return attendance.date
                 });
-                testNames = refStudent.tests.map(test=> {
+                testNames = refStudent.tests.map(test => {
                     return test.name
                 });
-                homeworkNames = refStudent.homework.map(hw=> {
+                homeworkNames = refStudent.homework.map(hw => {
                     return hw.date
                 });
             }
@@ -59,33 +63,17 @@ class Group extends Component {
 
     constructor(props) {
         super(props);
-        let group = {
-            name: "",
-            _id: "",
-            dateOfActivities: "",
-            password: "",
-            students: [
-                {
-                    id: 1,
-                    name: "",
-                    surname: "",
-                    tests: [],
-                    attendances: [],
-                    homework: []
-                }
-            ]
-        };
-
+        let semester = resolveSemester(REFERENCE_GROUP);
 
         let commonHeaders = ["#", "lp.", "Imię Nazwisko"];
-        let refStudent = group.students[0];
-        let attendanceHeaders = refStudent.attendances.map(attendance=> {
+        let refStudent = semester.students[0];
+        let attendanceHeaders = refStudent.attendances.map(attendance => {
             return attendance.date
         });
-        let homeworkHeaders = refStudent.homework.map(hw=> {
+        let homeworkHeaders = refStudent.homework.map(hw => {
             return hw.date
         });
-        let testNames = refStudent.tests.map(test=> {
+        let testNames = refStudent.tests.map(test => {
             return test.name
         });
         this.state = {
@@ -95,7 +83,7 @@ class Group extends Component {
             homework: homeworkHeaders,
             testNames: commonHeaders.concat(testNames),
             tests: testNames,
-            group: group
+            group: REFERENCE_GROUP
         }
     }
 
@@ -105,7 +93,13 @@ class Group extends Component {
                 <Header title={this.state.group.name} subtitle={this.state.group.dateOfActivities}
                         className="hidden-print"/>
                 <span className="hidden-print">Hasło grupy: {this.state.group.password}</span>
-
+                <br />
+                <div className="btn-group">
+                    <Link to={`/groups/${this.state.group._id}/archive`}
+                          className="btn btn-default hidden-print">Archiwum</Link>
+                    <Link to={`/groups/${this.state.group._id}/promote`}
+                          className="btn btn-warning hidden-print">Promuj grupę na następny semestr</Link>
+                </div>
                 <div className="col-sm-12">
                     <div className="page-header">
                         <h4>Obecności</h4>
@@ -120,7 +114,7 @@ class Group extends Component {
                                        group={this.state.group}
                                        renderer={AttendanceRenderer}
                                        lastColumnRenderer={AvgAttendanceCalculator}
-                                    />
+                                />
                             </div>
                         </div>
 
@@ -140,7 +134,7 @@ class Group extends Component {
                                        group={this.state.group}
                                        renderer={TestResultRenderer}
                                        lastColumnRenderer={AvgTestCalculator}
-                                    />
+                                />
                             </div>
                         </div>
                     </div>
@@ -160,7 +154,7 @@ class Group extends Component {
                                        group={this.state.group}
                                        renderer={HomeworkRenderer}
                                        lastColumnRenderer={HomeworkCountRenderer}
-                                    />
+                                />
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import request from 'request'
 import EditableSelect from '../common/EditableSelect.js'
+import {resolveSemester} from '../common/resolveSemester.js'
 
 class AttendanceRenderer extends Component {
     constructor(props) {
@@ -52,7 +53,8 @@ class AttendanceRenderer extends Component {
     justifyStudent(studentId, columnId) {
         return (e) => {
             let group = this.state.group;
-            group.students[studentId]['attendances'][columnId].status = e.target.value;
+            let semester = resolveSemester(group);
+            semester.students[studentId]['attendances'][columnId].status = e.target.value;
             request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, e => {
                 this.setState({
                     group: group

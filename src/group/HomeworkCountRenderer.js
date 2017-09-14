@@ -16,9 +16,9 @@ class HomeworkCountRenderer extends Component {
     }
 
     static homeworkCount(student) {
-        var attendances = student['homework'];
+        let attendances = student['homework'];
         if (attendances.length === 0) return 0;
-        var sum = attendances
+        return attendances
             .map(a => {
                 switch (a.status) {
                     case "-":
@@ -26,8 +26,7 @@ class HomeworkCountRenderer extends Component {
                     default :
                         return 0;
                 }
-            }).reduce((a, b)=> a + b);
-        return sum;
+            }).reduce((a, b) => a + b);
     }
 
     render() {

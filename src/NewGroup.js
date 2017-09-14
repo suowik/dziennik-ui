@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import request from 'request'
-import { hashHistory } from 'react-router';
+import {hashHistory} from 'react-router';
 import Header from './common/Header.js'
+import shortid from 'shortid'
 
 class NewGroup extends Component {
 
@@ -9,38 +10,39 @@ class NewGroup extends Component {
         super(props);
         this.state = {
             name: "",
+            _id: shortid.generate(),
             dateOfActivities: "",
             description: "",
             password: "",
-            students: []
+            activeYear: "2017/2018",
+            activeSemester: 1,
+            semesters: [{year: "2017/2018", semester: 1, students: []}]
         };
-
-        this.handleInputChange = this.handleInputChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    handleInputChange(event) {
+    handleInputChange = (event) => {
         const target = event.target;
         const name = target.name;
         const value = target.value;
         this.setState({
             [name]: value
         });
-    }
+    };
 
-    handleSubmit(e) {
+    handleSubmit = (e) => {
         e.preventDefault();
-        let group = this.state;
-        group._id = group.name;
-        group.students.map((s)=> {
+        let group = this.state.semesters[0];
+        group.students.map((s) => {
             s.name = s.nameAndSurname.split(" ")[0];
             s.surname = s.nameAndSurname.split(" ")[1];
             return s;
         });
-        request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, e => {
+        group.year = this.state.activeYear;
+        group.semester = this.state.activeSemester;
+        request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(this.state)}, () => {
             hashHistory.push('/groups')
         })
-    }
+    };
 
     render() {
         return (
@@ -82,12 +84,35 @@ class NewGroup extends Component {
                                    placeholder="Termin zajęć"/>
                         </div>
 
+                        <div className="form-group">
+                            <label htmlFor="activeYear">Rok zajęć (rrrr/rrrr)</label>
+                            <input type="text"
+                                   className="form-control"
+                                   name="activeYear"
+                                   id="activeYear"
+                                   onChange={this.handleInputChange}
+                                   value={this.state.activeYear}
+                                   placeholder="Termin zajęć"/>
+                        </div>
+
+                        <div className="form-group">
+                            <label htmlFor="activeSemester">Semestr</label>
+                            <select className="form-control"
+                                    name="activeSemester"
+                                    id="activeSemester"
+                                    onChange={this.handleInputChange}
+                                    value={this.state.activeSemester}>
+                                <option value={1}>1</option>
+                                <option value={2}>2</option>
+                            </select>
+                        </div>
+
 
                         <div className="page-header">
                             <h4>Studenci</h4>
                         </div>
 
-                        <StudentsTable students={this.state.students}/>
+                        <StudentsTable students={this.state.semesters[0].students}/>
 
                         <button type="submit" className="btn btn-sm btn-success">Zapisz</button>
                     </form>
@@ -105,17 +130,16 @@ class StudentsTable extends Component {
         this.state = {
             students: props.students
         };
-        this.addStudent = this.addStudent.bind(this);
     }
 
-    addStudent(e) {
+    addStudent = (e) => {
         e.preventDefault();
         const students = this.state.students;
         students.push({name: "", surname: "", id: students.length, nameAndSurname: ""});
         this.setState({
             students: students
         })
-    }
+    };
 
     render() {
         return (
@@ -163,8 +187,8 @@ class Student extends Component {
     }
 
     handleChangeFactory(index, field) {
-        var that = this;
-        return function (e) {
+        let that = this;
+        return (e) => {
             e.preventDefault();
             const students = that.state.students;
             students[index][field] = e.target.value;

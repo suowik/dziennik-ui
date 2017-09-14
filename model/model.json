@@ -1,0 +1,44 @@
+{
+  "group": {
+    "_id": "GT%H$EW#^",
+    "name": "2B",
+    "description": "",
+    "activeYear": "2017/2018",
+    "activeSemester": 1,
+    "semesters": [
+      {
+        "year": "2016/2017",
+        "semester": 2,
+        "students": [
+          {
+            "name": "Mariusz",
+            "id": 0,
+            "tests": [
+              {
+                "name": "Unit 11,12",
+                "marks": {
+                  "first": "4"
+                }
+              }
+            ],
+            "homework": [
+              {
+                "date": "15.03",
+                "status": ""
+              }
+            ],
+            "surname": "Hombek",
+            "attendances": [
+              {
+                "date": "01.03",
+                "status": "absent"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "password": "wsei2B",
+    "dateOfActivities": "Środa"
+  }
+}
