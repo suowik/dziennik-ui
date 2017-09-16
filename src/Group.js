@@ -96,7 +96,7 @@ class Group extends Component {
                 <br />
                 <div className="btn-group">
                     <Link to={`/groups/${this.state.group._id}/archive`}
-                          className="btn btn-default hidden-print">Archiwum</Link>
+                          className="btn btn-default hidden-print">Poprzednie semestry</Link>
                     <Link to={`/groups/${this.state.group._id}/promote`}
                           className="btn btn-warning hidden-print">Promuj grupę na następny semestr</Link>
                 </div>

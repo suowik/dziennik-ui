@@ -13,6 +13,7 @@ export default class Promote extends Component {
             activeYear: "2017/2018",
             activeSemester: 1,
             name: "",
+            archive: false,
             group: REFERENCE_GROUP
         }
     }
@@ -28,8 +29,8 @@ export default class Promote extends Component {
 
     handleInputChange = (event) => {
         const target = event.target;
+        const value = target.type === 'checkbox' ? target.checked : target.value;
         const name = target.name;
-        const value = target.value;
         this.setState({
             [name]: value
         });
@@ -56,6 +57,7 @@ export default class Promote extends Component {
         group.semesters.push(newSemester);
         group.activeSemester = this.state.activeSemester;
         group.activeYear = this.state.activeYear;
+        group.archive = this.state.archive;
         request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, () => {
             hashHistory.push('/groups')
         })
@@ -88,6 +90,17 @@ export default class Promote extends Component {
                                    onChange={this.handleInputChange}
                                    value={this.state.name}
                                    placeholder="Nowa nazwa grupy"/>
+                        </div>
+
+                        <div className="form-group">
+                            <label htmlFor="activeYear">Archiwalna?</label>
+                            <input type="checkbox"
+                                   className="form-control"
+                                   name="archive"
+                                   id="archive"
+                                   onChange={this.handleInputChange}
+                                   checked={this.state.archive}
+                                   placeholder="Archiwalna?"/>
                         </div>
 
                         <div className="form-group">
