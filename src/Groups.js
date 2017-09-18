@@ -30,7 +30,7 @@ class Groups extends Component {
 
                     <div>
                         {this.state.groups.filter(g => !g.archive).map(group => (
-                            <GroupTile group={group} key={group._id}/>
+                            <GroupTile group={group} key={group._id} archive={""}/>
                         ))}
                         <div className="col-sm-3">
                             <div className="panel panel-default">
@@ -50,7 +50,7 @@ class Groups extends Component {
                     <Header title={`Grupy archiwalne`} subtitle={``}/>
                     <div>
                         {this.state.groups.filter(g => g.archive).map(group => (
-                            <GroupTile group={group} key={group._id}/>
+                            <GroupTile group={group} key={group._id} archive={"/archive"}/>
                         ))}
                     </div>
                 </div>
@@ -70,7 +70,8 @@ class GroupTile extends Component {
                     </div>
                     <div className="panel-body">
                         {this.props.group.dateOfActivities} &nbsp;
-                        <Link to={`/groups/${this.props.group._id}`} className="btn btn-sm btn-success">Podgląd</Link>
+                        <Link to={`/groups/${this.props.group._id}` + this.props.archive}
+                              className="btn btn-sm btn-success">Podgląd</Link>
                     </div>
                 </div>
             </div>
