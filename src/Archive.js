@@ -68,8 +68,8 @@ class TestsTable extends Table {
             field: "tests",
             renderer: (student, test, index) => {
                 let first = test.marks.first || 0;
-                let second = test.marks.second || null;
-                let third = test.marks.third || null;
+                let second = this.prepareTestValue(test.marks.second, first);
+                let third = this.prepareTestValue(test.marks.third, second);
                 let marks = [first, second, third]
                     .filter(m => m !== null)
                     .map((e, i) => <EditableSelect
@@ -92,6 +92,15 @@ class TestsTable extends Table {
             }
         }
     }
+
+    prepareTestValue = (current, prev) => {
+        let value = current || null;
+        if (prev === "2" || prev === "2.0") {
+            value = 0;
+        }
+        return value;
+    }
+
 }
 
 class EditableField extends Component {
