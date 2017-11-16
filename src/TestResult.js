@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { hashHistory } from 'react-router'
+import {hashHistory} from 'react-router'
 import request from 'request'
 import getFormattedDate from './util.js'
 import Header from './common/Header.js'
@@ -14,7 +14,7 @@ class TestResult extends Component {
         request.get('https://dziennik-api.herokuapp.com/groups/' + that.props.params.groupId, function (err, res, body) {
             let group = JSON.parse(body);
             let semester = resolveSemester(group);
-            semester.students.forEach((student)=> {
+            semester.students.forEach((student) => {
                 if (student.tests === undefined) {
                     student.tests = [{marks: {first: 0}, name: that.state.testName}];
                 } else {
@@ -41,6 +41,16 @@ class TestResult extends Component {
     handleSubmit(e) {
         e.preventDefault();
         let group = this.state.group;
+        let that = this;
+        resolveSemester(group).students.map(s => {
+            let tests = s.tests;
+            let test = tests[tests.length - 1];
+            test.name = that.state.testName;
+            s.tests[tests.length - 1] = test;
+            return s
+        });
+
+        console.log(group)
         request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, () => {
             hashHistory.push('/groups/' + group._id)
         })
@@ -107,8 +117,8 @@ class TestResultPanel extends Component {
     }
 
     handleStatusChangeFactory(idx) {
-        var that = this;
-        return function (e) {
+        let that = this;
+        return (e) => {
             e.preventDefault();
             const students = resolveSemester(that.state.group).students;
             const group = that.state.group;
