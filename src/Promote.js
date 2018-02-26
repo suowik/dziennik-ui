@@ -82,11 +82,11 @@ export default class Promote extends Component {
                         </div>
 
                         <div className="form-group">
-                            <label htmlFor="activeYear">Nowa nazwa grupy</label>
+                            <label htmlFor="name">Nowa nazwa grupy</label>
                             <input type="text"
                                    className="form-control"
-                                   name="activeYear"
-                                   id="activeYear"
+                                   name="name"
+                                   id="name"
                                    onChange={this.handleInputChange}
                                    value={this.state.name}
                                    placeholder="Nowa nazwa grupy"/>
