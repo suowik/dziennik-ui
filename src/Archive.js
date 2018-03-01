@@ -95,7 +95,7 @@ class TestsTable extends Table {
 
     prepareTestValue = (current, prev) => {
         let value = current || null;
-        if (prev === "2" || prev === "2.0") {
+        if ((prev === "2" || prev === "2.0") && !current) {
             value = 0;
         }
         return value;
