@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { hashHistory } from 'react-router'
+import {hashHistory} from 'react-router'
 import request from 'request'
 import getFormattedDate from './util.js'
 import Header from './common/Header.js'
@@ -13,7 +13,7 @@ class Attendance extends Component {
         request.get('https://dziennik-api.herokuapp.com/groups/' + that.props.params.groupId, function (err, res, body) {
             let group = JSON.parse(body);
             let semester = resolveSemester(group);
-            semester.students.forEach((student)=> {
+            semester.students.forEach((student) => {
                 if (student.attendances === undefined) {
                     student.attendances = [{status: 'present', date: getFormattedDate(new Date())}];
                 } else {
@@ -43,13 +43,29 @@ class Attendance extends Component {
         })
     }
 
+    handleDateChange = (e) => {
+        e.preventDefault();
+        let raw = e.target.value.split("-");
+        this.setState({
+            date: raw[2] + "." + raw[1]
+        })
+    };
+
     render() {
         return (
             <div className="row">
-                <Header title={`Sprawdzanie obecności - ${this.state.group.name}`} subtitle={this.state.date} />
+                <Header title={`Sprawdzanie obecności - ${this.state.group.name}`} subtitle={this.state.date}/>
                 <form onSubmit={this.handleSubmit}>
+                    <div className="form-group">
+                        <label htmlFor="attendanceDate">Data zajęć:</label>
+                        <input type="date"
+                               value={this.state.date}
+                               id="attendanceDate"
+                               onChange={this.handleDateChange}
+                               className="form-control"/>
+                    </div>
                     {resolveSemester(this.state.group).students.map((student, idx) => (
-                        <AttendancePanel key={idx} idx={idx} group={this.state.group}/>
+                        <AttendancePanel key={idx} idx={idx} group={this.state.group} date={this.state.date}/>
                     ))}
                     <div className="col-sm-12">
                         <button type="submit" className="btn btn-sm btn-success">Zapisz</button>
@@ -74,7 +90,7 @@ class AttendancePanel extends Component {
 
     init(parent, props) {
         let group = props.group;
-        let date = getFormattedDate(new Date());
+        let date = props.date;
         let student = resolveSemester(group).students[props.idx];
         parent.state = {
             group: group,

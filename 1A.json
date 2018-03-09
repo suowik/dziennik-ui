@@ -1,0 +1,3984 @@
+{
+  "_id": "1A",
+  "password": "wsei2A",
+  "activeYear": "2017/2018",
+  "name": "2A",
+  "description": "",
+  "students": [
+    {
+      "name": "Adam",
+      "id": 0,
+      "tests": [
+        {
+          "name": "Unit 4",
+          "marks": {
+            "first": "3"
+          }
+        },
+        {
+          "name": "Unit 5",
+          "marks": {
+            "first": "2",
+            "second": "3.5"
+          }
+        },
+        {
+          "name": "TED Vocabulary",
+          "marks": {
+            "third": null,
+            "first": "2.0",
+            "second": "2"
+          }
+        },
+        {
+          "name": "Unit 6",
+          "marks": {
+            "third": null,
+            "first": "3.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Final mark",
+          "marks": {
+            "third": null,
+            "first": "2.0",
+            "second": null
+          }
+        }
+      ],
+      "homework": [
+        {
+          "date": "25.10",
+          "status": "-"
+        },
+        {
+          "date": "08.11",
+          "status": ""
+        },
+        {
+          "date": "15.11",
+          "status": "-"
+        },
+        {
+          "date": "06.12",
+          "status": ""
+        },
+        {
+          "date": "13.12",
+          "status": ""
+        }
+      ],
+      "surname": "Galon",
+      "attendances": [
+        {
+          "date": "04.10",
+          "status": "present"
+        },
+        {
+          "date": "11.10",
+          "status": "present"
+        },
+        {
+          "date": "18.10",
+          "status": "present"
+        },
+        {
+          "date": "25.10",
+          "status": "present"
+        },
+        {
+          "date": "08.11",
+          "status": "justified"
+        },
+        {
+          "date": "15.11",
+          "status": "present"
+        },
+        {
+          "date": "22.11",
+          "status": "absent"
+        },
+        {
+          "date": "29.11",
+          "status": "absent"
+        },
+        {
+          "date": "06.12",
+          "status": "absent"
+        },
+        {
+          "date": "13.12",
+          "status": "justified"
+        },
+        {
+          "date": "20.12",
+          "status": "justified"
+        },
+        {
+          "date": "03.01",
+          "status": "present"
+        },
+        {
+          "date": "10.01",
+          "status": "present"
+        },
+        {
+          "date": "17.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "present"
+        }
+      ]
+    },
+    {
+      "name": "Krystian",
+      "id": 1,
+      "tests": [
+        {
+          "name": "Unit 4",
+          "marks": {
+            "third": null,
+            "first": "4.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 5",
+          "marks": {
+            "third": null,
+            "first": "2.0",
+            "second": "4.5"
+          }
+        },
+        {
+          "name": "TED Vocabulary",
+          "marks": {
+            "third": null,
+            "first": "2.0",
+            "second": "2"
+          }
+        },
+        {
+          "name": "Unit 6",
+          "marks": {
+            "third": null,
+            "first": "5.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Final mark",
+          "marks": {
+            "first": 0
+          }
+        }
+      ],
+      "homework": [
+        {
+          "date": "25.10",
+          "status": "+"
+        },
+        {
+          "date": "08.11",
+          "status": ""
+        },
+        {
+          "date": "15.11",
+          "status": ""
+        },
+        {
+          "date": "06.12",
+          "status": ""
+        },
+        {
+          "date": "13.12",
+          "status": ""
+        }
+      ],
+      "surname": "Kobus",
+      "attendances": [
+        {
+          "date": "04.10",
+          "status": "present"
+        },
+        {
+          "date": "11.10",
+          "status": "present"
+        },
+        {
+          "date": "18.10",
+          "status": "present"
+        },
+        {
+          "date": "25.10",
+          "status": "present"
+        },
+        {
+          "date": "08.11",
+          "status": "present"
+        },
+        {
+          "date": "15.11",
+          "status": "absent"
+        },
+        {
+          "date": "22.11",
+          "status": "absent"
+        },
+        {
+          "date": "29.11",
+          "status": "present"
+        },
+        {
+          "date": "06.12",
+          "status": "present"
+        },
+        {
+          "date": "13.12",
+          "status": "present"
+        },
+        {
+          "date": "20.12",
+          "status": "present"
+        },
+        {
+          "date": "03.01",
+          "status": "present"
+        },
+        {
+          "date": "10.01",
+          "status": "present"
+        },
+        {
+          "date": "17.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "present"
+        }
+      ]
+    },
+    {
+      "name": "Michał",
+      "id": 2,
+      "tests": [
+        {
+          "name": "",
+          "marks": {
+            "first": "3.5"
+          }
+        },
+        {
+          "name": "Unit 5",
+          "marks": {
+            "third": null,
+            "first": "2.0",
+            "second": "3.5"
+          }
+        },
+        {
+          "name": "TED Vocabulary",
+          "marks": {
+            "third": null,
+            "first": "4.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 6",
+          "marks": {
+            "third": null,
+            "first": "4.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Final mark",
+          "marks": {
+            "first": 0
+          }
+        }
+      ],
+      "homework": [
+        {
+          "date": "25.10",
+          "status": "-"
+        },
+        {
+          "date": "08.11",
+          "status": ""
+        },
+        {
+          "date": "15.11",
+          "status": ""
+        },
+        {
+          "date": "06.12",
+          "status": "-"
+        },
+        {
+          "date": "13.12",
+          "status": ""
+        }
+      ],
+      "surname": "Pacanowski",
+      "attendances": [
+        {
+          "date": "04.10",
+          "status": "present"
+        },
+        {
+          "date": "11.10",
+          "status": "present"
+        },
+        {
+          "date": "18.10",
+          "status": "present"
+        },
+        {
+          "date": "25.10",
+          "status": "present"
+        },
+        {
+          "date": "08.11",
+          "status": "absent"
+        },
+        {
+          "date": "15.11",
+          "status": "present"
+        },
+        {
+          "date": "22.11",
+          "status": "present"
+        },
+        {
+          "date": "29.11",
+          "status": "absent"
+        },
+        {
+          "date": "06.12",
+          "status": "present"
+        },
+        {
+          "date": "13.12",
+          "status": "present"
+        },
+        {
+          "date": "20.12",
+          "status": "present"
+        },
+        {
+          "date": "03.01",
+          "status": "present"
+        },
+        {
+          "date": "10.01",
+          "status": "present"
+        },
+        {
+          "date": "17.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "present"
+        }
+      ]
+    },
+    {
+      "name": "Bartosz",
+      "id": 3,
+      "tests": [
+        {
+          "name": "Unit 4",
+          "marks": {
+            "third": null,
+            "first": "3.5",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 5",
+          "marks": {
+            "third": null,
+            "first": "3.5",
+            "second": null
+          }
+        },
+        {
+          "name": "TED Vocabulary",
+          "marks": {
+            "third": null,
+            "first": "2.0",
+            "second": "3"
+          }
+        },
+        {
+          "name": "Unit 6",
+          "marks": {
+            "third": null,
+            "first": "4.5",
+            "second": null
+          }
+        },
+        {
+          "name": "Final mark",
+          "marks": {
+            "first": 0
+          }
+        }
+      ],
+      "homework": [
+        {
+          "date": "25.10",
+          "status": ""
+        },
+        {
+          "date": "08.11",
+          "status": "-"
+        },
+        {
+          "date": "15.11",
+          "status": ""
+        },
+        {
+          "date": "06.12",
+          "status": "-"
+        },
+        {
+          "date": "13.12",
+          "status": ""
+        }
+      ],
+      "surname": "Ruszel",
+      "attendances": [
+        {
+          "date": "04.10",
+          "status": "present"
+        },
+        {
+          "date": "11.10",
+          "status": "present"
+        },
+        {
+          "date": "18.10",
+          "status": "present"
+        },
+        {
+          "date": "25.10",
+          "status": "justified"
+        },
+        {
+          "date": "08.11",
+          "status": "present"
+        },
+        {
+          "date": "15.11",
+          "status": "absent"
+        },
+        {
+          "date": "22.11",
+          "status": "present"
+        },
+        {
+          "date": "29.11",
+          "status": "present"
+        },
+        {
+          "date": "06.12",
+          "status": "present"
+        },
+        {
+          "date": "13.12",
+          "status": "present"
+        },
+        {
+          "date": "20.12",
+          "status": "present"
+        },
+        {
+          "date": "03.01",
+          "status": "present"
+        },
+        {
+          "date": "10.01",
+          "status": "present"
+        },
+        {
+          "date": "17.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "absent"
+        }
+      ]
+    },
+    {
+      "name": "Sebastian",
+      "id": 4,
+      "tests": [
+        {
+          "name": "Unit 4",
+          "marks": {
+            "third": null,
+            "first": "4.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 5",
+          "marks": {
+            "third": null,
+            "first": "3.0",
+            "second": null
+          }
+        },
+        {
+          "name": "TED Vocabulary",
+          "marks": {
+            "third": null,
+            "first": "3.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 6",
+          "marks": {
+            "third": null,
+            "first": "3.5",
+            "second": null
+          }
+        },
+        {
+          "name": "Final mark",
+          "marks": {
+            "first": 0
+          }
+        }
+      ],
+      "homework": [
+        {
+          "date": "25.10",
+          "status": ""
+        },
+        {
+          "date": "08.11",
+          "status": ""
+        },
+        {
+          "date": "15.11",
+          "status": ""
+        },
+        {
+          "date": "06.12",
+          "status": "-"
+        },
+        {
+          "date": "13.12",
+          "status": ""
+        }
+      ],
+      "surname": "Sobociński",
+      "attendances": [
+        {
+          "date": "04.10",
+          "status": "present"
+        },
+        {
+          "date": "11.10",
+          "status": "absent"
+        },
+        {
+          "date": "18.10",
+          "status": "present"
+        },
+        {
+          "date": "25.10",
+          "status": "absent"
+        },
+        {
+          "date": "08.11",
+          "status": "present"
+        },
+        {
+          "date": "15.11",
+          "status": "present"
+        },
+        {
+          "date": "22.11",
+          "status": "present"
+        },
+        {
+          "date": "29.11",
+          "status": "present"
+        },
+        {
+          "date": "06.12",
+          "status": "present"
+        },
+        {
+          "date": "13.12",
+          "status": "absent"
+        },
+        {
+          "date": "20.12",
+          "status": "present"
+        },
+        {
+          "date": "03.01",
+          "status": "present"
+        },
+        {
+          "date": "10.01",
+          "status": "present"
+        },
+        {
+          "date": "17.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "present"
+        }
+      ]
+    },
+    {
+      "name": "Tomasz",
+      "id": 5,
+      "tests": [
+        {
+          "name": "Unit 4",
+          "marks": {
+            "third": null,
+            "first": "3.5",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 5",
+          "marks": {
+            "first": "2",
+            "second": "3.5"
+          }
+        },
+        {
+          "name": "TED Vocabulary",
+          "marks": {
+            "first": "3.5"
+          }
+        },
+        {
+          "name": "Unit 6",
+          "marks": {
+            "third": null,
+            "first": "3.5",
+            "second": null
+          }
+        },
+        {
+          "name": "Final mark",
+          "marks": {
+            "first": 0
+          }
+        }
+      ],
+      "homework": [
+        {
+          "date": "25.10",
+          "status": ""
+        },
+        {
+          "date": "08.11",
+          "status": "-"
+        },
+        {
+          "date": "15.11",
+          "status": ""
+        },
+        {
+          "date": "06.12",
+          "status": ""
+        },
+        {
+          "date": "13.12",
+          "status": "-"
+        }
+      ],
+      "surname": "Niedźwiedź",
+      "attendances": [
+        {
+          "date": "04.10",
+          "status": "justified"
+        },
+        {
+          "date": "11.10",
+          "status": "present"
+        },
+        {
+          "date": "18.10",
+          "status": "present"
+        },
+        {
+          "date": "25.10",
+          "status": "present"
+        },
+        {
+          "date": "08.11",
+          "status": "present"
+        },
+        {
+          "date": "15.11",
+          "status": "present"
+        },
+        {
+          "date": "22.11",
+          "status": "absent"
+        },
+        {
+          "date": "29.11",
+          "status": "present"
+        },
+        {
+          "date": "06.12",
+          "status": "absent"
+        },
+        {
+          "date": "13.12",
+          "status": "present"
+        },
+        {
+          "date": "20.12",
+          "status": "absent"
+        },
+        {
+          "date": "03.01",
+          "status": "present"
+        },
+        {
+          "date": "10.01",
+          "status": "justified"
+        },
+        {
+          "date": "17.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "present"
+        }
+      ]
+    },
+    {
+      "name": "Miłosz",
+      "id": 6,
+      "tests": [
+        {
+          "name": "",
+          "marks": {
+            "first": "4"
+          }
+        },
+        {
+          "name": "Unit 5",
+          "marks": {
+            "third": null,
+            "first": "3.0",
+            "second": null
+          }
+        },
+        {
+          "name": "TED Vocabulary",
+          "marks": {
+            "third": null,
+            "first": "2.0",
+            "second": "2"
+          }
+        },
+        {
+          "name": "Unit 6",
+          "marks": {
+            "third": null,
+            "first": "4.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Final mark",
+          "marks": {
+            "first": 0
+          }
+        }
+      ],
+      "homework": [
+        {
+          "date": "25.10",
+          "status": "-"
+        },
+        {
+          "date": "08.11",
+          "status": ""
+        },
+        {
+          "date": "15.11",
+          "status": "-"
+        },
+        {
+          "date": "06.12",
+          "status": ""
+        },
+        {
+          "date": "13.12",
+          "status": ""
+        }
+      ],
+      "surname": "Klecha",
+      "attendances": [
+        {
+          "date": "04.10",
+          "status": "present"
+        },
+        {
+          "date": "11.10",
+          "status": "absent"
+        },
+        {
+          "date": "18.10",
+          "status": "present"
+        },
+        {
+          "date": "25.10",
+          "status": "present"
+        },
+        {
+          "date": "08.11",
+          "status": "absent"
+        },
+        {
+          "date": "15.11",
+          "status": "present"
+        },
+        {
+          "date": "22.11",
+          "status": "present"
+        },
+        {
+          "date": "29.11",
+          "status": "present"
+        },
+        {
+          "date": "06.12",
+          "status": "present"
+        },
+        {
+          "date": "13.12",
+          "status": "absent"
+        },
+        {
+          "date": "20.12",
+          "status": "present"
+        },
+        {
+          "date": "03.01",
+          "status": "absent"
+        },
+        {
+          "date": "10.01",
+          "status": "present"
+        },
+        {
+          "date": "17.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "present"
+        }
+      ]
+    },
+    {
+      "name": "Serhii",
+      "id": 7,
+      "tests": [
+        {
+          "name": "",
+          "marks": {
+            "first": 0
+          }
+        },
+        {
+          "name": "Unit 5",
+          "marks": {
+            "first": 0
+          }
+        },
+        {
+          "name": "TED Vocabulary",
+          "marks": {
+            "first": 0
+          }
+        },
+        {
+          "name": "Unit 6",
+          "marks": {
+            "first": 0
+          }
+        },
+        {
+          "name": "Final mark",
+          "marks": {
+            "first": 0
+          }
+        }
+      ],
+      "homework": [
+        {
+          "date": "25.10",
+          "status": ""
+        },
+        {
+          "date": "08.11",
+          "status": ""
+        },
+        {
+          "date": "15.11",
+          "status": ""
+        },
+        {
+          "date": "06.12",
+          "status": ""
+        },
+        {
+          "date": "13.12",
+          "status": ""
+        }
+      ],
+      "surname": "Rubee",
+      "attendances": [
+        {
+          "date": "04.10",
+          "status": "absent"
+        },
+        {
+          "date": "11.10",
+          "status": "present"
+        },
+        {
+          "date": "18.10",
+          "status": "absent"
+        },
+        {
+          "date": "25.10",
+          "status": "absent"
+        },
+        {
+          "date": "08.11",
+          "status": "absent"
+        },
+        {
+          "date": "15.11",
+          "status": "absent"
+        },
+        {
+          "date": "22.11",
+          "status": "absent"
+        },
+        {
+          "date": "29.11",
+          "status": "present"
+        },
+        {
+          "date": "06.12",
+          "status": "absent"
+        },
+        {
+          "date": "13.12",
+          "status": "absent"
+        },
+        {
+          "date": "20.12",
+          "status": "absent"
+        },
+        {
+          "date": "03.01",
+          "status": "absent"
+        },
+        {
+          "date": "10.01",
+          "status": "absent"
+        },
+        {
+          "date": "17.01",
+          "status": "absent"
+        },
+        {
+          "date": "30.01",
+          "status": "absent"
+        }
+      ]
+    },
+    {
+      "name": "Karol",
+      "id": 8,
+      "tests": [
+        {
+          "marks": {
+            "first": "2"
+          }
+        },
+        {
+          "name": "Unit 5",
+          "marks": {
+            "third": null,
+            "first": "2.0",
+            "second": null
+          }
+        },
+        {
+          "name": "TED Vocabulary",
+          "marks": {
+            "third": null,
+            "first": "2.0",
+            "second": "2"
+          }
+        },
+        {
+          "name": "Unit 6",
+          "marks": {
+            "third": null,
+            "first": "2.0",
+            "second": "2"
+          }
+        },
+        {
+          "name": "Final mark",
+          "marks": {
+            "first": 0
+          }
+        }
+      ],
+      "homework": [
+        {
+          "date": "25.10",
+          "status": ""
+        },
+        {
+          "date": "08.11",
+          "status": ""
+        },
+        {
+          "date": "15.11",
+          "status": ""
+        },
+        {
+          "date": "06.12",
+          "status": "-"
+        },
+        {
+          "date": "13.12",
+          "status": "-"
+        }
+      ],
+      "surname": "Dwojak",
+      "attendances": [
+        {
+          "date": "04.10",
+          "status": "absent"
+        },
+        {
+          "date": "11.10",
+          "status": "absent"
+        },
+        {
+          "date": "18.10",
+          "status": "justified"
+        },
+        {
+          "date": "25.10",
+          "status": "justified"
+        },
+        {
+          "date": "08.11",
+          "status": "justified"
+        },
+        {
+          "date": "15.11",
+          "status": "present"
+        },
+        {
+          "date": "22.11",
+          "status": "present"
+        },
+        {
+          "date": "29.11",
+          "status": "present"
+        },
+        {
+          "date": "06.12",
+          "status": "present"
+        },
+        {
+          "date": "13.12",
+          "status": "present"
+        },
+        {
+          "date": "20.12",
+          "status": "present"
+        },
+        {
+          "date": "03.01",
+          "status": "present"
+        },
+        {
+          "date": "10.01",
+          "status": "present"
+        },
+        {
+          "date": "17.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "present"
+        }
+      ]
+    },
+    {
+      "name": "Kamil",
+      "id": 9,
+      "tests": [
+        {
+          "marks": {
+            "first": 0
+          }
+        },
+        {
+          "name": "Unit 5",
+          "marks": {
+            "third": null,
+            "first": "2.0",
+            "second": null
+          }
+        },
+        {
+          "name": "TED Vocabulary",
+          "marks": {
+            "third": null,
+            "first": "2.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 6",
+          "marks": {
+            "third": null,
+            "first": "3.5",
+            "second": null
+          }
+        },
+        {
+          "name": "Final mark",
+          "marks": {
+            "first": 0
+          }
+        }
+      ],
+      "homework": [
+        {
+          "date": "25.10",
+          "status": ""
+        },
+        {
+          "date": "08.11",
+          "status": ""
+        },
+        {
+          "date": "15.11",
+          "status": ""
+        },
+        {
+          "date": "06.12",
+          "status": "-"
+        },
+        {
+          "date": "13.12",
+          "status": "-"
+        }
+      ],
+      "surname": "Będkowski",
+      "attendances": [
+        {
+          "date": "04.10",
+          "status": "absent"
+        },
+        {
+          "date": "11.10",
+          "status": "absent"
+        },
+        {
+          "date": "18.10",
+          "status": "absent"
+        },
+        {
+          "date": "25.10",
+          "status": "absent"
+        },
+        {
+          "date": "08.11",
+          "status": "absent"
+        },
+        {
+          "date": "15.11",
+          "status": "absent"
+        },
+        {
+          "date": "22.11",
+          "status": "absent"
+        },
+        {
+          "date": "29.11",
+          "status": "present"
+        },
+        {
+          "date": "06.12",
+          "status": "present"
+        },
+        {
+          "date": "13.12",
+          "status": "present"
+        },
+        {
+          "date": "20.12",
+          "status": "present"
+        },
+        {
+          "date": "03.01",
+          "status": "absent"
+        },
+        {
+          "date": "10.01",
+          "status": "present"
+        },
+        {
+          "date": "17.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "absent"
+        }
+      ]
+    }
+  ],
+  "activeSemester": "2",
+  "archive": false,
+  "semesters": [
+    {
+      "year": "2016/2017",
+      "students": [
+        {
+          "name": "Adam",
+          "id": 0,
+          "tests": [
+            {
+              "name": "Unit 1",
+              "marks": {
+                "third": null,
+                "first": "2",
+                "second": "4"
+              }
+            },
+            {
+              "name": "Presentation",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 2",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": "4"
+              }
+            },
+            {
+              "name": "Unit 3",
+              "marks": {
+                "third": null,
+                "first": "3.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "3.0",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "28.03",
+              "status": ""
+            },
+            {
+              "date": "28.04",
+              "status": "-"
+            },
+            {
+              "date": "09.05",
+              "status": ""
+            },
+            {
+              "date": "16.05",
+              "status": ""
+            },
+            {
+              "date": "23.05",
+              "status": ""
+            }
+          ],
+          "surname": "Galon",
+          "attendances": [
+            {
+              "date": "13.03",
+              "status": "present"
+            },
+            {
+              "date": "14.03",
+              "status": "absent"
+            },
+            {
+              "date": "21.03",
+              "status": "absent"
+            },
+            {
+              "date": "28.03",
+              "status": "absent"
+            },
+            {
+              "date": "04.04",
+              "status": "present"
+            },
+            {
+              "date": "11.04",
+              "status": "absent"
+            },
+            {
+              "date": "25.04",
+              "status": "present"
+            },
+            {
+              "date": "28.04",
+              "status": "present"
+            },
+            {
+              "date": "09.05",
+              "status": "present"
+            },
+            {
+              "date": "12.05",
+              "status": "present"
+            },
+            {
+              "date": "16.05",
+              "status": "present"
+            },
+            {
+              "date": "19.05",
+              "status": "present"
+            },
+            {
+              "date": "23.05",
+              "status": "present"
+            },
+            {
+              "date": "26.05",
+              "status": "present"
+            },
+            {
+              "date": "30.05",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Krystian",
+          "id": 1,
+          "tests": [
+            {
+              "name": "Uni",
+              "marks": {
+                "first": "5"
+              }
+            },
+            {
+              "name": "",
+              "marks": {
+                "first": "4"
+              }
+            },
+            {
+              "name": "Unit 2",
+              "marks": {
+                "third": null,
+                "first": "3.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 3",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "28.03",
+              "status": ""
+            },
+            {
+              "date": "28.04",
+              "status": "-"
+            },
+            {
+              "date": "09.05",
+              "status": ""
+            },
+            {
+              "date": "16.05",
+              "status": ""
+            },
+            {
+              "date": "23.05",
+              "status": "-"
+            }
+          ],
+          "surname": "Kobus",
+          "attendances": [
+            {
+              "date": "13.03",
+              "status": "present"
+            },
+            {
+              "date": "14.03",
+              "status": "present"
+            },
+            {
+              "date": "21.03",
+              "status": "present"
+            },
+            {
+              "date": "28.03",
+              "status": "absent"
+            },
+            {
+              "date": "04.04",
+              "status": "present"
+            },
+            {
+              "date": "11.04",
+              "status": "absent"
+            },
+            {
+              "date": "25.04",
+              "status": "present"
+            },
+            {
+              "date": "28.04",
+              "status": "present"
+            },
+            {
+              "date": "09.05",
+              "status": "present"
+            },
+            {
+              "date": "12.05",
+              "status": "present"
+            },
+            {
+              "date": "16.05",
+              "status": "present"
+            },
+            {
+              "date": "19.05",
+              "status": "present"
+            },
+            {
+              "date": "23.05",
+              "status": "present"
+            },
+            {
+              "date": "26.05",
+              "status": "present"
+            },
+            {
+              "date": "30.05",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Marcin",
+          "id": 2,
+          "tests": [
+            {
+              "name": "Unit 1",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            },
+            {
+              "name": "",
+              "marks": {
+                "first": "4.5"
+              }
+            },
+            {
+              "name": "Unit 2",
+              "marks": {
+                "third": null,
+                "first": "3.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 3",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "28.03",
+              "status": ""
+            },
+            {
+              "date": "28.04",
+              "status": ""
+            },
+            {
+              "date": "09.05",
+              "status": ""
+            },
+            {
+              "date": "16.05",
+              "status": "-"
+            },
+            {
+              "date": "23.05",
+              "status": ""
+            }
+          ],
+          "surname": "Kwaśniak",
+          "attendances": [
+            {
+              "date": "13.03",
+              "status": "present"
+            },
+            {
+              "date": "14.03",
+              "status": "present"
+            },
+            {
+              "date": "21.03",
+              "status": "present"
+            },
+            {
+              "date": "28.03",
+              "status": "present"
+            },
+            {
+              "date": "04.04",
+              "status": "present"
+            },
+            {
+              "date": "11.04",
+              "status": "present"
+            },
+            {
+              "date": "25.04",
+              "status": "present"
+            },
+            {
+              "date": "28.04",
+              "status": "present"
+            },
+            {
+              "date": "09.05",
+              "status": "present"
+            },
+            {
+              "date": "12.05",
+              "status": "present"
+            },
+            {
+              "date": "16.05",
+              "status": "present"
+            },
+            {
+              "date": "19.05",
+              "status": "present"
+            },
+            {
+              "date": "23.05",
+              "status": "present"
+            },
+            {
+              "date": "26.05",
+              "status": "absent"
+            },
+            {
+              "date": "30.05",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Bartłomiej",
+          "id": 3,
+          "tests": [
+            {
+              "name": "Uni",
+              "marks": {
+                "first": "3"
+              }
+            },
+            {
+              "name": "Presentation",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 2",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 3",
+              "marks": {
+                "third": null,
+                "first": "3.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "28.03",
+              "status": ""
+            },
+            {
+              "date": "28.04",
+              "status": ""
+            },
+            {
+              "date": "09.05",
+              "status": ""
+            },
+            {
+              "date": "16.05",
+              "status": "-"
+            },
+            {
+              "date": "23.05",
+              "status": "-"
+            }
+          ],
+          "surname": "Pieła",
+          "attendances": [
+            {
+              "date": "13.03",
+              "status": "present"
+            },
+            {
+              "date": "14.03",
+              "status": "present"
+            },
+            {
+              "date": "21.03",
+              "status": "present"
+            },
+            {
+              "date": "28.03",
+              "status": "present"
+            },
+            {
+              "date": "04.04",
+              "status": "present"
+            },
+            {
+              "date": "11.04",
+              "status": "absent"
+            },
+            {
+              "date": "25.04",
+              "status": "present"
+            },
+            {
+              "date": "28.04",
+              "status": "present"
+            },
+            {
+              "date": "09.05",
+              "status": "present"
+            },
+            {
+              "date": "12.05",
+              "status": "present"
+            },
+            {
+              "date": "16.05",
+              "status": "present"
+            },
+            {
+              "date": "19.05",
+              "status": "absent"
+            },
+            {
+              "date": "23.05",
+              "status": "present"
+            },
+            {
+              "date": "26.05",
+              "status": "present"
+            },
+            {
+              "date": "30.05",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Michał",
+          "id": 4,
+          "tests": [
+            {
+              "name": "Uni",
+              "marks": {
+                "first": "3"
+              }
+            },
+            {
+              "name": "Presentation",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 2",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 3",
+              "marks": {
+                "third": null,
+                "first": "3.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "28.03",
+              "status": ""
+            },
+            {
+              "date": "28.04",
+              "status": ""
+            },
+            {
+              "date": "09.05",
+              "status": "-"
+            },
+            {
+              "date": "16.05",
+              "status": ""
+            },
+            {
+              "date": "23.05",
+              "status": ""
+            }
+          ],
+          "surname": "Pacanowski",
+          "attendances": [
+            {
+              "date": "13.03",
+              "status": "present"
+            },
+            {
+              "date": "14.03",
+              "status": "present"
+            },
+            {
+              "date": "21.03",
+              "status": "present"
+            },
+            {
+              "date": "28.03",
+              "status": "present"
+            },
+            {
+              "date": "04.04",
+              "status": "present"
+            },
+            {
+              "date": "11.04",
+              "status": "absent"
+            },
+            {
+              "date": "25.04",
+              "status": "present"
+            },
+            {
+              "date": "28.04",
+              "status": "present"
+            },
+            {
+              "date": "09.05",
+              "status": "present"
+            },
+            {
+              "date": "12.05",
+              "status": "present"
+            },
+            {
+              "date": "16.05",
+              "status": "absent"
+            },
+            {
+              "date": "19.05",
+              "status": "present"
+            },
+            {
+              "date": "23.05",
+              "status": "present"
+            },
+            {
+              "date": "26.05",
+              "status": "present"
+            },
+            {
+              "date": "30.05",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Dominik",
+          "id": 5,
+          "tests": [
+            {
+              "name": "Unit 1",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            },
+            {
+              "name": "",
+              "marks": {
+                "first": "4.5"
+              }
+            },
+            {
+              "name": "Unit 2",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 3",
+              "marks": {
+                "third": null,
+                "first": "3.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "28.03",
+              "status": ""
+            },
+            {
+              "date": "28.04",
+              "status": ""
+            },
+            {
+              "date": "09.05",
+              "status": "-"
+            },
+            {
+              "date": "16.05",
+              "status": ""
+            },
+            {
+              "date": "23.05",
+              "status": ""
+            }
+          ],
+          "surname": "Raczkowski",
+          "attendances": [
+            {
+              "date": "13.03",
+              "status": "present"
+            },
+            {
+              "date": "14.03",
+              "status": "present"
+            },
+            {
+              "date": "21.03",
+              "status": "present"
+            },
+            {
+              "date": "28.03",
+              "status": "present"
+            },
+            {
+              "date": "04.04",
+              "status": "present"
+            },
+            {
+              "date": "11.04",
+              "status": "present"
+            },
+            {
+              "date": "25.04",
+              "status": "present"
+            },
+            {
+              "date": "28.04",
+              "status": "present"
+            },
+            {
+              "date": "09.05",
+              "status": "present"
+            },
+            {
+              "date": "12.05",
+              "status": "absent"
+            },
+            {
+              "date": "16.05",
+              "status": "present"
+            },
+            {
+              "date": "19.05",
+              "status": "present"
+            },
+            {
+              "date": "23.05",
+              "status": "present"
+            },
+            {
+              "date": "26.05",
+              "status": "present"
+            },
+            {
+              "date": "30.05",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Bartosz",
+          "id": 6,
+          "tests": [
+            {
+              "name": "Uni",
+              "marks": {
+                "first": "3"
+              }
+            },
+            {
+              "name": "",
+              "marks": {
+                "first": "3.5"
+              }
+            },
+            {
+              "name": "",
+              "marks": {
+                "first": "2",
+                "second": "4"
+              }
+            },
+            {
+              "name": "Unit 3",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "28.03",
+              "status": ""
+            },
+            {
+              "date": "28.04",
+              "status": ""
+            },
+            {
+              "date": "09.05",
+              "status": ""
+            },
+            {
+              "date": "16.05",
+              "status": ""
+            },
+            {
+              "date": "23.05",
+              "status": ""
+            }
+          ],
+          "surname": "Ruszel",
+          "attendances": [
+            {
+              "date": "13.03",
+              "status": "present"
+            },
+            {
+              "date": "14.03",
+              "status": "present"
+            },
+            {
+              "date": "21.03",
+              "status": "present"
+            },
+            {
+              "date": "28.03",
+              "status": "justified"
+            },
+            {
+              "date": "04.04",
+              "status": "present"
+            },
+            {
+              "date": "11.04",
+              "status": "justified"
+            },
+            {
+              "date": "25.04",
+              "status": "present"
+            },
+            {
+              "date": "28.04",
+              "status": "absent"
+            },
+            {
+              "date": "09.05",
+              "status": "absent"
+            },
+            {
+              "date": "12.05",
+              "status": "present"
+            },
+            {
+              "date": "16.05",
+              "status": "present"
+            },
+            {
+              "date": "19.05",
+              "status": "present"
+            },
+            {
+              "date": "23.05",
+              "status": "present"
+            },
+            {
+              "date": "26.05",
+              "status": "present"
+            },
+            {
+              "date": "30.05",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Sebastian",
+          "id": 7,
+          "tests": [
+            {
+              "name": "Uni",
+              "marks": {
+                "first": "3"
+              }
+            },
+            {
+              "name": "",
+              "marks": {
+                "first": "4"
+              }
+            },
+            {
+              "name": "Unit 2",
+              "marks": {
+                "third": null,
+                "first": "3.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 3",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "28.03",
+              "status": ""
+            },
+            {
+              "date": "28.04",
+              "status": ""
+            },
+            {
+              "date": "09.05",
+              "status": "-"
+            },
+            {
+              "date": "16.05",
+              "status": ""
+            },
+            {
+              "date": "23.05",
+              "status": ""
+            }
+          ],
+          "surname": "Sobociński",
+          "attendances": [
+            {
+              "date": "13.03",
+              "status": "present"
+            },
+            {
+              "date": "14.03",
+              "status": "present"
+            },
+            {
+              "date": "21.03",
+              "status": "justified"
+            },
+            {
+              "date": "28.03",
+              "status": "present"
+            },
+            {
+              "date": "04.04",
+              "status": "justified"
+            },
+            {
+              "date": "11.04",
+              "status": "justified"
+            },
+            {
+              "date": "25.04",
+              "status": "present"
+            },
+            {
+              "date": "28.04",
+              "status": "absent"
+            },
+            {
+              "date": "09.05",
+              "status": "present"
+            },
+            {
+              "date": "12.05",
+              "status": "present"
+            },
+            {
+              "date": "16.05",
+              "status": "present"
+            },
+            {
+              "date": "19.05",
+              "status": "present"
+            },
+            {
+              "date": "23.05",
+              "status": "absent"
+            },
+            {
+              "date": "26.05",
+              "status": "present"
+            },
+            {
+              "date": "30.05",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Kamil",
+          "id": 8,
+          "tests": [
+            {
+              "name": "Unit 1",
+              "marks": {
+                "third": null,
+                "first": "3.0",
+                "second": null
+              }
+            },
+            {
+              "name": "",
+              "marks": {
+                "first": "4"
+              }
+            },
+            {
+              "name": "Unit 2",
+              "marks": {
+                "third": null,
+                "first": "3.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 3",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "28.03",
+              "status": ""
+            },
+            {
+              "date": "28.04",
+              "status": ""
+            },
+            {
+              "date": "09.05",
+              "status": ""
+            },
+            {
+              "date": "16.05",
+              "status": ""
+            },
+            {
+              "date": "23.05",
+              "status": ""
+            }
+          ],
+          "surname": "Zając",
+          "attendances": [
+            {
+              "date": "13.03",
+              "status": "present"
+            },
+            {
+              "date": "14.03",
+              "status": "present"
+            },
+            {
+              "date": "21.03",
+              "status": "present"
+            },
+            {
+              "date": "28.03",
+              "status": "present"
+            },
+            {
+              "date": "04.04",
+              "status": "present"
+            },
+            {
+              "date": "11.04",
+              "status": "present"
+            },
+            {
+              "date": "25.04",
+              "status": "present"
+            },
+            {
+              "date": "28.04",
+              "status": "absent"
+            },
+            {
+              "date": "09.05",
+              "status": "present"
+            },
+            {
+              "date": "12.05",
+              "status": "present"
+            },
+            {
+              "date": "16.05",
+              "status": "present"
+            },
+            {
+              "date": "19.05",
+              "status": "present"
+            },
+            {
+              "date": "23.05",
+              "status": "present"
+            },
+            {
+              "date": "26.05",
+              "status": "absent"
+            },
+            {
+              "date": "30.05",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Tomasz",
+          "id": 9,
+          "tests": [
+            {
+              "name": "Unit 1",
+              "marks": {
+                "third": null,
+                "first": "3.0",
+                "second": null
+              }
+            },
+            {
+              "name": "",
+              "marks": {
+                "first": "4"
+              }
+            },
+            {
+              "name": "",
+              "marks": {
+                "first": "3"
+              }
+            },
+            {
+              "name": "Unit 3",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "28.03",
+              "status": "-"
+            },
+            {
+              "date": "28.04",
+              "status": ""
+            },
+            {
+              "date": "09.05",
+              "status": ""
+            },
+            {
+              "date": "16.05",
+              "status": ""
+            },
+            {
+              "date": "23.05",
+              "status": ""
+            }
+          ],
+          "surname": "Niedźwiedź",
+          "attendances": [
+            {
+              "date": "07.03",
+              "status": "absent"
+            },
+            {
+              "date": "14.03",
+              "status": "absent"
+            },
+            {
+              "date": "21.03",
+              "status": "present"
+            },
+            {
+              "date": "28.03",
+              "status": "present"
+            },
+            {
+              "date": "04.04",
+              "status": "present"
+            },
+            {
+              "date": "11.04",
+              "status": "present"
+            },
+            {
+              "date": "25.04",
+              "status": "present"
+            },
+            {
+              "date": "28.04",
+              "status": "present"
+            },
+            {
+              "date": "09.05",
+              "status": "justified"
+            },
+            {
+              "date": "12.05",
+              "status": "justified"
+            },
+            {
+              "date": "16.05",
+              "status": "present"
+            },
+            {
+              "date": "19.05",
+              "status": "present"
+            },
+            {
+              "date": "23.05",
+              "status": "present"
+            },
+            {
+              "date": "26.05",
+              "status": "present"
+            },
+            {
+              "date": "30.05",
+              "status": "present"
+            }
+          ]
+        }
+      ],
+      "semester": "2"
+    },
+    {
+      "year": "2017/2018",
+      "students": [
+        {
+          "name": "Adam",
+          "id": 0,
+          "tests": [
+            {
+              "name": "Unit 4",
+              "marks": {
+                "first": "3"
+              }
+            },
+            {
+              "name": "Unit 5",
+              "marks": {
+                "first": "2",
+                "second": "3.5"
+              }
+            },
+            {
+              "name": "TED Vocabulary",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": "2"
+              }
+            },
+            {
+              "name": "Unit 6",
+              "marks": {
+                "third": null,
+                "first": "3.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "25.10",
+              "status": "-"
+            },
+            {
+              "date": "08.11",
+              "status": ""
+            },
+            {
+              "date": "15.11",
+              "status": "-"
+            },
+            {
+              "date": "06.12",
+              "status": ""
+            },
+            {
+              "date": "13.12",
+              "status": ""
+            }
+          ],
+          "surname": "Galon",
+          "attendances": [
+            {
+              "date": "04.10",
+              "status": "present"
+            },
+            {
+              "date": "11.10",
+              "status": "present"
+            },
+            {
+              "date": "18.10",
+              "status": "present"
+            },
+            {
+              "date": "25.10",
+              "status": "present"
+            },
+            {
+              "date": "08.11",
+              "status": "justified"
+            },
+            {
+              "date": "15.11",
+              "status": "present"
+            },
+            {
+              "date": "22.11",
+              "status": "absent"
+            },
+            {
+              "date": "29.11",
+              "status": "absent"
+            },
+            {
+              "date": "06.12",
+              "status": "absent"
+            },
+            {
+              "date": "13.12",
+              "status": "justified"
+            },
+            {
+              "date": "20.12",
+              "status": "justified"
+            },
+            {
+              "date": "03.01",
+              "status": "present"
+            },
+            {
+              "date": "10.01",
+              "status": "present"
+            },
+            {
+              "date": "17.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Krystian",
+          "id": 1,
+          "tests": [
+            {
+              "name": "Unit 4",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 5",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": "4.5"
+              }
+            },
+            {
+              "name": "TED Vocabulary",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": "2"
+              }
+            },
+            {
+              "name": "Unit 6",
+              "marks": {
+                "third": null,
+                "first": "5.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "first": "2"
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "25.10",
+              "status": "+"
+            },
+            {
+              "date": "08.11",
+              "status": ""
+            },
+            {
+              "date": "15.11",
+              "status": ""
+            },
+            {
+              "date": "06.12",
+              "status": ""
+            },
+            {
+              "date": "13.12",
+              "status": ""
+            }
+          ],
+          "surname": "Kobus",
+          "attendances": [
+            {
+              "date": "04.10",
+              "status": "present"
+            },
+            {
+              "date": "11.10",
+              "status": "present"
+            },
+            {
+              "date": "18.10",
+              "status": "present"
+            },
+            {
+              "date": "25.10",
+              "status": "present"
+            },
+            {
+              "date": "08.11",
+              "status": "present"
+            },
+            {
+              "date": "15.11",
+              "status": "absent"
+            },
+            {
+              "date": "22.11",
+              "status": "absent"
+            },
+            {
+              "date": "29.11",
+              "status": "present"
+            },
+            {
+              "date": "06.12",
+              "status": "present"
+            },
+            {
+              "date": "13.12",
+              "status": "present"
+            },
+            {
+              "date": "20.12",
+              "status": "present"
+            },
+            {
+              "date": "03.01",
+              "status": "present"
+            },
+            {
+              "date": "10.01",
+              "status": "present"
+            },
+            {
+              "date": "17.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Michał",
+          "id": 2,
+          "tests": [
+            {
+              "name": "",
+              "marks": {
+                "first": "3.5"
+              }
+            },
+            {
+              "name": "Unit 5",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": "3.5"
+              }
+            },
+            {
+              "name": "TED Vocabulary",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 6",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "first": "4"
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "25.10",
+              "status": "-"
+            },
+            {
+              "date": "08.11",
+              "status": ""
+            },
+            {
+              "date": "15.11",
+              "status": ""
+            },
+            {
+              "date": "06.12",
+              "status": "-"
+            },
+            {
+              "date": "13.12",
+              "status": ""
+            }
+          ],
+          "surname": "Pacanowski",
+          "attendances": [
+            {
+              "date": "04.10",
+              "status": "present"
+            },
+            {
+              "date": "11.10",
+              "status": "present"
+            },
+            {
+              "date": "18.10",
+              "status": "present"
+            },
+            {
+              "date": "25.10",
+              "status": "present"
+            },
+            {
+              "date": "08.11",
+              "status": "absent"
+            },
+            {
+              "date": "15.11",
+              "status": "present"
+            },
+            {
+              "date": "22.11",
+              "status": "present"
+            },
+            {
+              "date": "29.11",
+              "status": "absent"
+            },
+            {
+              "date": "06.12",
+              "status": "present"
+            },
+            {
+              "date": "13.12",
+              "status": "present"
+            },
+            {
+              "date": "20.12",
+              "status": "present"
+            },
+            {
+              "date": "03.01",
+              "status": "present"
+            },
+            {
+              "date": "10.01",
+              "status": "present"
+            },
+            {
+              "date": "17.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Bartosz",
+          "id": 3,
+          "tests": [
+            {
+              "name": "Unit 4",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 5",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            },
+            {
+              "name": "TED Vocabulary",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": "3"
+              }
+            },
+            {
+              "name": "Unit 6",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "first": "3.5"
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "25.10",
+              "status": ""
+            },
+            {
+              "date": "08.11",
+              "status": "-"
+            },
+            {
+              "date": "15.11",
+              "status": ""
+            },
+            {
+              "date": "06.12",
+              "status": "-"
+            },
+            {
+              "date": "13.12",
+              "status": ""
+            }
+          ],
+          "surname": "Ruszel",
+          "attendances": [
+            {
+              "date": "04.10",
+              "status": "present"
+            },
+            {
+              "date": "11.10",
+              "status": "present"
+            },
+            {
+              "date": "18.10",
+              "status": "present"
+            },
+            {
+              "date": "25.10",
+              "status": "justified"
+            },
+            {
+              "date": "08.11",
+              "status": "present"
+            },
+            {
+              "date": "15.11",
+              "status": "absent"
+            },
+            {
+              "date": "22.11",
+              "status": "present"
+            },
+            {
+              "date": "29.11",
+              "status": "present"
+            },
+            {
+              "date": "06.12",
+              "status": "present"
+            },
+            {
+              "date": "13.12",
+              "status": "present"
+            },
+            {
+              "date": "20.12",
+              "status": "present"
+            },
+            {
+              "date": "03.01",
+              "status": "present"
+            },
+            {
+              "date": "10.01",
+              "status": "present"
+            },
+            {
+              "date": "17.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "absent"
+            }
+          ]
+        },
+        {
+          "name": "Sebastian",
+          "id": 4,
+          "tests": [
+            {
+              "name": "Unit 4",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 5",
+              "marks": {
+                "third": null,
+                "first": "3.0",
+                "second": null
+              }
+            },
+            {
+              "name": "TED Vocabulary",
+              "marks": {
+                "third": null,
+                "first": "3.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 6",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "first": "3.5"
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "25.10",
+              "status": ""
+            },
+            {
+              "date": "08.11",
+              "status": ""
+            },
+            {
+              "date": "15.11",
+              "status": ""
+            },
+            {
+              "date": "06.12",
+              "status": "-"
+            },
+            {
+              "date": "13.12",
+              "status": ""
+            }
+          ],
+          "surname": "Sobociński",
+          "attendances": [
+            {
+              "date": "04.10",
+              "status": "present"
+            },
+            {
+              "date": "11.10",
+              "status": "absent"
+            },
+            {
+              "date": "18.10",
+              "status": "present"
+            },
+            {
+              "date": "25.10",
+              "status": "absent"
+            },
+            {
+              "date": "08.11",
+              "status": "present"
+            },
+            {
+              "date": "15.11",
+              "status": "present"
+            },
+            {
+              "date": "22.11",
+              "status": "present"
+            },
+            {
+              "date": "29.11",
+              "status": "present"
+            },
+            {
+              "date": "06.12",
+              "status": "present"
+            },
+            {
+              "date": "13.12",
+              "status": "absent"
+            },
+            {
+              "date": "20.12",
+              "status": "present"
+            },
+            {
+              "date": "03.01",
+              "status": "present"
+            },
+            {
+              "date": "10.01",
+              "status": "present"
+            },
+            {
+              "date": "17.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Tomasz",
+          "id": 5,
+          "tests": [
+            {
+              "name": "Unit 4",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 5",
+              "marks": {
+                "first": "2",
+                "second": "3.5"
+              }
+            },
+            {
+              "name": "TED Vocabulary",
+              "marks": {
+                "first": "3.5"
+              }
+            },
+            {
+              "name": "Unit 6",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "first": "2"
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "25.10",
+              "status": ""
+            },
+            {
+              "date": "08.11",
+              "status": "-"
+            },
+            {
+              "date": "15.11",
+              "status": ""
+            },
+            {
+              "date": "06.12",
+              "status": ""
+            },
+            {
+              "date": "13.12",
+              "status": "-"
+            }
+          ],
+          "surname": "Niedźwiedź",
+          "attendances": [
+            {
+              "date": "04.10",
+              "status": "justified"
+            },
+            {
+              "date": "11.10",
+              "status": "present"
+            },
+            {
+              "date": "18.10",
+              "status": "present"
+            },
+            {
+              "date": "25.10",
+              "status": "present"
+            },
+            {
+              "date": "08.11",
+              "status": "present"
+            },
+            {
+              "date": "15.11",
+              "status": "present"
+            },
+            {
+              "date": "22.11",
+              "status": "absent"
+            },
+            {
+              "date": "29.11",
+              "status": "present"
+            },
+            {
+              "date": "06.12",
+              "status": "absent"
+            },
+            {
+              "date": "13.12",
+              "status": "present"
+            },
+            {
+              "date": "20.12",
+              "status": "absent"
+            },
+            {
+              "date": "03.01",
+              "status": "present"
+            },
+            {
+              "date": "10.01",
+              "status": "justified"
+            },
+            {
+              "date": "17.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Miłosz",
+          "id": 6,
+          "tests": [
+            {
+              "name": "",
+              "marks": {
+                "first": "4"
+              }
+            },
+            {
+              "name": "Unit 5",
+              "marks": {
+                "third": null,
+                "first": "3.0",
+                "second": null
+              }
+            },
+            {
+              "name": "TED Vocabulary",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": "2"
+              }
+            },
+            {
+              "name": "Unit 6",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "first": "2"
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "25.10",
+              "status": "-"
+            },
+            {
+              "date": "08.11",
+              "status": ""
+            },
+            {
+              "date": "15.11",
+              "status": "-"
+            },
+            {
+              "date": "06.12",
+              "status": ""
+            },
+            {
+              "date": "13.12",
+              "status": ""
+            }
+          ],
+          "surname": "Klecha",
+          "attendances": [
+            {
+              "date": "04.10",
+              "status": "present"
+            },
+            {
+              "date": "11.10",
+              "status": "absent"
+            },
+            {
+              "date": "18.10",
+              "status": "present"
+            },
+            {
+              "date": "25.10",
+              "status": "present"
+            },
+            {
+              "date": "08.11",
+              "status": "absent"
+            },
+            {
+              "date": "15.11",
+              "status": "present"
+            },
+            {
+              "date": "22.11",
+              "status": "present"
+            },
+            {
+              "date": "29.11",
+              "status": "present"
+            },
+            {
+              "date": "06.12",
+              "status": "present"
+            },
+            {
+              "date": "13.12",
+              "status": "absent"
+            },
+            {
+              "date": "20.12",
+              "status": "present"
+            },
+            {
+              "date": "03.01",
+              "status": "absent"
+            },
+            {
+              "date": "10.01",
+              "status": "present"
+            },
+            {
+              "date": "17.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Serhii",
+          "id": 7,
+          "tests": [
+            {
+              "name": "",
+              "marks": {
+                "first": 0
+              }
+            },
+            {
+              "name": "Unit 5",
+              "marks": {
+                "first": 0
+              }
+            },
+            {
+              "name": "TED Vocabulary",
+              "marks": {
+                "first": 0
+              }
+            },
+            {
+              "name": "Unit 6",
+              "marks": {
+                "first": 0
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "first": "2"
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "25.10",
+              "status": ""
+            },
+            {
+              "date": "08.11",
+              "status": ""
+            },
+            {
+              "date": "15.11",
+              "status": ""
+            },
+            {
+              "date": "06.12",
+              "status": ""
+            },
+            {
+              "date": "13.12",
+              "status": ""
+            }
+          ],
+          "surname": "Rubee",
+          "attendances": [
+            {
+              "date": "04.10",
+              "status": "absent"
+            },
+            {
+              "date": "11.10",
+              "status": "present"
+            },
+            {
+              "date": "18.10",
+              "status": "absent"
+            },
+            {
+              "date": "25.10",
+              "status": "absent"
+            },
+            {
+              "date": "08.11",
+              "status": "absent"
+            },
+            {
+              "date": "15.11",
+              "status": "absent"
+            },
+            {
+              "date": "22.11",
+              "status": "absent"
+            },
+            {
+              "date": "29.11",
+              "status": "present"
+            },
+            {
+              "date": "06.12",
+              "status": "absent"
+            },
+            {
+              "date": "13.12",
+              "status": "absent"
+            },
+            {
+              "date": "20.12",
+              "status": "absent"
+            },
+            {
+              "date": "03.01",
+              "status": "absent"
+            },
+            {
+              "date": "10.01",
+              "status": "absent"
+            },
+            {
+              "date": "17.01",
+              "status": "absent"
+            },
+            {
+              "date": "30.01",
+              "status": "absent"
+            }
+          ]
+        },
+        {
+          "name": "Karol",
+          "id": 8,
+          "tests": [
+            {
+              "marks": {
+                "first": "2"
+              }
+            },
+            {
+              "name": "Unit 5",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": null
+              }
+            },
+            {
+              "name": "TED Vocabulary",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": "2"
+              }
+            },
+            {
+              "name": "Unit 6",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": "2"
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "first": "2",
+                "second": "3.5"
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "25.10",
+              "status": ""
+            },
+            {
+              "date": "08.11",
+              "status": ""
+            },
+            {
+              "date": "15.11",
+              "status": ""
+            },
+            {
+              "date": "06.12",
+              "status": "-"
+            },
+            {
+              "date": "13.12",
+              "status": "-"
+            }
+          ],
+          "surname": "Dwojak",
+          "attendances": [
+            {
+              "date": "04.10",
+              "status": "absent"
+            },
+            {
+              "date": "11.10",
+              "status": "absent"
+            },
+            {
+              "date": "18.10",
+              "status": "justified"
+            },
+            {
+              "date": "25.10",
+              "status": "justified"
+            },
+            {
+              "date": "08.11",
+              "status": "justified"
+            },
+            {
+              "date": "15.11",
+              "status": "present"
+            },
+            {
+              "date": "22.11",
+              "status": "present"
+            },
+            {
+              "date": "29.11",
+              "status": "present"
+            },
+            {
+              "date": "06.12",
+              "status": "present"
+            },
+            {
+              "date": "13.12",
+              "status": "present"
+            },
+            {
+              "date": "20.12",
+              "status": "present"
+            },
+            {
+              "date": "03.01",
+              "status": "present"
+            },
+            {
+              "date": "10.01",
+              "status": "present"
+            },
+            {
+              "date": "17.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Kamil",
+          "id": 9,
+          "tests": [
+            {
+              "marks": {
+                "first": 0
+              }
+            },
+            {
+              "name": "Unit 5",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": null
+              }
+            },
+            {
+              "name": "TED Vocabulary",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 6",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "first": "2",
+                "second": "3.5"
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "25.10",
+              "status": ""
+            },
+            {
+              "date": "08.11",
+              "status": ""
+            },
+            {
+              "date": "15.11",
+              "status": ""
+            },
+            {
+              "date": "06.12",
+              "status": "-"
+            },
+            {
+              "date": "13.12",
+              "status": "-"
+            }
+          ],
+          "surname": "Będkowski",
+          "attendances": [
+            {
+              "date": "04.10",
+              "status": "absent"
+            },
+            {
+              "date": "11.10",
+              "status": "absent"
+            },
+            {
+              "date": "18.10",
+              "status": "absent"
+            },
+            {
+              "date": "25.10",
+              "status": "absent"
+            },
+            {
+              "date": "08.11",
+              "status": "absent"
+            },
+            {
+              "date": "15.11",
+              "status": "absent"
+            },
+            {
+              "date": "22.11",
+              "status": "absent"
+            },
+            {
+              "date": "29.11",
+              "status": "present"
+            },
+            {
+              "date": "06.12",
+              "status": "present"
+            },
+            {
+              "date": "13.12",
+              "status": "present"
+            },
+            {
+              "date": "20.12",
+              "status": "present"
+            },
+            {
+              "date": "03.01",
+              "status": "absent"
+            },
+            {
+              "date": "10.01",
+              "status": "present"
+            },
+            {
+              "date": "17.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "absent"
+            }
+          ]
+        }
+      ],
+      "semester": "1"
+    },
+    {
+      "year": "2017/2018",
+      "students": [
+        {
+          "name": "Adam",
+          "tests": [],
+          "id": 0,
+          "homework": [],
+          "surname": "Galon",
+          "attendances": [
+            {
+              "date": "28.02",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Krystian",
+          "tests": [],
+          "id": 1,
+          "homework": [],
+          "surname": "Kobus",
+          "attendances": [
+            {
+              "date": "28.02",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Michał",
+          "tests": [],
+          "id": 2,
+          "homework": [],
+          "surname": "Pacanowski",
+          "attendances": [
+            {
+              "date": "28.02",
+              "status": "absent"
+            }
+          ]
+        },
+        {
+          "name": "Bartosz",
+          "tests": [],
+          "id": 3,
+          "homework": [],
+          "surname": "Ruszel",
+          "attendances": [
+            {
+              "date": "28.02",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Sebastian",
+          "tests": [],
+          "id": 4,
+          "homework": [],
+          "surname": "Sobociński",
+          "attendances": [
+            {
+              "date": "28.02",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Tomasz",
+          "tests": [],
+          "id": 5,
+          "homework": [],
+          "surname": "Niedźwiedź",
+          "attendances": [
+            {
+              "date": "28.02",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Miłosz",
+          "tests": [],
+          "id": 6,
+          "homework": [],
+          "surname": "Klecha",
+          "attendances": [
+            {
+              "date": "28.02",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Serhii",
+          "tests": [],
+          "id": 7,
+          "homework": [],
+          "surname": "Rubee",
+          "attendances": [
+            {
+              "date": "28.02",
+              "status": "absent"
+            }
+          ]
+        },
+        {
+          "name": "Karol",
+          "tests": [],
+          "id": 8,
+          "homework": [],
+          "surname": "Dwojak",
+          "attendances": [
+            {
+              "date": "28.02",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Kamil",
+          "tests": [],
+          "id": 9,
+          "homework": [],
+          "surname": "Będkowski",
+          "attendances": [
+            {
+              "date": "28.02",
+              "status": "absent"
+            }
+          ]
+        }
+      ],
+      "semester": "2"
+    }
+  ],
+  "announcements": [],
+  "dateOfActivities": "Wtorek"
+}

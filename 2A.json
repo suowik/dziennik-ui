@@ -1,0 +1,5757 @@
+{
+  "_id": "2A",
+  "password": "wsei3A",
+  "activeYear": "2017/2018",
+  "name": "3a",
+  "description": "",
+  "students": [
+    {
+      "name": "Justyna",
+      "id": 0,
+      "tests": [
+        {
+          "name": "Unit 5",
+          "marks": {
+            "third": null,
+            "first": "4.5",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 6",
+          "marks": {
+            "third": null,
+            "first": "4.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 7",
+          "marks": {
+            "third": null,
+            "first": "4.5",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 8",
+          "marks": {
+            "third": null,
+            "first": "4.5",
+            "second": null
+          }
+        },
+        {
+          "name": "Final mark",
+          "marks": {
+            "third": null,
+            "first": "4.5",
+            "second": null
+          }
+        }
+      ],
+      "homework": [
+        {
+          "date": "10.10",
+          "status": "+"
+        },
+        {
+          "date": "17.10",
+          "status": "+"
+        },
+        {
+          "date": "24.10",
+          "status": "+"
+        },
+        {
+          "date": "07.11",
+          "status": ""
+        },
+        {
+          "date": "14.11",
+          "status": ""
+        },
+        {
+          "date": "05.12",
+          "status": ""
+        }
+      ],
+      "surname": "Bazgier",
+      "attendances": [
+        {
+          "date": "03.10",
+          "status": "present"
+        },
+        {
+          "date": "10.10",
+          "status": "present"
+        },
+        {
+          "date": "17.10",
+          "status": "present"
+        },
+        {
+          "date": "24.10",
+          "status": "present"
+        },
+        {
+          "date": "07.11",
+          "status": "present"
+        },
+        {
+          "date": "14.11",
+          "status": "present"
+        },
+        {
+          "date": "21.11",
+          "status": "present"
+        },
+        {
+          "date": "28.11",
+          "status": "present"
+        },
+        {
+          "date": "05.12",
+          "status": "present"
+        },
+        {
+          "date": "12.12",
+          "status": "present"
+        },
+        {
+          "date": "19.12",
+          "status": "present"
+        },
+        {
+          "date": "09.01",
+          "status": "present"
+        },
+        {
+          "date": "16.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "present"
+        }
+      ]
+    },
+    {
+      "name": "Łukasz",
+      "id": 1,
+      "tests": [
+        {
+          "name": "Unit 5",
+          "marks": {
+            "third": null,
+            "first": "4.5",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 6",
+          "marks": {
+            "third": null,
+            "first": "3.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 7",
+          "marks": {
+            "third": null,
+            "first": "4.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 8",
+          "marks": {
+            "third": null,
+            "first": "3.5",
+            "second": null
+          }
+        },
+        {
+          "name": "Final mark",
+          "marks": {
+            "first": 0
+          }
+        }
+      ],
+      "homework": [
+        {
+          "date": "10.10",
+          "status": "-"
+        },
+        {
+          "date": "17.10",
+          "status": "-"
+        },
+        {
+          "date": "24.10",
+          "status": ""
+        },
+        {
+          "date": "07.11",
+          "status": ""
+        },
+        {
+          "date": "14.11",
+          "status": ""
+        },
+        {
+          "date": "05.12",
+          "status": ""
+        }
+      ],
+      "surname": "Janda",
+      "attendances": [
+        {
+          "date": "03.10",
+          "status": "present"
+        },
+        {
+          "date": "10.10",
+          "status": "present"
+        },
+        {
+          "date": "17.10",
+          "status": "justified"
+        },
+        {
+          "date": "24.10",
+          "status": "absent"
+        },
+        {
+          "date": "07.11",
+          "status": "present"
+        },
+        {
+          "date": "14.11",
+          "status": "justified"
+        },
+        {
+          "date": "21.11",
+          "status": "absent"
+        },
+        {
+          "date": "28.11",
+          "status": "present"
+        },
+        {
+          "date": "05.12",
+          "status": "absent"
+        },
+        {
+          "date": "12.12",
+          "status": "justified"
+        },
+        {
+          "date": "19.12",
+          "status": "present"
+        },
+        {
+          "date": "09.01",
+          "status": "justified"
+        },
+        {
+          "date": "16.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "justified"
+        },
+        {
+          "date": "30.01",
+          "status": "present"
+        }
+      ]
+    },
+    {
+      "name": "Kamil",
+      "id": 2,
+      "tests": [
+        {
+          "name": "Unit 5",
+          "marks": {
+            "third": null,
+            "first": "3.5",
+            "second": null
+          }
+        },
+        {
+          "name": "",
+          "marks": {
+            "first": "3"
+          }
+        },
+        {
+          "name": "Unit 7",
+          "marks": {
+            "third": null,
+            "first": "3.5",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 8",
+          "marks": {
+            "third": null,
+            "first": "3.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Final mark",
+          "marks": {
+            "first": 0
+          }
+        }
+      ],
+      "homework": [
+        {
+          "date": "10.10",
+          "status": "-"
+        },
+        {
+          "date": "17.10",
+          "status": "-"
+        },
+        {
+          "date": "24.10",
+          "status": "-"
+        },
+        {
+          "date": "07.11",
+          "status": ""
+        },
+        {
+          "date": "14.11",
+          "status": ""
+        },
+        {
+          "date": "05.12",
+          "status": "-"
+        }
+      ],
+      "surname": "Józefko",
+      "attendances": [
+        {
+          "date": "03.10",
+          "status": "present"
+        },
+        {
+          "date": "10.10",
+          "status": "present"
+        },
+        {
+          "date": "17.10",
+          "status": "present"
+        },
+        {
+          "date": "24.10",
+          "status": "present"
+        },
+        {
+          "date": "07.11",
+          "status": "absent"
+        },
+        {
+          "date": "14.11",
+          "status": "justified"
+        },
+        {
+          "date": "21.11",
+          "status": "present"
+        },
+        {
+          "date": "28.11",
+          "status": "present"
+        },
+        {
+          "date": "05.12",
+          "status": "present"
+        },
+        {
+          "date": "12.12",
+          "status": "present"
+        },
+        {
+          "date": "19.12",
+          "status": "present"
+        },
+        {
+          "date": "09.01",
+          "status": "absent"
+        },
+        {
+          "date": "16.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "absent"
+        }
+      ]
+    },
+    {
+      "name": "Dawid",
+      "id": 3,
+      "tests": [
+        {
+          "name": "Unit 5",
+          "marks": {
+            "third": null,
+            "first": "4.5",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 6",
+          "marks": {
+            "third": null,
+            "first": "3.5",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 7",
+          "marks": {
+            "first": "3"
+          }
+        },
+        {
+          "name": "Unit 8",
+          "marks": {
+            "third": null,
+            "first": "3.5",
+            "second": null
+          }
+        },
+        {
+          "name": "Final mark",
+          "marks": {
+            "first": 0
+          }
+        }
+      ],
+      "homework": [
+        {
+          "date": "10.10",
+          "status": "-"
+        },
+        {
+          "date": "17.10",
+          "status": ""
+        },
+        {
+          "date": "24.10",
+          "status": "-"
+        },
+        {
+          "date": "07.11",
+          "status": ""
+        },
+        {
+          "date": "14.11",
+          "status": ""
+        },
+        {
+          "date": "05.12",
+          "status": "-"
+        }
+      ],
+      "surname": "Kobos",
+      "attendances": [
+        {
+          "date": "03.10",
+          "status": "present"
+        },
+        {
+          "date": "10.10",
+          "status": "present"
+        },
+        {
+          "date": "17.10",
+          "status": "justified"
+        },
+        {
+          "date": "24.10",
+          "status": "present"
+        },
+        {
+          "date": "07.11",
+          "status": "present"
+        },
+        {
+          "date": "14.11",
+          "status": "present"
+        },
+        {
+          "date": "21.11",
+          "status": "present"
+        },
+        {
+          "date": "28.11",
+          "status": "justified"
+        },
+        {
+          "date": "05.12",
+          "status": "present"
+        },
+        {
+          "date": "12.12",
+          "status": "present"
+        },
+        {
+          "date": "19.12",
+          "status": "present"
+        },
+        {
+          "date": "09.01",
+          "status": "absent"
+        },
+        {
+          "date": "16.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "absent"
+        }
+      ]
+    },
+    {
+      "name": "Michał ",
+      "id": 4,
+      "tests": [
+        {
+          "name": "",
+          "marks": {
+            "first": "4"
+          }
+        },
+        {
+          "name": "",
+          "marks": {
+            "first": "5"
+          }
+        },
+        {
+          "name": "Unit 7",
+          "marks": {
+            "third": null,
+            "first": "4.5",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 8",
+          "marks": {
+            "third": null,
+            "first": "4.5",
+            "second": null
+          }
+        },
+        {
+          "name": "Final mark",
+          "marks": {
+            "first": 0
+          }
+        }
+      ],
+      "homework": [
+        {
+          "date": "10.10",
+          "status": ""
+        },
+        {
+          "date": "17.10",
+          "status": "-"
+        },
+        {
+          "date": "24.10",
+          "status": "-"
+        },
+        {
+          "date": "07.11",
+          "status": "-"
+        },
+        {
+          "date": "14.11",
+          "status": ""
+        },
+        {
+          "date": "05.12",
+          "status": "-"
+        }
+      ],
+      "surname": "Majcher",
+      "attendances": [
+        {
+          "date": "03.10",
+          "status": "justified"
+        },
+        {
+          "date": "10.10",
+          "status": "absent"
+        },
+        {
+          "date": "17.10",
+          "status": "present"
+        },
+        {
+          "date": "24.10",
+          "status": "present"
+        },
+        {
+          "date": "07.11",
+          "status": "present"
+        },
+        {
+          "date": "14.11",
+          "status": "absent"
+        },
+        {
+          "date": "21.11",
+          "status": "justified"
+        },
+        {
+          "date": "28.11",
+          "status": "present"
+        },
+        {
+          "date": "05.12",
+          "status": "present"
+        },
+        {
+          "date": "12.12",
+          "status": "justified"
+        },
+        {
+          "date": "19.12",
+          "status": "present"
+        },
+        {
+          "date": "09.01",
+          "status": "present"
+        },
+        {
+          "date": "16.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "justified"
+        },
+        {
+          "date": "30.01",
+          "status": "present"
+        }
+      ]
+    },
+    {
+      "name": "Paweł ",
+      "id": 5,
+      "tests": [
+        {
+          "name": "Unit 5",
+          "marks": {
+            "third": null,
+            "first": "3.5",
+            "second": null
+          }
+        },
+        {
+          "name": "",
+          "marks": {
+            "first": "3"
+          }
+        },
+        {
+          "name": "Unit 7",
+          "marks": {
+            "third": null,
+            "first": "3.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 8",
+          "marks": {
+            "third": null,
+            "first": "4.5",
+            "second": null
+          }
+        },
+        {
+          "name": "Final mark",
+          "marks": {
+            "first": 0
+          }
+        }
+      ],
+      "homework": [
+        {
+          "date": "10.10",
+          "status": "-"
+        },
+        {
+          "date": "17.10",
+          "status": "-"
+        },
+        {
+          "date": "24.10",
+          "status": ""
+        },
+        {
+          "date": "07.11",
+          "status": ""
+        },
+        {
+          "date": "14.11",
+          "status": "-"
+        },
+        {
+          "date": "05.12",
+          "status": ""
+        }
+      ],
+      "surname": "Mocny",
+      "attendances": [
+        {
+          "date": "03.10",
+          "status": "absent"
+        },
+        {
+          "date": "10.10",
+          "status": "present"
+        },
+        {
+          "date": "17.10",
+          "status": "present"
+        },
+        {
+          "date": "24.10",
+          "status": "absent"
+        },
+        {
+          "date": "07.11",
+          "status": "justified"
+        },
+        {
+          "date": "14.11",
+          "status": "present"
+        },
+        {
+          "date": "21.11",
+          "status": "present"
+        },
+        {
+          "date": "28.11",
+          "status": "present"
+        },
+        {
+          "date": "05.12",
+          "status": "justified"
+        },
+        {
+          "date": "12.12",
+          "status": "present"
+        },
+        {
+          "date": "19.12",
+          "status": "present"
+        },
+        {
+          "date": "09.01",
+          "status": "present"
+        },
+        {
+          "date": "16.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "present"
+        }
+      ]
+    },
+    {
+      "name": "Żaneta ",
+      "id": 6,
+      "tests": [
+        {
+          "name": "",
+          "marks": {
+            "first": "2",
+            "second": "3.5"
+          }
+        },
+        {
+          "name": "Unit 6",
+          "marks": {
+            "third": null,
+            "first": "4.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 7",
+          "marks": {
+            "third": null,
+            "first": "3.5",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 8",
+          "marks": {
+            "third": null,
+            "first": "3.5",
+            "second": null
+          }
+        },
+        {
+          "name": "Final mark",
+          "marks": {
+            "first": 0
+          }
+        }
+      ],
+      "homework": [
+        {
+          "date": "10.10",
+          "status": ""
+        },
+        {
+          "date": "17.10",
+          "status": ""
+        },
+        {
+          "date": "24.10",
+          "status": "-"
+        },
+        {
+          "date": "07.11",
+          "status": ""
+        },
+        {
+          "date": "14.11",
+          "status": ""
+        },
+        {
+          "date": "05.12",
+          "status": ""
+        }
+      ],
+      "surname": "Nazar",
+      "attendances": [
+        {
+          "date": "03.10",
+          "status": "present"
+        },
+        {
+          "date": "10.10",
+          "status": "justified"
+        },
+        {
+          "date": "17.10",
+          "status": "justified"
+        },
+        {
+          "date": "24.10",
+          "status": "present"
+        },
+        {
+          "date": "07.11",
+          "status": "present"
+        },
+        {
+          "date": "14.11",
+          "status": "justified"
+        },
+        {
+          "date": "21.11",
+          "status": "justified"
+        },
+        {
+          "date": "28.11",
+          "status": "present"
+        },
+        {
+          "date": "05.12",
+          "status": "absent"
+        },
+        {
+          "date": "12.12",
+          "status": "present"
+        },
+        {
+          "date": "19.12",
+          "status": "justified"
+        },
+        {
+          "date": "09.01",
+          "status": "justified"
+        },
+        {
+          "date": "16.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "absent"
+        },
+        {
+          "date": "30.01",
+          "status": "present"
+        }
+      ]
+    },
+    {
+      "name": "Wojciech",
+      "id": 7,
+      "tests": [
+        {
+          "name": "",
+          "marks": {
+            "first": 0
+          }
+        },
+        {
+          "name": "Unit 6",
+          "marks": {
+            "third": null,
+            "first": "5.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 7",
+          "marks": {
+            "third": null,
+            "first": "3.5",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 8",
+          "marks": {
+            "third": null,
+            "first": "2.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Final mark",
+          "marks": {
+            "first": 0
+          }
+        }
+      ],
+      "homework": [
+        {
+          "date": "10.10",
+          "status": ""
+        },
+        {
+          "date": "17.10",
+          "status": ""
+        },
+        {
+          "date": "24.10",
+          "status": ""
+        },
+        {
+          "date": "07.11",
+          "status": ""
+        },
+        {
+          "date": "14.11",
+          "status": ""
+        },
+        {
+          "date": "05.12",
+          "status": "-"
+        }
+      ],
+      "surname": "Papież",
+      "attendances": [
+        {
+          "date": "03.10",
+          "status": "present"
+        },
+        {
+          "date": "10.10",
+          "status": "absent"
+        },
+        {
+          "date": "17.10",
+          "status": "justified"
+        },
+        {
+          "date": "24.10",
+          "status": "justified"
+        },
+        {
+          "date": "07.11",
+          "status": "present"
+        },
+        {
+          "date": "14.11",
+          "status": "absent"
+        },
+        {
+          "date": "21.11",
+          "status": "absent"
+        },
+        {
+          "date": "28.11",
+          "status": "present"
+        },
+        {
+          "date": "05.12",
+          "status": "present"
+        },
+        {
+          "date": "12.12",
+          "status": "present"
+        },
+        {
+          "date": "19.12",
+          "status": "absent"
+        },
+        {
+          "date": "09.01",
+          "status": "present"
+        },
+        {
+          "date": "16.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "absent"
+        },
+        {
+          "date": "30.01",
+          "status": "present"
+        }
+      ]
+    },
+    {
+      "name": "Natalia ",
+      "id": 8,
+      "tests": [
+        {
+          "name": "",
+          "marks": {
+            "first": "4.5"
+          }
+        },
+        {
+          "name": "Unit 6",
+          "marks": {
+            "third": null,
+            "first": "4.5",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 7",
+          "marks": {
+            "third": null,
+            "first": "4.5",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 8",
+          "marks": {
+            "third": null,
+            "first": "5.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Final mark",
+          "marks": {
+            "first": 0
+          }
+        }
+      ],
+      "homework": [
+        {
+          "date": "10.10",
+          "status": ""
+        },
+        {
+          "date": "17.10",
+          "status": "-"
+        },
+        {
+          "date": "24.10",
+          "status": "-"
+        },
+        {
+          "date": "07.11",
+          "status": ""
+        },
+        {
+          "date": "14.11",
+          "status": ""
+        },
+        {
+          "date": "05.12",
+          "status": ""
+        }
+      ],
+      "surname": "Piechnik",
+      "attendances": [
+        {
+          "date": "03.10",
+          "status": "present"
+        },
+        {
+          "date": "10.10",
+          "status": "absent"
+        },
+        {
+          "date": "17.10",
+          "status": "present"
+        },
+        {
+          "date": "24.10",
+          "status": "present"
+        },
+        {
+          "date": "07.11",
+          "status": "present"
+        },
+        {
+          "date": "14.11",
+          "status": "present"
+        },
+        {
+          "date": "21.11",
+          "status": "present"
+        },
+        {
+          "date": "28.11",
+          "status": "present"
+        },
+        {
+          "date": "05.12",
+          "status": "justified"
+        },
+        {
+          "date": "12.12",
+          "status": "present"
+        },
+        {
+          "date": "19.12",
+          "status": "present"
+        },
+        {
+          "date": "09.01",
+          "status": "present"
+        },
+        {
+          "date": "16.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "absent"
+        },
+        {
+          "date": "30.01",
+          "status": "present"
+        }
+      ]
+    },
+    {
+      "name": "Dymytro",
+      "id": 9,
+      "tests": [
+        {
+          "name": "Unit 5",
+          "marks": {
+            "third": null,
+            "first": "4.5",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 6",
+          "marks": {
+            "third": null,
+            "first": "4.5",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 7",
+          "marks": {
+            "third": null,
+            "first": "5.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 8",
+          "marks": {
+            "third": null,
+            "first": "4.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Final mark",
+          "marks": {
+            "first": 0
+          }
+        }
+      ],
+      "homework": [
+        {
+          "date": "10.10",
+          "status": "-"
+        },
+        {
+          "date": "17.10",
+          "status": "-"
+        },
+        {
+          "date": "24.10",
+          "status": ""
+        },
+        {
+          "date": "07.11",
+          "status": ""
+        },
+        {
+          "date": "14.11",
+          "status": ""
+        },
+        {
+          "date": "05.12",
+          "status": ""
+        }
+      ],
+      "surname": "Poliakov",
+      "attendances": [
+        {
+          "date": "03.10",
+          "status": "present"
+        },
+        {
+          "date": "10.10",
+          "status": "present"
+        },
+        {
+          "date": "17.10",
+          "status": "present"
+        },
+        {
+          "date": "24.10",
+          "status": "absent"
+        },
+        {
+          "date": "07.11",
+          "status": "present"
+        },
+        {
+          "date": "14.11",
+          "status": "present"
+        },
+        {
+          "date": "21.11",
+          "status": "present"
+        },
+        {
+          "date": "28.11",
+          "status": "present"
+        },
+        {
+          "date": "05.12",
+          "status": "present"
+        },
+        {
+          "date": "12.12",
+          "status": "present"
+        },
+        {
+          "date": "19.12",
+          "status": "absent"
+        },
+        {
+          "date": "09.01",
+          "status": "present"
+        },
+        {
+          "date": "16.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "present"
+        }
+      ]
+    },
+    {
+      "name": "Dorian",
+      "id": 10,
+      "tests": [
+        {
+          "name": "Unit 5",
+          "marks": {
+            "third": null,
+            "first": "2.0",
+            "second": null
+          }
+        },
+        {
+          "name": "",
+          "marks": {
+            "first": 0
+          }
+        },
+        {
+          "name": "Unit 7",
+          "marks": {
+            "third": null,
+            "first": "4.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 8",
+          "marks": {
+            "third": null,
+            "first": "2.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Final mark",
+          "marks": {
+            "first": 0
+          }
+        }
+      ],
+      "homework": [
+        {
+          "date": "10.10",
+          "status": "-"
+        },
+        {
+          "date": "17.10",
+          "status": "-"
+        },
+        {
+          "date": "24.10",
+          "status": ""
+        },
+        {
+          "date": "07.11",
+          "status": ""
+        },
+        {
+          "date": "14.11",
+          "status": ""
+        },
+        {
+          "date": "05.12",
+          "status": ""
+        }
+      ],
+      "surname": "Solnica",
+      "attendances": [
+        {
+          "date": "03.10",
+          "status": "present"
+        },
+        {
+          "date": "10.10",
+          "status": "present"
+        },
+        {
+          "date": "17.10",
+          "status": "present"
+        },
+        {
+          "date": "24.10",
+          "status": "justified"
+        },
+        {
+          "date": "07.11",
+          "status": "justified"
+        },
+        {
+          "date": "14.11",
+          "status": "absent"
+        },
+        {
+          "date": "21.11",
+          "status": "present"
+        },
+        {
+          "date": "28.11",
+          "status": "present"
+        },
+        {
+          "date": "05.12",
+          "status": "justified"
+        },
+        {
+          "date": "12.12",
+          "status": "present"
+        },
+        {
+          "date": "19.12",
+          "status": "absent"
+        },
+        {
+          "date": "09.01",
+          "status": "justified"
+        },
+        {
+          "date": "16.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "absent"
+        }
+      ]
+    },
+    {
+      "name": "Veronika",
+      "id": 11,
+      "tests": [
+        {
+          "name": "Unit 5",
+          "marks": {
+            "third": null,
+            "first": "3.5",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 6",
+          "marks": {
+            "third": null,
+            "first": "4.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 7",
+          "marks": {
+            "first": "5"
+          }
+        },
+        {
+          "name": "Unit 8",
+          "marks": {
+            "third": null,
+            "first": "4.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Final mark",
+          "marks": {
+            "first": 0
+          }
+        }
+      ],
+      "homework": [
+        {
+          "date": "10.10",
+          "status": "-"
+        },
+        {
+          "date": "17.10",
+          "status": "+"
+        },
+        {
+          "date": "24.10",
+          "status": ""
+        },
+        {
+          "date": "07.11",
+          "status": ""
+        },
+        {
+          "date": "14.11",
+          "status": "-"
+        },
+        {
+          "date": "05.12",
+          "status": ""
+        }
+      ],
+      "surname": "Tsiatko",
+      "attendances": [
+        {
+          "date": "03.10",
+          "status": "present"
+        },
+        {
+          "date": "10.10",
+          "status": "present"
+        },
+        {
+          "date": "17.10",
+          "status": "present"
+        },
+        {
+          "date": "24.10",
+          "status": "present"
+        },
+        {
+          "date": "07.11",
+          "status": "present"
+        },
+        {
+          "date": "14.11",
+          "status": "present"
+        },
+        {
+          "date": "21.11",
+          "status": "absent"
+        },
+        {
+          "date": "28.11",
+          "status": "present"
+        },
+        {
+          "date": "05.12",
+          "status": "present"
+        },
+        {
+          "date": "12.12",
+          "status": "present"
+        },
+        {
+          "date": "19.12",
+          "status": "present"
+        },
+        {
+          "date": "09.01",
+          "status": "absent"
+        },
+        {
+          "date": "16.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "present"
+        }
+      ]
+    },
+    {
+      "name": "Joanna",
+      "id": 12,
+      "tests": [
+        {
+          "name": "Unit 5",
+          "marks": {
+            "third": null,
+            "first": "4.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 6",
+          "marks": {
+            "third": null,
+            "first": "5.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 7",
+          "marks": {
+            "third": null,
+            "first": "5.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Unit 8",
+          "marks": {
+            "third": null,
+            "first": "4.0",
+            "second": null
+          }
+        },
+        {
+          "name": "Final mark",
+          "marks": {
+            "first": 0
+          }
+        }
+      ],
+      "homework": [
+        {
+          "date": "10.10",
+          "status": "+"
+        },
+        {
+          "date": "17.10",
+          "status": "+"
+        },
+        {
+          "date": "24.10",
+          "status": "+"
+        },
+        {
+          "date": "07.11",
+          "status": ""
+        },
+        {
+          "date": "14.11",
+          "status": ""
+        },
+        {
+          "date": "05.12",
+          "status": ""
+        }
+      ],
+      "surname": "Ziętara",
+      "attendances": [
+        {
+          "date": "03.10",
+          "status": "present"
+        },
+        {
+          "date": "10.10",
+          "status": "present"
+        },
+        {
+          "date": "17.10",
+          "status": "present"
+        },
+        {
+          "date": "24.10",
+          "status": "present"
+        },
+        {
+          "date": "07.11",
+          "status": "present"
+        },
+        {
+          "date": "14.11",
+          "status": "present"
+        },
+        {
+          "date": "21.11",
+          "status": "present"
+        },
+        {
+          "date": "28.11",
+          "status": "present"
+        },
+        {
+          "date": "05.12",
+          "status": "present"
+        },
+        {
+          "date": "12.12",
+          "status": "present"
+        },
+        {
+          "date": "19.12",
+          "status": "present"
+        },
+        {
+          "date": "09.01",
+          "status": "present"
+        },
+        {
+          "date": "16.01",
+          "status": "present"
+        },
+        {
+          "date": "30.01",
+          "status": "absent"
+        },
+        {
+          "date": "30.01",
+          "status": "present"
+        }
+      ]
+    }
+  ],
+  "activeSemester": 1,
+  "archive": false,
+  "semesters": [
+    {
+      "year": "2016/2017",
+      "students": [
+        {
+          "name": "Justyna",
+          "id": 0,
+          "tests": [
+            {
+              "name": "Unit 1",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 2",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 3",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 4",
+              "marks": {
+                "first": "4"
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "13.03",
+              "status": ""
+            },
+            {
+              "date": "15.03",
+              "status": ""
+            },
+            {
+              "date": "22.03",
+              "status": ""
+            },
+            {
+              "date": "29.03",
+              "status": ""
+            },
+            {
+              "date": "05.04",
+              "status": ""
+            },
+            {
+              "date": "12.04",
+              "status": ""
+            },
+            {
+              "date": "19.04",
+              "status": ""
+            },
+            {
+              "date": "17.05",
+              "status": ""
+            }
+          ],
+          "surname": "Bazgier",
+          "attendances": [
+            {
+              "date": "01.03",
+              "status": "present"
+            },
+            {
+              "date": "08.03",
+              "status": "present"
+            },
+            {
+              "date": "15.03",
+              "status": "present"
+            },
+            {
+              "date": "22.03",
+              "status": "present"
+            },
+            {
+              "date": "29.03",
+              "status": "present"
+            },
+            {
+              "date": "05.04",
+              "status": "present"
+            },
+            {
+              "date": "12.04",
+              "status": "present"
+            },
+            {
+              "date": "19.04",
+              "status": "present"
+            },
+            {
+              "date": "26.04",
+              "status": "present"
+            },
+            {
+              "date": "10.05",
+              "status": "present"
+            },
+            {
+              "date": "17.05",
+              "status": "absent"
+            },
+            {
+              "date": "24.05",
+              "status": "present"
+            },
+            {
+              "date": "31.05",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Kateryna",
+          "id": 1,
+          "tests": [
+            {
+              "name": "Unit 1",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 2",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 3",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 4",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "13.03",
+              "status": "-"
+            },
+            {
+              "date": "15.03",
+              "status": ""
+            },
+            {
+              "date": "22.03",
+              "status": ""
+            },
+            {
+              "date": "29.03",
+              "status": ""
+            },
+            {
+              "date": "05.04",
+              "status": ""
+            },
+            {
+              "date": "12.04",
+              "status": ""
+            },
+            {
+              "date": "19.04",
+              "status": ""
+            },
+            {
+              "date": "17.05",
+              "status": ""
+            }
+          ],
+          "surname": "Dotsenko",
+          "attendances": [
+            {
+              "date": "01.03",
+              "status": "present"
+            },
+            {
+              "date": "08.03",
+              "status": "present"
+            },
+            {
+              "date": "15.03",
+              "status": "present"
+            },
+            {
+              "date": "22.03",
+              "status": "present"
+            },
+            {
+              "date": "29.03",
+              "status": "present"
+            },
+            {
+              "date": "05.04",
+              "status": "present"
+            },
+            {
+              "date": "12.04",
+              "status": "present"
+            },
+            {
+              "date": "19.04",
+              "status": "present"
+            },
+            {
+              "date": "26.04",
+              "status": "present"
+            },
+            {
+              "date": "10.05",
+              "status": "present"
+            },
+            {
+              "date": "17.05",
+              "status": "present"
+            },
+            {
+              "date": "24.05",
+              "status": "present"
+            },
+            {
+              "date": "31.05",
+              "status": "absent"
+            }
+          ]
+        },
+        {
+          "name": "Łukasz",
+          "id": 2,
+          "tests": [
+            {
+              "name": "",
+              "marks": {
+                "first": "4.5"
+              }
+            },
+            {
+              "name": "Unit 2",
+              "marks": {
+                "third": null,
+                "first": "3.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 3",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            },
+            {
+              "name": "",
+              "marks": {
+                "first": "3.5"
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "13.03",
+              "status": "-"
+            },
+            {
+              "date": "15.03",
+              "status": ""
+            },
+            {
+              "date": "22.03",
+              "status": ""
+            },
+            {
+              "date": "29.03",
+              "status": ""
+            },
+            {
+              "date": "05.04",
+              "status": ""
+            },
+            {
+              "date": "12.04",
+              "status": ""
+            },
+            {
+              "date": "19.04",
+              "status": ""
+            },
+            {
+              "date": "17.05",
+              "status": ""
+            }
+          ],
+          "surname": "Janda",
+          "attendances": [
+            {
+              "date": "01.03",
+              "status": "justified"
+            },
+            {
+              "date": "08.03",
+              "status": "present"
+            },
+            {
+              "date": "15.03",
+              "status": "present"
+            },
+            {
+              "date": "22.03",
+              "status": "justified"
+            },
+            {
+              "date": "29.03",
+              "status": "justified"
+            },
+            {
+              "date": "05.04",
+              "status": "present"
+            },
+            {
+              "date": "12.04",
+              "status": "present"
+            },
+            {
+              "date": "19.04",
+              "status": "present"
+            },
+            {
+              "date": "26.04",
+              "status": "present"
+            },
+            {
+              "date": "10.05",
+              "status": "present"
+            },
+            {
+              "date": "17.05",
+              "status": "absent"
+            },
+            {
+              "date": "24.05",
+              "status": "present"
+            },
+            {
+              "date": "31.05",
+              "status": "absent"
+            }
+          ]
+        },
+        {
+          "name": "Kamil",
+          "id": 3,
+          "tests": [
+            {
+              "name": "",
+              "marks": {
+                "first": "3.5"
+              }
+            },
+            {
+              "name": "",
+              "marks": {
+                "first": "4"
+              }
+            },
+            {
+              "name": "Unit 3",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 4",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "13.03",
+              "status": "-"
+            },
+            {
+              "date": "15.03",
+              "status": ""
+            },
+            {
+              "date": "22.03",
+              "status": ""
+            },
+            {
+              "date": "29.03",
+              "status": ""
+            },
+            {
+              "date": "05.04",
+              "status": ""
+            },
+            {
+              "date": "12.04",
+              "status": ""
+            },
+            {
+              "date": "19.04",
+              "status": "-"
+            },
+            {
+              "date": "17.05",
+              "status": ""
+            }
+          ],
+          "surname": "Józefko",
+          "attendances": [
+            {
+              "date": "01.03",
+              "status": "justified"
+            },
+            {
+              "date": "08.03",
+              "status": "present"
+            },
+            {
+              "date": "15.03",
+              "status": "present"
+            },
+            {
+              "date": "22.03",
+              "status": "absent"
+            },
+            {
+              "date": "29.03",
+              "status": "present"
+            },
+            {
+              "date": "05.04",
+              "status": "present"
+            },
+            {
+              "date": "12.04",
+              "status": "absent"
+            },
+            {
+              "date": "19.04",
+              "status": "present"
+            },
+            {
+              "date": "26.04",
+              "status": "present"
+            },
+            {
+              "date": "10.05",
+              "status": "present"
+            },
+            {
+              "date": "17.05",
+              "status": "present"
+            },
+            {
+              "date": "24.05",
+              "status": "present"
+            },
+            {
+              "date": "31.05",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Aleksi",
+          "id": 4,
+          "tests": [
+            {
+              "name": "Unit 1",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 2",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 3",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 4",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "13.03",
+              "status": "-"
+            },
+            {
+              "date": "15.03",
+              "status": "-"
+            },
+            {
+              "date": "22.03",
+              "status": ""
+            },
+            {
+              "date": "29.03",
+              "status": "-"
+            },
+            {
+              "date": "05.04",
+              "status": ""
+            },
+            {
+              "date": "12.04",
+              "status": "-"
+            },
+            {
+              "date": "19.04",
+              "status": "-"
+            },
+            {
+              "date": "17.05",
+              "status": "-"
+            }
+          ],
+          "surname": "Katona",
+          "attendances": [
+            {
+              "date": "01.03",
+              "status": "present"
+            },
+            {
+              "date": "08.03",
+              "status": "present"
+            },
+            {
+              "date": "15.03",
+              "status": "present"
+            },
+            {
+              "date": "22.03",
+              "status": "present"
+            },
+            {
+              "date": "29.03",
+              "status": "present"
+            },
+            {
+              "date": "05.04",
+              "status": "present"
+            },
+            {
+              "date": "12.04",
+              "status": "present"
+            },
+            {
+              "date": "19.04",
+              "status": "present"
+            },
+            {
+              "date": "26.04",
+              "status": "present"
+            },
+            {
+              "date": "10.05",
+              "status": "absent"
+            },
+            {
+              "date": "17.05",
+              "status": "present"
+            },
+            {
+              "date": "24.05",
+              "status": "present"
+            },
+            {
+              "date": "31.05",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Dawid",
+          "id": 5,
+          "tests": [
+            {
+              "name": "Unit 1",
+              "marks": {
+                "third": null,
+                "first": "3.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 2",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 3",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 4",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "13.03",
+              "status": "-"
+            },
+            {
+              "date": "15.03",
+              "status": ""
+            },
+            {
+              "date": "22.03",
+              "status": ""
+            },
+            {
+              "date": "29.03",
+              "status": ""
+            },
+            {
+              "date": "05.04",
+              "status": ""
+            },
+            {
+              "date": "12.04",
+              "status": ""
+            },
+            {
+              "date": "19.04",
+              "status": ""
+            },
+            {
+              "date": "17.05",
+              "status": "-"
+            }
+          ],
+          "surname": "Kobos",
+          "attendances": [
+            {
+              "date": "01.03",
+              "status": "absent"
+            },
+            {
+              "date": "08.03",
+              "status": "present"
+            },
+            {
+              "date": "15.03",
+              "status": "present"
+            },
+            {
+              "date": "22.03",
+              "status": "present"
+            },
+            {
+              "date": "29.03",
+              "status": "present"
+            },
+            {
+              "date": "05.04",
+              "status": "present"
+            },
+            {
+              "date": "12.04",
+              "status": "present"
+            },
+            {
+              "date": "19.04",
+              "status": "present"
+            },
+            {
+              "date": "26.04",
+              "status": "present"
+            },
+            {
+              "date": "10.05",
+              "status": "present"
+            },
+            {
+              "date": "17.05",
+              "status": "present"
+            },
+            {
+              "date": "24.05",
+              "status": "present"
+            },
+            {
+              "date": "31.05",
+              "status": "absent"
+            }
+          ]
+        },
+        {
+          "name": "Vladyslav ",
+          "id": 6,
+          "tests": [
+            {
+              "name": "Unit 1",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 2",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 3",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 4",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "13.03",
+              "status": ""
+            },
+            {
+              "date": "15.03",
+              "status": ""
+            },
+            {
+              "date": "22.03",
+              "status": "-"
+            },
+            {
+              "date": "29.03",
+              "status": "-"
+            },
+            {
+              "date": "05.04",
+              "status": ""
+            },
+            {
+              "date": "12.04",
+              "status": ""
+            },
+            {
+              "date": "19.04",
+              "status": ""
+            },
+            {
+              "date": "17.05",
+              "status": "-"
+            }
+          ],
+          "surname": "Kucher",
+          "attendances": [
+            {
+              "date": "01.03",
+              "status": "present"
+            },
+            {
+              "date": "08.03",
+              "status": "absent"
+            },
+            {
+              "date": "15.03",
+              "status": "absent"
+            },
+            {
+              "date": "22.03",
+              "status": "present"
+            },
+            {
+              "date": "29.03",
+              "status": "present"
+            },
+            {
+              "date": "05.04",
+              "status": "present"
+            },
+            {
+              "date": "12.04",
+              "status": "present"
+            },
+            {
+              "date": "19.04",
+              "status": "absent"
+            },
+            {
+              "date": "26.04",
+              "status": "present"
+            },
+            {
+              "date": "10.05",
+              "status": "absent"
+            },
+            {
+              "date": "17.05",
+              "status": "present"
+            },
+            {
+              "date": "24.05",
+              "status": "absent"
+            },
+            {
+              "date": "31.05",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Michał ",
+          "id": 7,
+          "tests": [
+            {
+              "name": "Unit 1",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "",
+              "marks": {
+                "first": "3"
+              }
+            },
+            {
+              "name": "",
+              "marks": {
+                "first": "4.5"
+              }
+            },
+            {
+              "name": "Unit 4",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "13.03",
+              "status": ""
+            },
+            {
+              "date": "15.03",
+              "status": "-"
+            },
+            {
+              "date": "22.03",
+              "status": "-"
+            },
+            {
+              "date": "29.03",
+              "status": ""
+            },
+            {
+              "date": "05.04",
+              "status": "-"
+            },
+            {
+              "date": "12.04",
+              "status": ""
+            },
+            {
+              "date": "19.04",
+              "status": "-"
+            },
+            {
+              "date": "17.05",
+              "status": ""
+            }
+          ],
+          "surname": "Majcher",
+          "attendances": [
+            {
+              "date": "01.03",
+              "status": "justified"
+            },
+            {
+              "date": "08.03",
+              "status": "absent"
+            },
+            {
+              "date": "15.03",
+              "status": "present"
+            },
+            {
+              "date": "22.03",
+              "status": "present"
+            },
+            {
+              "date": "29.03",
+              "status": "absent"
+            },
+            {
+              "date": "05.04",
+              "status": "present"
+            },
+            {
+              "date": "12.04",
+              "status": "justified"
+            },
+            {
+              "date": "19.04",
+              "status": "present"
+            },
+            {
+              "date": "26.04",
+              "status": "justified"
+            },
+            {
+              "date": "10.05",
+              "status": "justified"
+            },
+            {
+              "date": "17.05",
+              "status": "present"
+            },
+            {
+              "date": "24.05",
+              "status": "absent"
+            },
+            {
+              "date": "31.05",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Paweł ",
+          "id": 8,
+          "tests": [
+            {
+              "name": "Unit 1",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            },
+            {
+              "name": "",
+              "marks": {
+                "first": "4"
+              }
+            },
+            {
+              "name": "Unit 3",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 4",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "13.03",
+              "status": "-"
+            },
+            {
+              "date": "15.03",
+              "status": ""
+            },
+            {
+              "date": "22.03",
+              "status": ""
+            },
+            {
+              "date": "29.03",
+              "status": ""
+            },
+            {
+              "date": "05.04",
+              "status": ""
+            },
+            {
+              "date": "12.04",
+              "status": ""
+            },
+            {
+              "date": "19.04",
+              "status": ""
+            },
+            {
+              "date": "17.05",
+              "status": ""
+            }
+          ],
+          "surname": "Mocny",
+          "attendances": [
+            {
+              "date": "01.03",
+              "status": "absent"
+            },
+            {
+              "date": "08.03",
+              "status": "present"
+            },
+            {
+              "date": "15.03",
+              "status": "present"
+            },
+            {
+              "date": "22.03",
+              "status": "present"
+            },
+            {
+              "date": "29.03",
+              "status": "absent"
+            },
+            {
+              "date": "05.04",
+              "status": "present"
+            },
+            {
+              "date": "12.04",
+              "status": "justified"
+            },
+            {
+              "date": "19.04",
+              "status": "present"
+            },
+            {
+              "date": "26.04",
+              "status": "present"
+            },
+            {
+              "date": "10.05",
+              "status": "present"
+            },
+            {
+              "date": "17.05",
+              "status": "present"
+            },
+            {
+              "date": "24.05",
+              "status": "present"
+            },
+            {
+              "date": "31.05",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Żaneta ",
+          "id": 9,
+          "tests": [
+            {
+              "name": "",
+              "marks": {
+                "first": "3"
+              }
+            },
+            {
+              "name": "",
+              "marks": {
+                "first": "3.5"
+              }
+            },
+            {
+              "name": "",
+              "marks": {
+                "first": "4"
+              }
+            },
+            {
+              "name": "Unit 4",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "3.0",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "13.03",
+              "status": ""
+            },
+            {
+              "date": "15.03",
+              "status": ""
+            },
+            {
+              "date": "22.03",
+              "status": ""
+            },
+            {
+              "date": "29.03",
+              "status": "-"
+            },
+            {
+              "date": "05.04",
+              "status": ""
+            },
+            {
+              "date": "12.04",
+              "status": ""
+            },
+            {
+              "date": "19.04",
+              "status": ""
+            },
+            {
+              "date": "17.05",
+              "status": "-"
+            }
+          ],
+          "surname": "Nazar",
+          "attendances": [
+            {
+              "date": "01.03",
+              "status": "present"
+            },
+            {
+              "date": "08.03",
+              "status": "present"
+            },
+            {
+              "date": "15.03",
+              "status": "present"
+            },
+            {
+              "date": "22.03",
+              "status": "justified"
+            },
+            {
+              "date": "29.03",
+              "status": "present"
+            },
+            {
+              "date": "05.04",
+              "status": "justified"
+            },
+            {
+              "date": "12.04",
+              "status": "absent"
+            },
+            {
+              "date": "19.04",
+              "status": "justified"
+            },
+            {
+              "date": "26.04",
+              "status": "justified"
+            },
+            {
+              "date": "10.05",
+              "status": "justified"
+            },
+            {
+              "date": "17.05",
+              "status": "present"
+            },
+            {
+              "date": "24.05",
+              "status": "present"
+            },
+            {
+              "date": "31.05",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Wojciech",
+          "id": 10,
+          "tests": [
+            {
+              "name": "Unit 1",
+              "marks": {
+                "third": null,
+                "first": "3.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 2",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 3",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 4",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "13.03",
+              "status": ""
+            },
+            {
+              "date": "15.03",
+              "status": ""
+            },
+            {
+              "date": "22.03",
+              "status": ""
+            },
+            {
+              "date": "29.03",
+              "status": ""
+            },
+            {
+              "date": "05.04",
+              "status": ""
+            },
+            {
+              "date": "12.04",
+              "status": ""
+            },
+            {
+              "date": "19.04",
+              "status": ""
+            },
+            {
+              "date": "17.05",
+              "status": ""
+            }
+          ],
+          "surname": "Papież",
+          "attendances": [
+            {
+              "date": "01.03",
+              "status": "present"
+            },
+            {
+              "date": "08.03",
+              "status": "present"
+            },
+            {
+              "date": "15.03",
+              "status": "absent"
+            },
+            {
+              "date": "22.03",
+              "status": "present"
+            },
+            {
+              "date": "29.03",
+              "status": "present"
+            },
+            {
+              "date": "05.04",
+              "status": "absent"
+            },
+            {
+              "date": "12.04",
+              "status": "present"
+            },
+            {
+              "date": "19.04",
+              "status": "absent"
+            },
+            {
+              "date": "26.04",
+              "status": "present"
+            },
+            {
+              "date": "10.05",
+              "status": "present"
+            },
+            {
+              "date": "17.05",
+              "status": "present"
+            },
+            {
+              "date": "24.05",
+              "status": "present"
+            },
+            {
+              "date": "31.05",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Natalia ",
+          "id": 11,
+          "tests": [
+            {
+              "name": "Unit 1",
+              "marks": {
+                "third": null,
+                "first": "3.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 2",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": "5"
+              }
+            },
+            {
+              "name": "Unit 3",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 4",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "13.03",
+              "status": ""
+            },
+            {
+              "date": "15.03",
+              "status": ""
+            },
+            {
+              "date": "22.03",
+              "status": ""
+            },
+            {
+              "date": "29.03",
+              "status": ""
+            },
+            {
+              "date": "05.04",
+              "status": ""
+            },
+            {
+              "date": "12.04",
+              "status": ""
+            },
+            {
+              "date": "19.04",
+              "status": ""
+            },
+            {
+              "date": "17.05",
+              "status": "-"
+            }
+          ],
+          "surname": "Piechnik",
+          "attendances": [
+            {
+              "date": "01.03",
+              "status": "present"
+            },
+            {
+              "date": "08.03",
+              "status": "present"
+            },
+            {
+              "date": "15.03",
+              "status": "present"
+            },
+            {
+              "date": "22.03",
+              "status": "present"
+            },
+            {
+              "date": "29.03",
+              "status": "absent"
+            },
+            {
+              "date": "05.04",
+              "status": "justified"
+            },
+            {
+              "date": "12.04",
+              "status": "present"
+            },
+            {
+              "date": "19.04",
+              "status": "present"
+            },
+            {
+              "date": "26.04",
+              "status": "present"
+            },
+            {
+              "date": "10.05",
+              "status": "present"
+            },
+            {
+              "date": "17.05",
+              "status": "present"
+            },
+            {
+              "date": "24.05",
+              "status": "present"
+            },
+            {
+              "date": "31.05",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Dymytro",
+          "id": 12,
+          "tests": [
+            {
+              "name": "Unit 1",
+              "marks": {
+                "third": null,
+                "first": "3.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 2",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": "5"
+              }
+            },
+            {
+              "name": "Unit 3",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 4",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "13.03",
+              "status": ""
+            },
+            {
+              "date": "15.03",
+              "status": "-"
+            },
+            {
+              "date": "22.03",
+              "status": ""
+            },
+            {
+              "date": "29.03",
+              "status": ""
+            },
+            {
+              "date": "05.04",
+              "status": ""
+            },
+            {
+              "date": "12.04",
+              "status": ""
+            },
+            {
+              "date": "19.04",
+              "status": ""
+            },
+            {
+              "date": "17.05",
+              "status": ""
+            }
+          ],
+          "surname": "Poliakov",
+          "attendances": [
+            {
+              "date": "01.03",
+              "status": "present"
+            },
+            {
+              "date": "08.03",
+              "status": "absent"
+            },
+            {
+              "date": "15.03",
+              "status": "present"
+            },
+            {
+              "date": "22.03",
+              "status": "present"
+            },
+            {
+              "date": "29.03",
+              "status": "present"
+            },
+            {
+              "date": "05.04",
+              "status": "present"
+            },
+            {
+              "date": "12.04",
+              "status": "present"
+            },
+            {
+              "date": "19.04",
+              "status": "present"
+            },
+            {
+              "date": "26.04",
+              "status": "present"
+            },
+            {
+              "date": "10.05",
+              "status": "present"
+            },
+            {
+              "date": "17.05",
+              "status": "present"
+            },
+            {
+              "date": "24.05",
+              "status": "absent"
+            },
+            {
+              "date": "31.05",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Dorian",
+          "id": 13,
+          "tests": [
+            {
+              "name": "",
+              "marks": {
+                "first": "4"
+              }
+            },
+            {
+              "name": "",
+              "marks": {
+                "first": "4"
+              }
+            },
+            {
+              "name": "",
+              "marks": {
+                "first": "3.5"
+              }
+            },
+            {
+              "name": "Unit 4",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "13.03",
+              "status": "-"
+            },
+            {
+              "date": "15.03",
+              "status": ""
+            },
+            {
+              "date": "22.03",
+              "status": ""
+            },
+            {
+              "date": "29.03",
+              "status": "-"
+            },
+            {
+              "date": "05.04",
+              "status": ""
+            },
+            {
+              "date": "12.04",
+              "status": ""
+            },
+            {
+              "date": "19.04",
+              "status": ""
+            },
+            {
+              "date": "17.05",
+              "status": "-"
+            }
+          ],
+          "surname": "Solnica",
+          "attendances": [
+            {
+              "date": "01.03",
+              "status": "present"
+            },
+            {
+              "date": "08.03",
+              "status": "present"
+            },
+            {
+              "date": "15.03",
+              "status": "absent"
+            },
+            {
+              "date": "22.03",
+              "status": "absent"
+            },
+            {
+              "date": "29.03",
+              "status": "present"
+            },
+            {
+              "date": "05.04",
+              "status": "justified"
+            },
+            {
+              "date": "12.04",
+              "status": "justified"
+            },
+            {
+              "date": "19.04",
+              "status": "absent"
+            },
+            {
+              "date": "26.04",
+              "status": "absent"
+            },
+            {
+              "date": "10.05",
+              "status": "present"
+            },
+            {
+              "date": "17.05",
+              "status": "present"
+            },
+            {
+              "date": "24.05",
+              "status": "justified"
+            },
+            {
+              "date": "31.05",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Veronika",
+          "id": 14,
+          "tests": [
+            {
+              "name": "Unit 1",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": "4"
+              }
+            },
+            {
+              "name": "Unit 2",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": "4.5"
+              }
+            },
+            {
+              "name": "Unit 3",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 4",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "13.03",
+              "status": ""
+            },
+            {
+              "date": "15.03",
+              "status": ""
+            },
+            {
+              "date": "22.03",
+              "status": ""
+            },
+            {
+              "date": "29.03",
+              "status": ""
+            },
+            {
+              "date": "05.04",
+              "status": ""
+            },
+            {
+              "date": "12.04",
+              "status": ""
+            },
+            {
+              "date": "19.04",
+              "status": ""
+            },
+            {
+              "date": "17.05",
+              "status": ""
+            }
+          ],
+          "surname": "Tsiatko",
+          "attendances": [
+            {
+              "date": "01.03",
+              "status": "present"
+            },
+            {
+              "date": "08.03",
+              "status": "present"
+            },
+            {
+              "date": "15.03",
+              "status": "present"
+            },
+            {
+              "date": "22.03",
+              "status": "present"
+            },
+            {
+              "date": "29.03",
+              "status": "present"
+            },
+            {
+              "date": "05.04",
+              "status": "present"
+            },
+            {
+              "date": "12.04",
+              "status": "present"
+            },
+            {
+              "date": "19.04",
+              "status": "absent"
+            },
+            {
+              "date": "26.04",
+              "status": "present"
+            },
+            {
+              "date": "10.05",
+              "status": "absent"
+            },
+            {
+              "date": "17.05",
+              "status": "present"
+            },
+            {
+              "date": "24.05",
+              "status": "present"
+            },
+            {
+              "date": "31.05",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Joanna",
+          "id": 15,
+          "tests": [
+            {
+              "name": "Unit 1",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 2",
+              "marks": {
+                "third": null,
+                "first": "3.0",
+                "second": null
+              }
+            },
+            {
+              "name": "",
+              "marks": {
+                "first": "5"
+              }
+            },
+            {
+              "name": "Unit 4",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "13.03",
+              "status": ""
+            },
+            {
+              "date": "15.03",
+              "status": ""
+            },
+            {
+              "date": "22.03",
+              "status": ""
+            },
+            {
+              "date": "29.03",
+              "status": ""
+            },
+            {
+              "date": "05.04",
+              "status": ""
+            },
+            {
+              "date": "12.04",
+              "status": ""
+            },
+            {
+              "date": "19.04",
+              "status": ""
+            },
+            {
+              "date": "17.05",
+              "status": ""
+            }
+          ],
+          "surname": "Ziętara",
+          "attendances": [
+            {
+              "date": "01.03",
+              "status": "present"
+            },
+            {
+              "date": "08.03",
+              "status": "justified"
+            },
+            {
+              "date": "15.03",
+              "status": "present"
+            },
+            {
+              "date": "22.03",
+              "status": "present"
+            },
+            {
+              "date": "29.03",
+              "status": "present"
+            },
+            {
+              "date": "05.04",
+              "status": "absent"
+            },
+            {
+              "date": "12.04",
+              "status": "present"
+            },
+            {
+              "date": "19.04",
+              "status": "present"
+            },
+            {
+              "date": "26.04",
+              "status": "present"
+            },
+            {
+              "date": "10.05",
+              "status": "present"
+            },
+            {
+              "date": "17.05",
+              "status": "present"
+            },
+            {
+              "date": "24.05",
+              "status": "present"
+            },
+            {
+              "date": "31.05",
+              "status": "absent"
+            }
+          ]
+        }
+      ],
+      "semester": "2"
+    },
+    {
+      "year": "2017/2018",
+      "students": [
+        {
+          "name": "Justyna",
+          "id": 0,
+          "tests": [
+            {
+              "name": "Unit 5",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 6",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 7",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 8",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "10.10",
+              "status": "+"
+            },
+            {
+              "date": "17.10",
+              "status": "+"
+            },
+            {
+              "date": "24.10",
+              "status": "+"
+            },
+            {
+              "date": "07.11",
+              "status": ""
+            },
+            {
+              "date": "14.11",
+              "status": ""
+            },
+            {
+              "date": "05.12",
+              "status": ""
+            }
+          ],
+          "surname": "Bazgier",
+          "attendances": [
+            {
+              "date": "03.10",
+              "status": "present"
+            },
+            {
+              "date": "10.10",
+              "status": "present"
+            },
+            {
+              "date": "17.10",
+              "status": "present"
+            },
+            {
+              "date": "24.10",
+              "status": "present"
+            },
+            {
+              "date": "07.11",
+              "status": "present"
+            },
+            {
+              "date": "14.11",
+              "status": "present"
+            },
+            {
+              "date": "21.11",
+              "status": "present"
+            },
+            {
+              "date": "28.11",
+              "status": "present"
+            },
+            {
+              "date": "05.12",
+              "status": "present"
+            },
+            {
+              "date": "12.12",
+              "status": "present"
+            },
+            {
+              "date": "19.12",
+              "status": "present"
+            },
+            {
+              "date": "09.01",
+              "status": "present"
+            },
+            {
+              "date": "16.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Łukasz",
+          "id": 1,
+          "tests": [
+            {
+              "name": "Unit 5",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 6",
+              "marks": {
+                "third": null,
+                "first": "3.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 7",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 8",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "first": "4"
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "10.10",
+              "status": "-"
+            },
+            {
+              "date": "17.10",
+              "status": "-"
+            },
+            {
+              "date": "24.10",
+              "status": ""
+            },
+            {
+              "date": "07.11",
+              "status": ""
+            },
+            {
+              "date": "14.11",
+              "status": ""
+            },
+            {
+              "date": "05.12",
+              "status": ""
+            }
+          ],
+          "surname": "Janda",
+          "attendances": [
+            {
+              "date": "03.10",
+              "status": "present"
+            },
+            {
+              "date": "10.10",
+              "status": "present"
+            },
+            {
+              "date": "17.10",
+              "status": "justified"
+            },
+            {
+              "date": "24.10",
+              "status": "justified"
+            },
+            {
+              "date": "07.11",
+              "status": "present"
+            },
+            {
+              "date": "14.11",
+              "status": "justified"
+            },
+            {
+              "date": "21.11",
+              "status": "absent"
+            },
+            {
+              "date": "28.11",
+              "status": "present"
+            },
+            {
+              "date": "05.12",
+              "status": "absent"
+            },
+            {
+              "date": "12.12",
+              "status": "justified"
+            },
+            {
+              "date": "19.12",
+              "status": "present"
+            },
+            {
+              "date": "09.01",
+              "status": "justified"
+            },
+            {
+              "date": "16.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "justified"
+            },
+            {
+              "date": "30.01",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Kamil",
+          "id": 2,
+          "tests": [
+            {
+              "name": "Unit 5",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            },
+            {
+              "name": "",
+              "marks": {
+                "first": "3"
+              }
+            },
+            {
+              "name": "Unit 7",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 8",
+              "marks": {
+                "third": null,
+                "first": "3.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "first": "2",
+                "second": "3.5"
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "10.10",
+              "status": "-"
+            },
+            {
+              "date": "17.10",
+              "status": "-"
+            },
+            {
+              "date": "24.10",
+              "status": "-"
+            },
+            {
+              "date": "07.11",
+              "status": ""
+            },
+            {
+              "date": "14.11",
+              "status": ""
+            },
+            {
+              "date": "05.12",
+              "status": "-"
+            }
+          ],
+          "surname": "Józefko",
+          "attendances": [
+            {
+              "date": "03.10",
+              "status": "present"
+            },
+            {
+              "date": "10.10",
+              "status": "present"
+            },
+            {
+              "date": "17.10",
+              "status": "present"
+            },
+            {
+              "date": "24.10",
+              "status": "present"
+            },
+            {
+              "date": "07.11",
+              "status": "absent"
+            },
+            {
+              "date": "14.11",
+              "status": "justified"
+            },
+            {
+              "date": "21.11",
+              "status": "present"
+            },
+            {
+              "date": "28.11",
+              "status": "present"
+            },
+            {
+              "date": "05.12",
+              "status": "present"
+            },
+            {
+              "date": "12.12",
+              "status": "present"
+            },
+            {
+              "date": "19.12",
+              "status": "present"
+            },
+            {
+              "date": "09.01",
+              "status": "absent"
+            },
+            {
+              "date": "16.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "absent"
+            }
+          ]
+        },
+        {
+          "name": "Dawid",
+          "id": 3,
+          "tests": [
+            {
+              "name": "Unit 5",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 6",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 7",
+              "marks": {
+                "first": "3"
+              }
+            },
+            {
+              "name": "Unit 8",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "first": "3.5"
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "10.10",
+              "status": "-"
+            },
+            {
+              "date": "17.10",
+              "status": ""
+            },
+            {
+              "date": "24.10",
+              "status": "-"
+            },
+            {
+              "date": "07.11",
+              "status": ""
+            },
+            {
+              "date": "14.11",
+              "status": ""
+            },
+            {
+              "date": "05.12",
+              "status": "-"
+            }
+          ],
+          "surname": "Kobos",
+          "attendances": [
+            {
+              "date": "03.10",
+              "status": "present"
+            },
+            {
+              "date": "10.10",
+              "status": "present"
+            },
+            {
+              "date": "17.10",
+              "status": "justified"
+            },
+            {
+              "date": "24.10",
+              "status": "present"
+            },
+            {
+              "date": "07.11",
+              "status": "present"
+            },
+            {
+              "date": "14.11",
+              "status": "present"
+            },
+            {
+              "date": "21.11",
+              "status": "present"
+            },
+            {
+              "date": "28.11",
+              "status": "justified"
+            },
+            {
+              "date": "05.12",
+              "status": "present"
+            },
+            {
+              "date": "12.12",
+              "status": "present"
+            },
+            {
+              "date": "19.12",
+              "status": "present"
+            },
+            {
+              "date": "09.01",
+              "status": "absent"
+            },
+            {
+              "date": "16.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "absent"
+            }
+          ]
+        },
+        {
+          "name": "Michał ",
+          "id": 4,
+          "tests": [
+            {
+              "name": "",
+              "marks": {
+                "first": "4"
+              }
+            },
+            {
+              "name": "",
+              "marks": {
+                "first": "5"
+              }
+            },
+            {
+              "name": "Unit 7",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 8",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "first": "4.5"
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "10.10",
+              "status": ""
+            },
+            {
+              "date": "17.10",
+              "status": "-"
+            },
+            {
+              "date": "24.10",
+              "status": "-"
+            },
+            {
+              "date": "07.11",
+              "status": "-"
+            },
+            {
+              "date": "14.11",
+              "status": ""
+            },
+            {
+              "date": "05.12",
+              "status": "-"
+            }
+          ],
+          "surname": "Majcher",
+          "attendances": [
+            {
+              "date": "03.10",
+              "status": "justified"
+            },
+            {
+              "date": "10.10",
+              "status": "absent"
+            },
+            {
+              "date": "17.10",
+              "status": "present"
+            },
+            {
+              "date": "24.10",
+              "status": "present"
+            },
+            {
+              "date": "07.11",
+              "status": "present"
+            },
+            {
+              "date": "14.11",
+              "status": "absent"
+            },
+            {
+              "date": "21.11",
+              "status": "justified"
+            },
+            {
+              "date": "28.11",
+              "status": "present"
+            },
+            {
+              "date": "05.12",
+              "status": "present"
+            },
+            {
+              "date": "12.12",
+              "status": "justified"
+            },
+            {
+              "date": "19.12",
+              "status": "present"
+            },
+            {
+              "date": "09.01",
+              "status": "present"
+            },
+            {
+              "date": "16.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "justified"
+            },
+            {
+              "date": "30.01",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Paweł ",
+          "id": 5,
+          "tests": [
+            {
+              "name": "Unit 5",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            },
+            {
+              "name": "",
+              "marks": {
+                "first": "3"
+              }
+            },
+            {
+              "name": "Unit 7",
+              "marks": {
+                "third": null,
+                "first": "3.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 8",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "first": "3.5"
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "10.10",
+              "status": "-"
+            },
+            {
+              "date": "17.10",
+              "status": "-"
+            },
+            {
+              "date": "24.10",
+              "status": ""
+            },
+            {
+              "date": "07.11",
+              "status": ""
+            },
+            {
+              "date": "14.11",
+              "status": "-"
+            },
+            {
+              "date": "05.12",
+              "status": ""
+            }
+          ],
+          "surname": "Mocny",
+          "attendances": [
+            {
+              "date": "03.10",
+              "status": "absent"
+            },
+            {
+              "date": "10.10",
+              "status": "present"
+            },
+            {
+              "date": "17.10",
+              "status": "present"
+            },
+            {
+              "date": "24.10",
+              "status": "absent"
+            },
+            {
+              "date": "07.11",
+              "status": "justified"
+            },
+            {
+              "date": "14.11",
+              "status": "present"
+            },
+            {
+              "date": "21.11",
+              "status": "present"
+            },
+            {
+              "date": "28.11",
+              "status": "present"
+            },
+            {
+              "date": "05.12",
+              "status": "justified"
+            },
+            {
+              "date": "12.12",
+              "status": "present"
+            },
+            {
+              "date": "19.12",
+              "status": "present"
+            },
+            {
+              "date": "09.01",
+              "status": "present"
+            },
+            {
+              "date": "16.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Żaneta ",
+          "id": 6,
+          "tests": [
+            {
+              "name": "",
+              "marks": {
+                "first": "2",
+                "second": "3.5"
+              }
+            },
+            {
+              "name": "Unit 6",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 7",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 8",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "first": "3.5"
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "10.10",
+              "status": ""
+            },
+            {
+              "date": "17.10",
+              "status": ""
+            },
+            {
+              "date": "24.10",
+              "status": "-"
+            },
+            {
+              "date": "07.11",
+              "status": ""
+            },
+            {
+              "date": "14.11",
+              "status": ""
+            },
+            {
+              "date": "05.12",
+              "status": ""
+            }
+          ],
+          "surname": "Nazar",
+          "attendances": [
+            {
+              "date": "03.10",
+              "status": "present"
+            },
+            {
+              "date": "10.10",
+              "status": "justified"
+            },
+            {
+              "date": "17.10",
+              "status": "justified"
+            },
+            {
+              "date": "24.10",
+              "status": "present"
+            },
+            {
+              "date": "07.11",
+              "status": "present"
+            },
+            {
+              "date": "14.11",
+              "status": "justified"
+            },
+            {
+              "date": "21.11",
+              "status": "justified"
+            },
+            {
+              "date": "28.11",
+              "status": "present"
+            },
+            {
+              "date": "05.12",
+              "status": "absent"
+            },
+            {
+              "date": "12.12",
+              "status": "present"
+            },
+            {
+              "date": "19.12",
+              "status": "justified"
+            },
+            {
+              "date": "09.01",
+              "status": "justified"
+            },
+            {
+              "date": "16.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "absent"
+            },
+            {
+              "date": "30.01",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Wojciech",
+          "id": 7,
+          "tests": [
+            {
+              "name": "",
+              "marks": {
+                "first": 0
+              }
+            },
+            {
+              "name": "Unit 6",
+              "marks": {
+                "third": null,
+                "first": "5.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 7",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 8",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "first": "2"
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "10.10",
+              "status": ""
+            },
+            {
+              "date": "17.10",
+              "status": ""
+            },
+            {
+              "date": "24.10",
+              "status": ""
+            },
+            {
+              "date": "07.11",
+              "status": ""
+            },
+            {
+              "date": "14.11",
+              "status": ""
+            },
+            {
+              "date": "05.12",
+              "status": "-"
+            }
+          ],
+          "surname": "Papież",
+          "attendances": [
+            {
+              "date": "03.10",
+              "status": "present"
+            },
+            {
+              "date": "10.10",
+              "status": "absent"
+            },
+            {
+              "date": "17.10",
+              "status": "justified"
+            },
+            {
+              "date": "24.10",
+              "status": "justified"
+            },
+            {
+              "date": "07.11",
+              "status": "present"
+            },
+            {
+              "date": "14.11",
+              "status": "absent"
+            },
+            {
+              "date": "21.11",
+              "status": "absent"
+            },
+            {
+              "date": "28.11",
+              "status": "present"
+            },
+            {
+              "date": "05.12",
+              "status": "present"
+            },
+            {
+              "date": "12.12",
+              "status": "present"
+            },
+            {
+              "date": "19.12",
+              "status": "absent"
+            },
+            {
+              "date": "09.01",
+              "status": "present"
+            },
+            {
+              "date": "16.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "absent"
+            },
+            {
+              "date": "30.01",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Natalia ",
+          "id": 8,
+          "tests": [
+            {
+              "name": "",
+              "marks": {
+                "first": "4.5"
+              }
+            },
+            {
+              "name": "Unit 6",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 7",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 8",
+              "marks": {
+                "third": null,
+                "first": "5.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "first": "4.5"
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "10.10",
+              "status": ""
+            },
+            {
+              "date": "17.10",
+              "status": "-"
+            },
+            {
+              "date": "24.10",
+              "status": "-"
+            },
+            {
+              "date": "07.11",
+              "status": ""
+            },
+            {
+              "date": "14.11",
+              "status": ""
+            },
+            {
+              "date": "05.12",
+              "status": ""
+            }
+          ],
+          "surname": "Piechnik",
+          "attendances": [
+            {
+              "date": "03.10",
+              "status": "present"
+            },
+            {
+              "date": "10.10",
+              "status": "absent"
+            },
+            {
+              "date": "17.10",
+              "status": "present"
+            },
+            {
+              "date": "24.10",
+              "status": "present"
+            },
+            {
+              "date": "07.11",
+              "status": "present"
+            },
+            {
+              "date": "14.11",
+              "status": "present"
+            },
+            {
+              "date": "21.11",
+              "status": "present"
+            },
+            {
+              "date": "28.11",
+              "status": "present"
+            },
+            {
+              "date": "05.12",
+              "status": "justified"
+            },
+            {
+              "date": "12.12",
+              "status": "present"
+            },
+            {
+              "date": "19.12",
+              "status": "present"
+            },
+            {
+              "date": "09.01",
+              "status": "present"
+            },
+            {
+              "date": "16.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "absent"
+            },
+            {
+              "date": "30.01",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Dymytro",
+          "id": 9,
+          "tests": [
+            {
+              "name": "Unit 5",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 6",
+              "marks": {
+                "third": null,
+                "first": "4.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 7",
+              "marks": {
+                "third": null,
+                "first": "5.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 8",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "first": "4.5"
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "10.10",
+              "status": "-"
+            },
+            {
+              "date": "17.10",
+              "status": "-"
+            },
+            {
+              "date": "24.10",
+              "status": ""
+            },
+            {
+              "date": "07.11",
+              "status": ""
+            },
+            {
+              "date": "14.11",
+              "status": ""
+            },
+            {
+              "date": "05.12",
+              "status": ""
+            }
+          ],
+          "surname": "Poliakov",
+          "attendances": [
+            {
+              "date": "03.10",
+              "status": "present"
+            },
+            {
+              "date": "10.10",
+              "status": "present"
+            },
+            {
+              "date": "17.10",
+              "status": "present"
+            },
+            {
+              "date": "24.10",
+              "status": "absent"
+            },
+            {
+              "date": "07.11",
+              "status": "present"
+            },
+            {
+              "date": "14.11",
+              "status": "present"
+            },
+            {
+              "date": "21.11",
+              "status": "present"
+            },
+            {
+              "date": "28.11",
+              "status": "present"
+            },
+            {
+              "date": "05.12",
+              "status": "present"
+            },
+            {
+              "date": "12.12",
+              "status": "present"
+            },
+            {
+              "date": "19.12",
+              "status": "absent"
+            },
+            {
+              "date": "09.01",
+              "status": "present"
+            },
+            {
+              "date": "16.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Dorian",
+          "id": 10,
+          "tests": [
+            {
+              "name": "Unit 5",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": null
+              }
+            },
+            {
+              "name": "",
+              "marks": {
+                "first": 0
+              }
+            },
+            {
+              "name": "Unit 7",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 8",
+              "marks": {
+                "third": null,
+                "first": "2.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "first": "2"
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "10.10",
+              "status": "-"
+            },
+            {
+              "date": "17.10",
+              "status": "-"
+            },
+            {
+              "date": "24.10",
+              "status": ""
+            },
+            {
+              "date": "07.11",
+              "status": ""
+            },
+            {
+              "date": "14.11",
+              "status": ""
+            },
+            {
+              "date": "05.12",
+              "status": ""
+            }
+          ],
+          "surname": "Solnica",
+          "attendances": [
+            {
+              "date": "03.10",
+              "status": "present"
+            },
+            {
+              "date": "10.10",
+              "status": "present"
+            },
+            {
+              "date": "17.10",
+              "status": "present"
+            },
+            {
+              "date": "24.10",
+              "status": "justified"
+            },
+            {
+              "date": "07.11",
+              "status": "justified"
+            },
+            {
+              "date": "14.11",
+              "status": "absent"
+            },
+            {
+              "date": "21.11",
+              "status": "present"
+            },
+            {
+              "date": "28.11",
+              "status": "present"
+            },
+            {
+              "date": "05.12",
+              "status": "justified"
+            },
+            {
+              "date": "12.12",
+              "status": "present"
+            },
+            {
+              "date": "19.12",
+              "status": "absent"
+            },
+            {
+              "date": "09.01",
+              "status": "justified"
+            },
+            {
+              "date": "16.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "absent"
+            }
+          ]
+        },
+        {
+          "name": "Veronika",
+          "id": 11,
+          "tests": [
+            {
+              "name": "Unit 5",
+              "marks": {
+                "third": null,
+                "first": "3.5",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 6",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 7",
+              "marks": {
+                "first": "5"
+              }
+            },
+            {
+              "name": "Unit 8",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "first": "4.5"
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "10.10",
+              "status": "-"
+            },
+            {
+              "date": "17.10",
+              "status": "+"
+            },
+            {
+              "date": "24.10",
+              "status": ""
+            },
+            {
+              "date": "07.11",
+              "status": ""
+            },
+            {
+              "date": "14.11",
+              "status": "-"
+            },
+            {
+              "date": "05.12",
+              "status": ""
+            }
+          ],
+          "surname": "Tsiatko",
+          "attendances": [
+            {
+              "date": "03.10",
+              "status": "present"
+            },
+            {
+              "date": "10.10",
+              "status": "present"
+            },
+            {
+              "date": "17.10",
+              "status": "present"
+            },
+            {
+              "date": "24.10",
+              "status": "present"
+            },
+            {
+              "date": "07.11",
+              "status": "present"
+            },
+            {
+              "date": "14.11",
+              "status": "present"
+            },
+            {
+              "date": "21.11",
+              "status": "absent"
+            },
+            {
+              "date": "28.11",
+              "status": "present"
+            },
+            {
+              "date": "05.12",
+              "status": "present"
+            },
+            {
+              "date": "12.12",
+              "status": "present"
+            },
+            {
+              "date": "19.12",
+              "status": "present"
+            },
+            {
+              "date": "09.01",
+              "status": "absent"
+            },
+            {
+              "date": "16.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Joanna",
+          "id": 12,
+          "tests": [
+            {
+              "name": "Unit 5",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 6",
+              "marks": {
+                "third": null,
+                "first": "5.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 7",
+              "marks": {
+                "third": null,
+                "first": "5.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Unit 8",
+              "marks": {
+                "third": null,
+                "first": "4.0",
+                "second": null
+              }
+            },
+            {
+              "name": "Final mark",
+              "marks": {
+                "first": "5"
+              }
+            }
+          ],
+          "homework": [
+            {
+              "date": "10.10",
+              "status": "+"
+            },
+            {
+              "date": "17.10",
+              "status": "+"
+            },
+            {
+              "date": "24.10",
+              "status": "+"
+            },
+            {
+              "date": "07.11",
+              "status": ""
+            },
+            {
+              "date": "14.11",
+              "status": ""
+            },
+            {
+              "date": "05.12",
+              "status": ""
+            }
+          ],
+          "surname": "Ziętara",
+          "attendances": [
+            {
+              "date": "03.10",
+              "status": "present"
+            },
+            {
+              "date": "10.10",
+              "status": "present"
+            },
+            {
+              "date": "17.10",
+              "status": "present"
+            },
+            {
+              "date": "24.10",
+              "status": "present"
+            },
+            {
+              "date": "07.11",
+              "status": "present"
+            },
+            {
+              "date": "14.11",
+              "status": "present"
+            },
+            {
+              "date": "21.11",
+              "status": "present"
+            },
+            {
+              "date": "28.11",
+              "status": "present"
+            },
+            {
+              "date": "05.12",
+              "status": "present"
+            },
+            {
+              "date": "12.12",
+              "status": "present"
+            },
+            {
+              "date": "19.12",
+              "status": "present"
+            },
+            {
+              "date": "09.01",
+              "status": "present"
+            },
+            {
+              "date": "16.01",
+              "status": "present"
+            },
+            {
+              "date": "30.01",
+              "status": "absent"
+            },
+            {
+              "date": "30.01",
+              "status": "present"
+            }
+          ]
+        }
+      ],
+      "semester": "1"
+    },
+    {
+      "year": "2017/2018",
+      "students": [
+        {
+          "name": "Justyna",
+          "tests": [],
+          "id": 0,
+          "homework": [],
+          "surname": "Bazgier",
+          "attendances": [
+            {
+              "date": "27.02",
+              "status": "absent"
+            }
+          ]
+        },
+        {
+          "name": "Łukasz",
+          "tests": [],
+          "id": 1,
+          "homework": [],
+          "surname": "Janda",
+          "attendances": [
+            {
+              "date": "27.02",
+              "status": "absent"
+            }
+          ]
+        },
+        {
+          "name": "Kamil",
+          "tests": [],
+          "id": 2,
+          "homework": [],
+          "surname": "Józefko",
+          "attendances": [
+            {
+              "date": "27.02",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Dawid",
+          "tests": [],
+          "id": 3,
+          "homework": [],
+          "surname": "Kobos",
+          "attendances": [
+            {
+              "date": "27.02",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Michał ",
+          "tests": [],
+          "id": 4,
+          "homework": [],
+          "surname": "Majcher",
+          "attendances": [
+            {
+              "date": "27.02",
+              "status": "absent"
+            }
+          ]
+        },
+        {
+          "name": "Paweł ",
+          "tests": [],
+          "id": 5,
+          "homework": [],
+          "surname": "Mocny",
+          "attendances": [
+            {
+              "date": "27.02",
+              "status": "absent"
+            }
+          ]
+        },
+        {
+          "name": "Żaneta ",
+          "tests": [],
+          "id": 6,
+          "homework": [],
+          "surname": "Nazar",
+          "attendances": [
+            {
+              "date": "27.02",
+              "status": "absent"
+            }
+          ]
+        },
+        {
+          "name": "Wojciech",
+          "tests": [],
+          "id": 7,
+          "homework": [],
+          "surname": "Papież",
+          "attendances": [
+            {
+              "date": "27.02",
+              "status": "absent"
+            }
+          ]
+        },
+        {
+          "name": "Natalia ",
+          "tests": [],
+          "id": 8,
+          "homework": [],
+          "surname": "Piechnik",
+          "attendances": [
+            {
+              "date": "27.02",
+              "status": "absent"
+            }
+          ]
+        },
+        {
+          "name": "Dymytro",
+          "tests": [],
+          "id": 9,
+          "homework": [],
+          "surname": "Poliakov",
+          "attendances": [
+            {
+              "date": "27.02",
+              "status": "absent"
+            }
+          ]
+        },
+        {
+          "name": "Dorian",
+          "tests": [],
+          "id": 10,
+          "homework": [],
+          "surname": "Solnica",
+          "attendances": [
+            {
+              "date": "27.02",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Veronika",
+          "tests": [],
+          "id": 11,
+          "homework": [],
+          "surname": "Tsiatko",
+          "attendances": [
+            {
+              "date": "27.02",
+              "status": "present"
+            }
+          ]
+        },
+        {
+          "name": "Joanna",
+          "tests": [],
+          "id": 12,
+          "homework": [],
+          "surname": "Ziętara",
+          "attendances": [
+            {
+              "date": "27.02",
+              "status": "present"
+            }
+          ]
+        }
+      ],
+      "semester": 1
+    }
+  ],
+  "announcements": [],
+  "dateOfActivities": "Środa"
+}
