@@ -45,6 +45,7 @@ class Attendance extends Component {
 
     handleDateChange = (e) => {
         e.preventDefault();
+        console.log(e.target.value)
         let raw = e.target.value.split("-");
         this.setState({
             date: raw[2] + "." + raw[1]
