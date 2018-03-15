@@ -26,10 +26,19 @@ class Attendance extends Component {
         });
     }
 
+    formatDate = (date) => {
+        let month = (1 + date.getMonth()).toString();
+        month = month.length > 1 ? month : '0' + month;
+        let day = date.getDate().toString();
+        day = day.length > 1 ? day : '0' + day;
+        let year = date.getFullYear();
+        return year + "-" + month + '-' + day;
+    };
+
     constructor(props) {
         super(props);
         this.state = {
-            date: getFormattedDate(new Date()),
+            date: this.formatDate(new Date()),
             group: REFERENCE_GROUP
         };
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -45,10 +54,9 @@ class Attendance extends Component {
 
     handleDateChange = (e) => {
         e.preventDefault();
-        console.log(e.target.value)
-        let raw = e.target.value.split("-");
+        let raw = e.target.value;
         this.setState({
-            date: raw[2] + "." + raw[1]
+            date: raw
         })
     };
 
@@ -89,6 +97,10 @@ class AttendancePanel extends Component {
         this.init(this, props)
     }
 
+    formatDate = (raw) => {
+        return raw.split("-")[2] + "." + raw.split("-")[1];
+    };
+
     init(parent, props) {
         let group = props.group;
         let date = props.date;
@@ -96,7 +108,7 @@ class AttendancePanel extends Component {
         parent.state = {
             group: group,
             student: student,
-            date: date
+            date: this.formatDate(date)
         };
     }
 
@@ -108,7 +120,7 @@ class AttendancePanel extends Component {
             const group = that.state.group;
             const semester = resolveSemester(that.state.group);
             let attendances = students[idx]['attendances'];
-            attendances[attendances.length - 1] = {date: that.state.date, status: e.target.value};
+            attendances[attendances.length - 1] = {date: that.formatDate(that.props.date), status: e.target.value};
             semester.students = students;
             that.setState({
                 group: group
