@@ -143,7 +143,7 @@ class Group extends Component {
                     </div>
                 </div>
 
-                <div className="col-sm-12">
+               {/* <div className="col-sm-12">
                     <div className="page-header">
                         <h4>Zadania domowe</h4>
                     </div>
@@ -161,7 +161,7 @@ class Group extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>*/}
 
                 <div className="col-sm-12 hidden-print">
                     <div className="page-header">
