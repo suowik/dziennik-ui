@@ -235,7 +235,7 @@ class Announcements extends Component {
                 {this.props.announcements.map((a, i) =>
                     <tr key={i}>
                         <td>{a.date}</td>
-                        <td>{a.text}</td>
+                        <td>{a.text.replace(/%28/g,"(").replace(/%29/g,")")}</td>
                         <td>
                             <button onClick={this.handleRemove(i)} className="btn btn-small btn-danger">-</button>
                         </td>
