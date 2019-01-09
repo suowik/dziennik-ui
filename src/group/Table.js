@@ -91,7 +91,7 @@ class Table extends Component {
                             {idx > 2 && idx < this.state.headers.length - 1 &&
                             <button
                                 onClick={() => {
-                                    if (confirm('Czy na pewno usunąć?')) {
+                                    if (window.confirm('Czy na pewno usunąć?')) {
                                         this.removeColumn(this.state.type, idx)
                                     }
                                 }}
