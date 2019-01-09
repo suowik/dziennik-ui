@@ -60,7 +60,7 @@ class AttendanceRenderer extends Component {
                 method: 'POST',
                 url: 'https://dziennik-api.herokuapp.com/groups/',
                 json: true,
-                body: this.state,
+                body: group,
                 headers: {
                     Authorization: 'Basic zaq12wsxcde34rfvbgt56yhnmju78ik,.lo90p;/'
                 }

@@ -56,18 +56,17 @@ class AddStudentPanel extends Component {
             homework: homework
         };
         semester.students.push(newStudent);
-        const requestBody = {
+        let requestBody = {
             method: 'POST',
             url: 'https://dziennik-api.herokuapp.com/groups/',
             json: true,
-            body: this.state,
+            body: group,
             headers: {
                 Authorization: 'Basic zaq12wsxcde34rfvbgt56yhnmju78ik,.lo90p;/'
             }
         };
         request(requestBody, () => {
             hashHistory.push('/groups/' + group._id);
-
         })
     }
 

@@ -192,7 +192,7 @@ class Group extends Component {
         let announcements = group.announcements;
         announcements.splice(index, 1);
         let that = this;
-        const requestBody = {
+        let requestBody = {
             method: 'POST',
             url: 'https://dziennik-api.herokuapp.com/groups/',
             json: true,

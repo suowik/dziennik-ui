@@ -40,7 +40,7 @@ class Table extends Component {
                 s.id = i;
                 return s
             });
-            const requestBody = {
+            let requestBody = {
                 method: 'POST',
                 url: 'https://dziennik-api.herokuapp.com/groups/',
                 json: true,

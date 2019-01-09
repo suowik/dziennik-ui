@@ -94,11 +94,11 @@ class TestResultRenderer extends Component {
             let group = this.state.group;
             let semester = resolveSemester(group);
             semester.students[studentId]['tests'][columnId]['marks'][mark] = e.target.value;
-            const requestBody = {
+            let requestBody = {
                 method: 'POST',
                 url: 'https://dziennik-api.herokuapp.com/groups/',
                 json: true,
-                body: this.state,
+                body: group,
                 headers: {
                     Authorization: 'Basic zaq12wsxcde34rfvbgt56yhnmju78ik,.lo90p;/'
                 }

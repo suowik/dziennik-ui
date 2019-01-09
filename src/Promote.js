@@ -58,7 +58,7 @@ export default class Promote extends Component {
         group.activeSemester = this.state.activeSemester;
         group.activeYear = this.state.activeYear;
         group.archive = this.state.archive;
-        const requestBody = {
+        let requestBody = {
             method: 'POST',
             url: 'https://dziennik-api.herokuapp.com/groups/',
             json: true,
