@@ -27,7 +27,7 @@ class Routes extends Component {
     render() {
         return (
             <Router history={hashHistory}>
-                <Route path="/"component={Layout}  onEnter={requireAuth}>
+                <Route path="/" component={Layout}  onEnter={requireAuth}>
                     <IndexRoute component={Groups}/>
                     <Route path="/groups" component={Groups}/>
                     <Route path="/groups/:groupId" component={Group}/>

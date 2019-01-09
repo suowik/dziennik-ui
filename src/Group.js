@@ -9,7 +9,7 @@ import AvgTestCalculator from './group/AvgTestCalculator.js'
 import HomeworkCountRenderer from './group/HomeworkCountRenderer.js'
 import Table from './group/Table.js'
 import TestResultRenderer from './group/TestResultRenderer.js'
-import {Link} from 'react-router'
+import {hashHistory, Link} from 'react-router'
 import {REFERENCE_GROUP} from './common/referenceGroup.js'
 import {resolveSemester} from './common/resolveSemester.js'
 
@@ -143,7 +143,7 @@ class Group extends Component {
                     </div>
                 </div>
 
-               {/* <div className="col-sm-12">
+                {/* <div className="col-sm-12">
                     <div className="page-header">
                         <h4>Zadania domowe</h4>
                     </div>
@@ -192,11 +192,21 @@ class Group extends Component {
         let announcements = group.announcements;
         announcements.splice(index, 1);
         let that = this;
-        request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, () => {
+        const requestBody = {
+            method: 'POST',
+            url: 'https://dziennik-api.herokuapp.com/groups/',
+            json: true,
+            body: group,
+            headers: {
+                Authorization: 'Basic zaq12wsxcde34rfvbgt56yhnmju78ik,.lo90p;/'
+            }
+        };
+        request(requestBody, () => {
             that.setState({
                 group: group
             })
-        })
+        });
+
     };
 
     addAnnouncement = (announcement) => {
@@ -204,11 +214,20 @@ class Group extends Component {
         let announcements = group.announcements;
         announcements.push({date: announcement.date, text: announcement.text});
         let that = this;
-        request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, () => {
+        const requestBody = {
+            method: 'POST',
+            url: 'https://dziennik-api.herokuapp.com/groups/',
+            json: true,
+            body: group,
+            headers: {
+                Authorization: 'Basic zaq12wsxcde34rfvbgt56yhnmju78ik,.lo90p;/'
+            }
+        };
+        request(requestBody, () => {
             that.setState({
                 group: group
             })
-        })
+        });
     }
 }
 
@@ -235,7 +254,7 @@ class Announcements extends Component {
                 {this.props.announcements.map((a, i) =>
                     <tr key={i}>
                         <td>{a.date}</td>
-                        <td>{a.text.replace(/%28/g,"(").replace(/%29/g,")")}</td>
+                        <td>{a.text.replace(/%28/g, "(").replace(/%29/g, ")")}</td>
                         <td>
                             <button onClick={this.handleRemove(i)} className="btn btn-small btn-danger">-</button>
                         </td>

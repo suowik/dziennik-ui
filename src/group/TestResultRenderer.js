@@ -2,12 +2,13 @@ import React, {Component} from 'react';
 import request from 'request'
 import EditableSelect from '../common/EditableSelect.js'
 import {resolveSemester} from '../common/resolveSemester.js'
+import {hashHistory} from "react-router";
 
 class TestResultRenderer extends Component {
 
     failed(marks) {
         let arrayMarks = this.marksToArray(marks, TestResultRenderer.rawMarkValue);
-        let sum = arrayMarks.reduce((a, b)=> {
+        let sum = arrayMarks.reduce((a, b) => {
             return a + b
         });
         return (sum / arrayMarks.length < 3.0) && arrayMarks[arrayMarks.length - 1] < 3;
@@ -37,8 +38,8 @@ class TestResultRenderer extends Component {
 
     renderMarks(marks, studentId, columnId) {
         let res = this.marksToArray(marks, this.renderMarkFactory(studentId, columnId))
-            .filter((e)=> e != null);
-        return new Array(res.length + (res.length - 1)).fill(1).map((e, i)=> {
+            .filter((e) => e != null);
+        return new Array(res.length + (res.length - 1)).fill(1).map((e, i) => {
             let index = Math.floor(i / 2);
             if (i % 2 === 0) {
                 return res[index]
@@ -55,7 +56,7 @@ class TestResultRenderer extends Component {
     renderMarkFactory(studentId, columnId) {
         let markNames = ['first', 'second', 'third'];
 
-        return (marks, mark, i)=> {
+        return (marks, mark, i) => {
             let prevMark = marks[markNames[i - 1]];
             let rawValue = TestResultRenderer.rawMarkValue(marks, mark);
             let id = studentId + "_" + columnId + "_" + mark;
@@ -89,20 +90,29 @@ class TestResultRenderer extends Component {
     }
 
     changeMark(studentId, columnId, mark) {
-        return (e)=> {
+        return (e) => {
             let group = this.state.group;
             let semester = resolveSemester(group);
             semester.students[studentId]['tests'][columnId]['marks'][mark] = e.target.value;
-            request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, () => {
+            const requestBody = {
+                method: 'POST',
+                url: 'https://dziennik-api.herokuapp.com/groups/',
+                json: true,
+                body: this.state,
+                headers: {
+                    Authorization: 'Basic zaq12wsxcde34rfvbgt56yhnmju78ik,.lo90p;/'
+                }
+            };
+            request(requestBody, () => {
                 this.setState({
                     group: group
                 });
-            });
+            })
         }
     }
 
     marksToArray(marks, cb) {
-        return ['first', 'second', 'third'].map((mark, i)=> {
+        return ['first', 'second', 'third'].map((mark, i) => {
             return cb(marks, mark, i)
         }).filter(m => m !== null);
     }

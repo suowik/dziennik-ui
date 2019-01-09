@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import request from 'request'
 import EditableSelect from '../common/EditableSelect.js'
 import {resolveSemester} from '../common/resolveSemester.js'
+import {hashHistory} from "react-router";
 
 class AttendanceRenderer extends Component {
     constructor(props) {
@@ -25,25 +26,25 @@ class AttendanceRenderer extends Component {
 
 
     renderAttendance(status, studentId, columnId) {
-        let id = studentId+"_"+columnId
+        let id = studentId + "_" + columnId;
         switch (status) {
             case 'present':
                 return <EditableSelect key={id} editable={false} value={'+'} identifier={id}
-                                              renderWhenEditable={this.renderSelect(studentId,columnId)}/>;
+                                       renderWhenEditable={this.renderSelect(studentId, columnId)}/>;
             case 'absent':
                 return <EditableSelect key={id} editable={true} value={'-'} identifier={id}
-                                       renderWhenEditable={this.renderSelect(studentId,columnId)}/>;
+                                       renderWhenEditable={this.renderSelect(studentId, columnId)}/>;
             case 'justified':
                 return <EditableSelect key={id} editable={false} value={'(+)'} identifier={id}
-                                       renderWhenEditable={this.renderSelect(studentId,columnId)}/>;
+                                       renderWhenEditable={this.renderSelect(studentId, columnId)}/>;
             default:
                 return <EditableSelect key={id} editable={false} value={''} identifier={id}
-                                       renderWhenEditable={this.renderSelect(studentId,columnId)}/>;
+                                       renderWhenEditable={this.renderSelect(studentId, columnId)}/>;
         }
     }
 
-    renderSelect(studentId,columnId){
-        return <select onChange={this.justifyStudent(studentId,columnId)}>
+    renderSelect(studentId, columnId) {
+        return <select onChange={this.justifyStudent(studentId, columnId)}>
             <option value="absent">-</option>
             <option value="present">+</option>
             <option value="justified">(+)</option>
@@ -55,12 +56,20 @@ class AttendanceRenderer extends Component {
             let group = this.state.group;
             let semester = resolveSemester(group);
             semester.students[studentId]['attendances'][columnId].status = e.target.value;
-            request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, e => {
+            const requestBody = {
+                method: 'POST',
+                url: 'https://dziennik-api.herokuapp.com/groups/',
+                json: true,
+                body: this.state,
+                headers: {
+                    Authorization: 'Basic zaq12wsxcde34rfvbgt56yhnmju78ik,.lo90p;/'
+                }
+            };
+            request(requestBody, () => {
                 this.setState({
                     group: group
                 });
-            });
-
+            })
         };
     }
 

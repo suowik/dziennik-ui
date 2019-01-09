@@ -47,9 +47,19 @@ class Attendance extends Component {
     handleSubmit(e) {
         e.preventDefault();
         let group = this.state.group;
-        request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(group)}, () => {
+        const requestBody = {
+            method: 'POST',
+            url: 'https://dziennik-api.herokuapp.com/groups/',
+            json: true,
+            body: group,
+            headers: {
+                Authorization: 'Basic zaq12wsxcde34rfvbgt56yhnmju78ik,.lo90p;/'
+            }
+        };
+        request(requestBody, () => {
             hashHistory.push('/groups/' + group._id)
-        })
+
+        });
     }
 
     handleDateChange = (e) => {

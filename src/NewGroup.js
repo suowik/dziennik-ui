@@ -39,7 +39,16 @@ class NewGroup extends Component {
         });
         group.year = this.state.activeYear;
         group.semester = this.state.activeSemester;
-        request.post('https://dziennik-api.herokuapp.com/groups/', {form: JSON.stringify(this.state)}, () => {
+        const requestBody = {
+            method: 'POST',
+            url: 'https://dziennik-api.herokuapp.com/groups/',
+            json: true,
+            body: this.state,
+            headers: {
+                Authorization: 'Basic zaq12wsxcde34rfvbgt56yhnmju78ik,.lo90p;/'
+            }
+        };
+        request(requestBody,() => {
             hashHistory.push('/groups')
         })
     };
