@@ -4,6 +4,7 @@ import {resolveSemester} from './common/resolveSemester.js'
 import {REFERENCE_GROUP} from './common/referenceGroup.js'
 import Header from './common/Header.js'
 import {hashHistory} from 'react-router';
+import moment from "moment";
 
 export default class Promote extends Component {
 
@@ -21,11 +22,33 @@ export default class Promote extends Component {
     componentDidMount() {
         let that = this;
         request.get('https://dziennik-api.herokuapp.com/groups/' + this.props.params.groupId, (err, res, body) => {
+            const group = JSON.parse(body);
+            const nextValues = this.nextValues(group.activeSemester);
             that.setState({
-                group: JSON.parse(body)
+                group: group,
+                name: group.name,
+                activeYear: nextValues.years.start + "/" + nextValues.years.end,
+                activeSemester: nextValues.nextSemester
             })
         });
     }
+
+    nextValues = (prevSemester) => {
+        const now = moment();
+        let nextSemester = (prevSemester - 1) % 2;
+        const nextYears = {
+            start: now.year(),
+            end: now.year() + 1
+        };
+        if (prevSemester === 2) {
+            nextYears.end = nextYears.end + 1;
+            nextYears.start = nextYears.start + 1
+        }
+        return {
+            years: nextYears,
+            nextSemester: nextSemester
+        }
+    };
 
     handleInputChange = (event) => {
         const target = event.target;
@@ -67,7 +90,7 @@ export default class Promote extends Component {
                 Authorization: 'Basic zaq12wsxcde34rfvbgt56yhnmju78ik,.lo90p;/'
             }
         };
-        request(requestBody,() => {
+        request(requestBody, () => {
             hashHistory.push('/groups')
         })
     };
@@ -75,8 +98,12 @@ export default class Promote extends Component {
     render() {
         return (
             <div>
-                <Header title={`Promuj grupę`} subtitle={this.state.group.name}/>
+                <Header title={`Promuj grupę `+this.state.group.name} subtitle={''}/>
                 <div>
+                    <div className="alert alert-info">
+                        <strong>Ważne!</strong><br/>
+                        Rok zajęć oraz semestr dotyczą przyszłości...
+                    </div>
                     <form onSubmit={this.promoteGroup}>
 
                         <div className="form-group">
@@ -89,7 +116,17 @@ export default class Promote extends Component {
                                    value={this.state.activeYear}
                                    placeholder="Rok zajęć"/>
                         </div>
-
+                        <div className="form-group">
+                            <label htmlFor="activeSemester">Semestr</label>
+                            <select className="form-control"
+                                    name="activeSemester"
+                                    id="activeSemester"
+                                    onChange={this.handleInputChange}
+                                    value={this.state.activeSemester}>
+                                <option value={1}>1</option>
+                                <option value={2}>2</option>
+                            </select>
+                        </div>
                         <div className="form-group">
                             <label htmlFor="name">Nowa nazwa grupy</label>
                             <input type="text"
@@ -111,19 +148,6 @@ export default class Promote extends Component {
                                    checked={this.state.archive}
                                    placeholder="Archiwalna?"/>
                         </div>
-
-                        <div className="form-group">
-                            <label htmlFor="activeSemester">Semestr</label>
-                            <select className="form-control"
-                                    name="activeSemester"
-                                    id="activeSemester"
-                                    onChange={this.handleInputChange}
-                                    value={this.state.activeSemester}>
-                                <option value={1}>1</option>
-                                <option value={2}>2</option>
-                            </select>
-                        </div>
-
                         <button type="submit" className="btn btn-sm btn-success">Zapisz</button>
                     </form>
                 </div>
