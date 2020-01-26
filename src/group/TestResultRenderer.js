@@ -11,7 +11,15 @@ class TestResultRenderer extends Component {
         let sum = arrayMarks.reduce((a, b) => {
             return a + b
         });
-        return (sum / arrayMarks.length < 3.0) && arrayMarks[arrayMarks.length - 1] < 3;
+        let passed = this.marksToArray(marks,(all,mark)=>{
+            return all[mark] === "PASSED"
+        });
+        console.log(passed)
+        if(isNaN(sum / arrayMarks.length)){
+            return passed.filter(e=>e).length === 0
+        } else {
+            return ((sum / arrayMarks.length < 3.0) && arrayMarks[arrayMarks.length - 1] < 3);
+        }
     }
 
     componentWillReceiveProps(props) {
@@ -64,7 +72,7 @@ class TestResultRenderer extends Component {
                 return <EditableSelect key={id} editable={true} value={rawValue} identifier={id}
                                        renderWhenEditable={this.renderSelect(id, studentId, columnId, mark, rawValue)}/>;
             }
-            if ((prevMark === "2.0" || prevMark === "2") && rawValue == null) {
+            if ((prevMark === "2.0" || prevMark === "2" || prevMark === "NOT_PASSED") && rawValue == null) {
                 return <EditableSelect key={id} editable={true} value={rawValue} identifier={id}
                                        renderWhenEditable={this.renderSelect(id, studentId, columnId, mark, rawValue)}/>;
             }
@@ -86,6 +94,8 @@ class TestResultRenderer extends Component {
             <option value="4">4.0</option>
             <option value="4.5">4.5</option>
             <option value="5">5.0</option>
+            <option value="NOT_PASSED">nzal</option>
+            <option value="PASSED">zal</option>
         </select>
     }
 
@@ -119,7 +129,13 @@ class TestResultRenderer extends Component {
 
     static rawMarkValue(marks, mark) {
         let value = marks[mark];
-        if (value !== null && value !== undefined) {
+        if(value === "PASSED" || value === "NOT_PASSED"){
+            if(value === "PASSED"){
+                return "zal";
+            } else {
+                return "nzal";
+            }
+        } else if (value !== null && value !== undefined) {
             return parseFloat(value)
         }
         return null

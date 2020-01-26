@@ -161,6 +161,8 @@ class TestResultPanel extends Component {
                                     <option value="4.0">4.0</option>
                                     <option value="4.5">4.5</option>
                                     <option value="5.0">5.0</option>
+                                    <option value="NOT_PASSED">nzal</option>
+                                    <option value="PASSED">zal</option>
                                 </select>
                             </label>
                         </div>
